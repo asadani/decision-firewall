@@ -1,0 +1,127 @@
+{
+  "modular_application": {
+    "span_count": 16,
+    "stages": {
+      "assessment": true,
+      "evidence": true,
+      "policy": true,
+      "review": true,
+      "authorization": true,
+      "dispatch": true,
+      "reconciliation": true,
+      "outcome": true
+    },
+    "fields": {
+      "assessment_id": true,
+      "evaluation_id": true,
+      "authorization_id": true,
+      "attempt_id": true,
+      "policy_version": true,
+      "reasons": false,
+      "disposition": true
+    },
+    "restart_trace_linked": true,
+    "assessment_linked": true,
+    "canaries_leaked": [],
+    "flushed": true,
+    "observer_calls": 14,
+    "write_lock_failures": 0,
+    "episode": {
+      "case": "data_export-base-review_approved",
+      "arm": "modular_application",
+      "initial": [
+        "REQUIRE_REVIEW"
+      ],
+      "expected_initial": "REQUIRE_REVIEW",
+      "statuses": [
+        "SUCCEEDED"
+      ],
+      "effects": 1,
+      "expected_effects": 1,
+      "setup_ms": 18.62510000501061,
+      "operation_ms": 894.1278000056627,
+      "errors": [],
+      "audit_records": 5,
+      "audit_verified": null,
+      "audit_tamper_rejected": null,
+      "audit_contains_canaries": true,
+      "rid": "job_bfe387143eb84b51a3efa9c44debc578"
+    },
+    "exporter_failure": {
+      "effects": 1,
+      "statuses": [
+        "SUCCEEDED"
+      ],
+      "diagnostics": {
+        "dropped": 0,
+        "export_failures": 14
+      }
+    }
+  },
+  "firewall": {
+    "span_count": 22,
+    "stages": {
+      "assessment": true,
+      "evidence": true,
+      "policy": true,
+      "review": true,
+      "authorization": true,
+      "dispatch": true,
+      "reconciliation": true,
+      "outcome": true
+    },
+    "fields": {
+      "assessment_id": true,
+      "evaluation_id": false,
+      "authorization_id": true,
+      "attempt_id": true,
+      "policy_version": false,
+      "reasons": false,
+      "disposition": false
+    },
+    "restart_trace_linked": true,
+    "assessment_linked": true,
+    "canaries_leaked": [],
+    "flushed": true,
+    "observer_calls": 20,
+    "write_lock_failures": 0,
+    "episode": {
+      "case": "data_export-base-review_approved",
+      "arm": "firewall",
+      "initial": [
+        "REQUIRE_REVIEW"
+      ],
+      "expected_initial": "REQUIRE_REVIEW",
+      "statuses": [
+        "SUCCEEDED"
+      ],
+      "effects": 1,
+      "expected_effects": 1,
+      "setup_ms": 62.934399997175205,
+      "operation_ms": 920.1046000016504,
+      "errors": [],
+      "audit_records": 8,
+      "audit_verified": true,
+      "audit_tamper_rejected": true,
+      "audit_contains_canaries": true,
+      "rid": "decision_dfe26fe304bf46ec925fb359edac43e6"
+    },
+    "exporter_failure": {
+      "effects": 1,
+      "statuses": [
+        "SUCCEEDED"
+      ],
+      "diagnostics": {
+        "dropped": 0,
+        "export_failures": 20
+      }
+    }
+  },
+  "shared_saturation": {
+    "capacity": 8,
+    "queued_while_blocked": 8,
+    "dropped": 992,
+    "enqueue_1000_ms": 3.1956000020727515,
+    "flushed": true
+  }
+}

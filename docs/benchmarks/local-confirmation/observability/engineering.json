@@ -1,0 +1,13 @@
+{
+  "application.py": 200,
+  "framework.py": 110,
+  "policies.py": 79,
+  "service.py": 54,
+  "application_note_calls": 8,
+  "application_operation_decorators": 4,
+  "framework_integration_event_hooks": 0,
+  "shared_export_v2_nonblank_lines": 4,
+  "refund_configuration_fields_changed": 1,
+  "export_configuration_fields_changed": 2,
+  "reused_core_library_nonblank_lines": 1377
+}

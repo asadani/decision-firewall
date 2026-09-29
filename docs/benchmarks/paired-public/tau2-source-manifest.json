@@ -1,0 +1,23 @@
+{
+  "repository": "sierra-research/tau2-bench",
+  "revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+  "files": {
+    "LICENSE": "e67c5aa0074dfcaefd3c3a1aedb94cb539234aecd15d5a972574e3200e6252fe",
+    "README.md": "ed39688aa5d40bd73007355df65f4e41a6c250960642e56764c3ad44da1df8d2",
+    "data/tau2/domains/airline/split_tasks.json": "b22ced4d9a9850ac9aea31c53bdcb6d6009058140bd9acc7db37c1d36222ba8b",
+    "data/tau2/domains/airline/tasks.json": "ccd8ba737b4cc371415af70151187788f728d6108d0916e73bb4317b40542052",
+    "data/tau2/domains/banking_knowledge/tasks.json": "213c7f3e6dc0420b1184ee271e39e38c6ece3c43edfa362db49a560828ebd543",
+    "data/tau2/domains/mock/split_tasks.json": "613c3298e6fd3cf03f71f848ecee519068eb4df54a1ceb28596f5aa443ee6581",
+    "data/tau2/domains/mock/tasks.json": "0d8bcd14798bf2e6e082432147f62570c57b0897b4e4e388c95bb02ecbe5d8cf",
+    "data/tau2/domains/retail/policy.md": "2c9652afbce57d6e087768d37cda64d31c53d50b3e3225cfdb791bac66466467",
+    "data/tau2/domains/retail/split_tasks.json": "ed0580ec52575b63fbf76568af42490da6ee7783ecb4aa81af46961291358f20",
+    "data/tau2/domains/retail/tasks.json": "8e03ebce7901bd6218e7a7dc3105faa9324091a68058f7fe61c65262868812e8",
+    "data/tau2/domains/telecom/split_tasks.json": "605b488bb9a6acb3c7f4505240a855fdc8681d09aadb16a8f38b2efcfc5c3aec",
+    "pyproject.toml": "3c718fbc3c1e350a4e36b465fee8f33db34eae75c97a18880cef46c14b96c77f",
+    "src/experiments/hyperparam/cli.py": "1ffba08a3262645e7e9c2231182ddee15d1ac03c6146470cf2591ca74413214f",
+    "src/tau2/cli.py": "13cb80a99483f85638bd565fd6aa5e3795f7cc2fe35e48b0ecb4d794c23d8b5c",
+    "src/tau2/utils/llm_utils.py": "fa7d61e34ef9c668452ec44e8ba9efafec14a349a530481fac1dc19eff275c65",
+    "src/tau2/voice/synthesis/cli.py": "f4c46f67ea3a843c483f4f57e637fd759317921399b8602f1e5ce9889c829a0e",
+    "tests/test_llm_utils.py": "39d52a055da6b92651966c56fecf1508bfe7b3bc1fe7daf26318a9fe2c77f717"
+  }
+}

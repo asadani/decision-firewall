@@ -1,0 +1,5702 @@
+[
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 17.547200004628394,
+    "operation_ms": 22.56239999405807,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_4cd72b12e7214806b5619ecdda1c3ca8",
+    "repetition": 0,
+    "telemetry": true,
+    "drain_ms": 0.0030999945010989904,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.951300000480842,
+    "operation_ms": 22.46720000403002,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_ae672f7b08b0487bb0d34f73fa70a6a4",
+    "repetition": 0,
+    "telemetry": false,
+    "drain_ms": 0.000600004568696022,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 52.498900004138704,
+    "operation_ms": 46.27640000398969,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_97ad0cae5bda4338957d75212f54df72",
+    "repetition": 0,
+    "telemetry": true,
+    "drain_ms": 0.004699999408330768,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 70.6817999962368,
+    "operation_ms": 44.768400002794806,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_e865938a8b1a40ad8d1a758450c0500c",
+    "repetition": 0,
+    "telemetry": false,
+    "drain_ms": 0.000400003045797348,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 57.345299996086396,
+    "operation_ms": 55.27930000243941,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_2f7968a2fde645cc9cba5923146ae611",
+    "repetition": 1,
+    "telemetry": false,
+    "drain_ms": 0.0007999988156370819,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 62.00190000527073,
+    "operation_ms": 44.01839999627555,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_e22cf2f80e1f4d079d96f0e02f05a061",
+    "repetition": 1,
+    "telemetry": true,
+    "drain_ms": 0.0025000044843181968,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 46.00629999913508,
+    "operation_ms": 30.2704999994603,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_4f11a48b709740489812623c27ab9aa5",
+    "repetition": 1,
+    "telemetry": false,
+    "drain_ms": 0.00039999576983973384,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 25.480700001935475,
+    "operation_ms": 20.83689999562921,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_5f1aa3f53fa347cb99f144b7b7f46b1b",
+    "repetition": 1,
+    "telemetry": true,
+    "drain_ms": 0.0032999960239976645,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 33.721500003593974,
+    "operation_ms": 31.154600001173094,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_2f6b1495b82f4b49919a7ae24446caec",
+    "repetition": 2,
+    "telemetry": true,
+    "drain_ms": 0.0023999964469112456,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 40.69629999867175,
+    "operation_ms": 36.533099999360275,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_b702228e96a44b40a9f98ec457d31cda",
+    "repetition": 2,
+    "telemetry": false,
+    "drain_ms": 0.0005999972927384079,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 54.78230000153417,
+    "operation_ms": 38.27050000109011,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_3bde46ec875c474a8004bd30b78bd764",
+    "repetition": 2,
+    "telemetry": true,
+    "drain_ms": 0.0017999991541728377,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 78.31270000315271,
+    "operation_ms": 38.36810000211699,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_081cbe05b25d4c1885b6c458b5328edc",
+    "repetition": 2,
+    "telemetry": false,
+    "drain_ms": 0.0008999995770864189,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.219199999293778,
+    "operation_ms": 24.262700004328508,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_2a1621ed09e643758faa0eb96da77968",
+    "repetition": 3,
+    "telemetry": true,
+    "drain_ms": 0.004699999408330768,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 34.877700003562495,
+    "operation_ms": 25.94880000106059,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_28c036192dac4952a54c10af0eea2bda",
+    "repetition": 3,
+    "telemetry": false,
+    "drain_ms": 0.000400003045797348,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 50.77109999547247,
+    "operation_ms": 39.22180000517983,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_96354b3075a94b3991045d677adbae8d",
+    "repetition": 3,
+    "telemetry": true,
+    "drain_ms": 0.0020000006770715117,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 59.752799999841955,
+    "operation_ms": 39.55040000437293,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_7b3d4056ce0444189a504bd846cc7357",
+    "repetition": 3,
+    "telemetry": false,
+    "drain_ms": 0.000500003807246685,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 54.92769999545999,
+    "operation_ms": 36.67850000056205,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_8ca61ca86b844cb48a2a1a27bbb86f96",
+    "repetition": 4,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 16.930300000240095,
+    "operation_ms": 24.043999997957144,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_3d2aa3c0b4af4af7be39b4edd98346c3",
+    "repetition": 4,
+    "telemetry": true,
+    "drain_ms": 0.0025000044843181968,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 33.62030000425875,
+    "operation_ms": 25.080899999011308,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_586909c30fad463ebbe5dd2868bc5403",
+    "repetition": 4,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 50.048400000378024,
+    "operation_ms": 35.480699996696785,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_341723d432434a54876a6af3605a2241",
+    "repetition": 4,
+    "telemetry": true,
+    "drain_ms": 0.0039000005926936865,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 28.154599996923935,
+    "operation_ms": 22.657499997876585,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_e846fd50c7154fea9c7afd3c8b38e5a8",
+    "repetition": 5,
+    "telemetry": true,
+    "drain_ms": 0.0020000006770715117,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 21.512200000870507,
+    "operation_ms": 29.447900000377558,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_98c28f3e1c6146b6b442702752eb8b03",
+    "repetition": 5,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 55.789899997762404,
+    "operation_ms": 36.88890000194078,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_c35a824e495f48df9c1a6cf3a6b93e9f",
+    "repetition": 5,
+    "telemetry": false,
+    "drain_ms": 0.000500003807246685,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 50.27450000488898,
+    "operation_ms": 37.78410000086296,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_0a60a92950d945fd9f108988855b7380",
+    "repetition": 5,
+    "telemetry": true,
+    "drain_ms": 0.0031000017770566046,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 72.47040000220295,
+    "operation_ms": 37.77049999916926,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_fef49f42c55c44dfb383182ac2c8d13c",
+    "repetition": 6,
+    "telemetry": false,
+    "drain_ms": 0.000500003807246685,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 21.43459999933839,
+    "operation_ms": 22.923799995623995,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_feb8538fabe345748ae6ce11888bf6a2",
+    "repetition": 6,
+    "telemetry": true,
+    "drain_ms": 0.001700005668681115,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 70.79930000327295,
+    "operation_ms": 37.71319999941625,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_a44f6940090d47b4858d77fd54c9ea81",
+    "repetition": 6,
+    "telemetry": true,
+    "drain_ms": 0.0018999999156221747,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 24.686200005817227,
+    "operation_ms": 22.282000005361624,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_0638b03c6d1240f29f8c32c2afd254ba",
+    "repetition": 6,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 56.55599999590777,
+    "operation_ms": 39.46630000427831,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_cf66215356d54e76b26103e8412115b4",
+    "repetition": 7,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.48959999915678,
+    "operation_ms": 22.915699999430217,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_f4b0c91e85de4ccfb89efe83f8e13d44",
+    "repetition": 7,
+    "telemetry": true,
+    "drain_ms": 0.0017999991541728377,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 81.24700000189478,
+    "operation_ms": 38.2132000013371,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_2f9879b2fab247588d7d5904fc93ade0",
+    "repetition": 7,
+    "telemetry": true,
+    "drain_ms": 0.001400003384333104,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 41.555700001481455,
+    "operation_ms": 33.63110000645975,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_fab3f82b671a43389fcd44252941524a",
+    "repetition": 7,
+    "telemetry": false,
+    "drain_ms": 0.000800006091594696,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 53.089200002432335,
+    "operation_ms": 37.37820000242209,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_ea40448bd79e46ec8ee68d2ce6ed1c86",
+    "repetition": 8,
+    "telemetry": true,
+    "drain_ms": 0.0017999991541728377,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 43.663399999786634,
+    "operation_ms": 29.80599999864353,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_8c0c608c6bf441b9816f3489dec5ca23",
+    "repetition": 8,
+    "telemetry": false,
+    "drain_ms": 0.0005999972927384079,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.37599999998929,
+    "operation_ms": 22.70190000126604,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_aebfccb772ed48a0af4e05b02eafbac8",
+    "repetition": 8,
+    "telemetry": true,
+    "drain_ms": 0.0016999983927235007,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 101.21609999623615,
+    "operation_ms": 36.93550000025425,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_77d7ef087ddb43ceb35dd6e6f6d48e2e",
+    "repetition": 8,
+    "telemetry": false,
+    "drain_ms": 0.00039999576983973384,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 55.06299999979092,
+    "operation_ms": 42.08400000061374,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_2ec763527b99407ab9f2b7eb170c3887",
+    "repetition": 9,
+    "telemetry": true,
+    "drain_ms": 0.0021000014385208488,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 94.20990000216989,
+    "operation_ms": 36.48819999943953,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_749124735b214f33a11755044a1503d8",
+    "repetition": 9,
+    "telemetry": false,
+    "drain_ms": 0.000400003045797348,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 21.155000002181623,
+    "operation_ms": 26.080600000568666,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_d1dd255db70d49dfae5d57f1e1008a15",
+    "repetition": 9,
+    "telemetry": false,
+    "drain_ms": 0.000400003045797348,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 19.173799999407493,
+    "operation_ms": 23.30880000226898,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_af920602f87b439b943162f3fbab48c1",
+    "repetition": 9,
+    "telemetry": true,
+    "drain_ms": 0.0017999991541728377,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 43.11799999413779,
+    "operation_ms": 28.413000000000466,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_a365e21a1de84ddb88e37d396c5a0499",
+    "repetition": 10,
+    "telemetry": true,
+    "drain_ms": 0.0021000014385208488,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 89.77800000138814,
+    "operation_ms": 37.128699994354974,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_94f1af0a1f8847f4ba2483306d6af76f",
+    "repetition": 10,
+    "telemetry": false,
+    "drain_ms": 0.000500003807246685,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 59.503600001335144,
+    "operation_ms": 37.55530000489671,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_05658724f40e4b9f965a5f6c4dd30492",
+    "repetition": 10,
+    "telemetry": true,
+    "drain_ms": 0.0021000014385208488,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 21.075799995742273,
+    "operation_ms": 24.163500005670357,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_a2e3bbb4153a4db0944a35f0be09215d",
+    "repetition": 10,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 20.570199994836003,
+    "operation_ms": 23.068699993018527,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_16613170889d43c79d0461d0dce83f9d",
+    "repetition": 11,
+    "telemetry": false,
+    "drain_ms": 0.0008999995770864189,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 52.45810000633355,
+    "operation_ms": 40.55379999772413,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_c5e0e59a8d4446199b69f8fac3da6e11",
+    "repetition": 11,
+    "telemetry": true,
+    "drain_ms": 0.0021000014385208488,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 48.43430000619264,
+    "operation_ms": 33.36259999923641,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_e699e10318e54bbabf626cda92fed50b",
+    "repetition": 11,
+    "telemetry": true,
+    "drain_ms": 0.0017999991541728377,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 104.78370000055293,
+    "operation_ms": 40.6003000025521,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_9220642ef05e43ae882a82d27a0054b2",
+    "repetition": 11,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 56.96110000280896,
+    "operation_ms": 38.52550000010524,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_9aa002e4ad964cbdb4c33cfa17118f9c",
+    "repetition": 12,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.321999996260274,
+    "operation_ms": 22.916599999007303,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_496de41963074b8585013bb9371b7aa2",
+    "repetition": 12,
+    "telemetry": true,
+    "drain_ms": 0.0033000032999552786,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 97.20480000396492,
+    "operation_ms": 43.169600001419894,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_d7ac13ee37dc4fbfbfa573db39c5c2f9",
+    "repetition": 12,
+    "telemetry": true,
+    "drain_ms": 0.0025999979698099196,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 23.654099997656886,
+    "operation_ms": 26.71899999404559,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_cb01d4e5529841cfad87055968274070",
+    "repetition": 12,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 19.396599993342534,
+    "operation_ms": 22.504699998535216,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_07da6d4159b1465caf782055f0b9bfa6",
+    "repetition": 13,
+    "telemetry": true,
+    "drain_ms": 0.0018999999156221747,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 98.78759999992326,
+    "operation_ms": 37.9252999991877,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_9a7abed642ec4a8d87186631c34afe55",
+    "repetition": 13,
+    "telemetry": false,
+    "drain_ms": 0.000500003807246685,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 59.39860000216868,
+    "operation_ms": 37.80969999934314,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_35fba52424f24104a92bcde2b1e7ccee",
+    "repetition": 13,
+    "telemetry": true,
+    "drain_ms": 0.001700005668681115,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 19.840900000417605,
+    "operation_ms": 23.217900001327507,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_2503bdb420e043db9a1084a4a17c0372",
+    "repetition": 13,
+    "telemetry": false,
+    "drain_ms": 0.0005999972927384079,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 60.49570000323001,
+    "operation_ms": 37.74859999975888,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_ee7b4080092e40f2b275c25840afcd19",
+    "repetition": 14,
+    "telemetry": true,
+    "drain_ms": 0.0022999956854619086,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 42.06550000526477,
+    "operation_ms": 35.12310000223806,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_84affba58b3e433699d088c6b73b64f9",
+    "repetition": 14,
+    "telemetry": true,
+    "drain_ms": 0.0014999968698248267,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 89.28719999676105,
+    "operation_ms": 36.75170000497019,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_a1ae06fd5309448f9f82fe883539beae",
+    "repetition": 14,
+    "telemetry": false,
+    "drain_ms": 0.00039999576983973384,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.473399999493267,
+    "operation_ms": 21.290499993483536,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_1fa72dfc212e460396bbf77b3b59af96",
+    "repetition": 14,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 51.872000003641006,
+    "operation_ms": 38.34110000025248,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_c7dd9a5b1c184034ae8ab17502f21637",
+    "repetition": 15,
+    "telemetry": false,
+    "drain_ms": 0.00039999576983973384,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 19.421600001805928,
+    "operation_ms": 20.491800001764204,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_adca944659764b4485489f4949e4a395",
+    "repetition": 15,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.84279999649152,
+    "operation_ms": 22.760799998650327,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_22c41cc24474421a9dfcf711208cb51b",
+    "repetition": 15,
+    "telemetry": true,
+    "drain_ms": 0.0018999999156221747,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 73.79170000058366,
+    "operation_ms": 39.64490000362275,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_9f49e7d938744f55a6898e4ff83764d0",
+    "repetition": 15,
+    "telemetry": true,
+    "drain_ms": 0.004699999408330768,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 64.38360000174725,
+    "operation_ms": 42.11949999444187,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_43a270ec0cc74432b2a71bea08600e7d",
+    "repetition": 16,
+    "telemetry": true,
+    "drain_ms": 0.0017999991541728377,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 63.19110000185901,
+    "operation_ms": 41.43900000053691,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_c2d66bcec79d4a7787e0c49275b599c3",
+    "repetition": 16,
+    "telemetry": false,
+    "drain_ms": 0.0005999972927384079,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 20.011099994007964,
+    "operation_ms": 23.864599999797065,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_a691d0a2f8a943d28b68507fbf344f55",
+    "repetition": 16,
+    "telemetry": true,
+    "drain_ms": 0.0027999994927085936,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 16.81300000200281,
+    "operation_ms": 26.213700002699625,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_3d4b23fecd4b4a95b674aa4dea2ed27d",
+    "repetition": 16,
+    "telemetry": false,
+    "drain_ms": 0.000700005330145359,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 53.438299997651484,
+    "operation_ms": 35.746599998674355,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_de5a030ad16c44fb9c777bad6d8efeaa",
+    "repetition": 17,
+    "telemetry": true,
+    "drain_ms": 0.0025999979698099196,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 37.28940000291914,
+    "operation_ms": 24.836399999912828,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_56e3b61e959f49759ff5bde929cc7405",
+    "repetition": 17,
+    "telemetry": false,
+    "drain_ms": 0.000400003045797348,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 55.92310000065481,
+    "operation_ms": 37.893099994107615,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_7b9502a10b70434297844eba7875b0f6",
+    "repetition": 17,
+    "telemetry": false,
+    "drain_ms": 0.000600004568696022,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 22.696399995766114,
+    "operation_ms": 24.20259999780683,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_5ceef09494984184af161422947193ea",
+    "repetition": 17,
+    "telemetry": true,
+    "drain_ms": 0.0018999999156221747,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 79.79460000206018,
+    "operation_ms": 44.01959999813698,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_8deb1fe9ad4543cdbb66f14ec5c65601",
+    "repetition": 18,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 19.78390000294894,
+    "operation_ms": 24.56230000098003,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_4f792627e65e4b7e9311bce034b435ae",
+    "repetition": 18,
+    "telemetry": true,
+    "drain_ms": 0.0022999956854619086,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 98.07780000119237,
+    "operation_ms": 34.83050000068033,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_c4e7adf87bc5443b994a1a6e8b48b065",
+    "repetition": 18,
+    "telemetry": true,
+    "drain_ms": 0.0015999976312741637,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 45.983399999386165,
+    "operation_ms": 36.607300004106946,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_192ae17abfcb4bbd883875eebb0bdc0e",
+    "repetition": 18,
+    "telemetry": false,
+    "drain_ms": 0.000600004568696022,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 19.22109999577515,
+    "operation_ms": 21.57440000155475,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_c97caeb2f7b44d01b22ac4951cd82fce",
+    "repetition": 19,
+    "telemetry": true,
+    "drain_ms": 0.0023000029614195228,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 45.27519999828655,
+    "operation_ms": 31.220000004395843,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_0b89d7120d7845d8a00ae79e8e8038ec",
+    "repetition": 19,
+    "telemetry": false,
+    "drain_ms": 0.000500003807246685,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 58.06589999701828,
+    "operation_ms": 37.16809999605175,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_05acd8eb55e64d9eaafecb66a9f88903",
+    "repetition": 19,
+    "telemetry": true,
+    "drain_ms": 0.0021999949240125716,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 77.9337000058149,
+    "operation_ms": 36.54439999809256,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_75218f5fd22d4953ae91e9e3955b7667",
+    "repetition": 19,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.082499998854473,
+    "operation_ms": 21.684200000890996,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_bf03e383cf62459191fae63d580b3aa4",
+    "repetition": 20,
+    "telemetry": true,
+    "drain_ms": 0.001700005668681115,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 89.64640000340296,
+    "operation_ms": 39.17120000551222,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_792fc52c7c9141b8a5d60a057e607d36",
+    "repetition": 20,
+    "telemetry": true,
+    "drain_ms": 0.0033000032999552786,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 55.66449999605538,
+    "operation_ms": 38.09610000462271,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_d11cdd4cf17940a68efa4371a368e4bd",
+    "repetition": 20,
+    "telemetry": false,
+    "drain_ms": 0.000500003807246685,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 16.647899996314663,
+    "operation_ms": 19.517599997925572,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_c8d94def48f14c59b5886d338211cee1",
+    "repetition": 20,
+    "telemetry": false,
+    "drain_ms": 0.000500003807246685,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 50.99229999905219,
+    "operation_ms": 37.813299997651484,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_417e11f429c14a6fb0c246f5ac917d3a",
+    "repetition": 21,
+    "telemetry": false,
+    "drain_ms": 0.000500003807246685,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 52.07869999867398,
+    "operation_ms": 34.9015000028885,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_5aba2814a10f457c90692e747bfed49e",
+    "repetition": 21,
+    "telemetry": true,
+    "drain_ms": 0.0018999999156221747,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 36.455100002058316,
+    "operation_ms": 28.652900000452064,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_a80a2b8ab6b24fb5a0fc2448417d7e6e",
+    "repetition": 21,
+    "telemetry": true,
+    "drain_ms": 0.0017999991541728377,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 45.34609999973327,
+    "operation_ms": 38.16489999735495,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_7d42793e416b421b93aa93c6c5d5cb71",
+    "repetition": 21,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 54.34709999826737,
+    "operation_ms": 46.40520000248216,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_408a2e1e5e3f4d978e330d4432573f25",
+    "repetition": 22,
+    "telemetry": true,
+    "drain_ms": 0.0024000037228688598,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 46.24590000457829,
+    "operation_ms": 33.760099999199156,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_123f59cc7f5c4d2eb7a6d6d1fcc01b4b",
+    "repetition": 22,
+    "telemetry": true,
+    "drain_ms": 0.0021000014385208488,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 94.64949999528471,
+    "operation_ms": 44.28679999546148,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_0f41baff3e754fdeba9dad1214f56174",
+    "repetition": 22,
+    "telemetry": false,
+    "drain_ms": 0.000800006091594696,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.423599998641293,
+    "operation_ms": 21.7657999965013,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_249cdd21599d459088ea2a51c5f3fd36",
+    "repetition": 22,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.701100001635496,
+    "operation_ms": 24.682600000232924,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_5dc6139e26644807bde8b70793893c78",
+    "repetition": 23,
+    "telemetry": true,
+    "drain_ms": 0.0017999991541728377,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 82.04139999725157,
+    "operation_ms": 40.575500002887566,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_062e1a6eaf0749bfafaca4682ad7de8d",
+    "repetition": 23,
+    "telemetry": true,
+    "drain_ms": 0.0034000040614046156,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 102.33359999983804,
+    "operation_ms": 37.12929999892367,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_0537422427c14ec78cafe06ef8e25251",
+    "repetition": 23,
+    "telemetry": false,
+    "drain_ms": 0.000600004568696022,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.378900000243448,
+    "operation_ms": 23.02560000680387,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_16a0d4caa4624f8d9ec79f767251e25d",
+    "repetition": 23,
+    "telemetry": false,
+    "drain_ms": 0.000500003807246685,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.640100002812687,
+    "operation_ms": 21.961099999316502,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_ca80d38479df4a25b844ea9ce754bfe1",
+    "repetition": 24,
+    "telemetry": true,
+    "drain_ms": 0.0020000006770715117,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 42.961599996488076,
+    "operation_ms": 30.699800001457334,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_c4f4ee391c23412f900e670945299460",
+    "repetition": 24,
+    "telemetry": false,
+    "drain_ms": 0.000600004568696022,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 58.12280000100145,
+    "operation_ms": 35.40440000506351,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_dff419e815c948f18c612418122a819e",
+    "repetition": 24,
+    "telemetry": true,
+    "drain_ms": 0.0023000029614195228,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 76.79620000271825,
+    "operation_ms": 37.15849999571219,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_416b9b8d001a4e7da9434eafa537c094",
+    "repetition": 24,
+    "telemetry": false,
+    "drain_ms": 0.000700005330145359,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 60.43580000550719,
+    "operation_ms": 38.75619999598712,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_116b435cecd24c47971fbff947e40209",
+    "repetition": 25,
+    "telemetry": true,
+    "drain_ms": 0.0029999937396496534,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 40.575400002126116,
+    "operation_ms": 25.80679999664426,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_686dacfa0c2c45b7b3857f0c5c35f854",
+    "repetition": 25,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 56.18330000288552,
+    "operation_ms": 37.73410000576405,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_1af6e2476ff043058a508c766298f9f0",
+    "repetition": 25,
+    "telemetry": false,
+    "drain_ms": 0.00039999576983973384,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 17.767999997886363,
+    "operation_ms": 22.759499996027444,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_48a24e338c0b498586b3cadb56cedcaf",
+    "repetition": 25,
+    "telemetry": true,
+    "drain_ms": 0.0021000014385208488,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 32.38319999945816,
+    "operation_ms": 23.982899998372886,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_1fcf9fa5598542e1b66b9fd828a23177",
+    "repetition": 26,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 58.567499996570405,
+    "operation_ms": 36.801100002776366,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_23e3a511825b4d64b8881433fd3b79f5",
+    "repetition": 26,
+    "telemetry": true,
+    "drain_ms": 0.0019999934011138976,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 66.26169999799458,
+    "operation_ms": 37.30119999818271,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_2670c803cc884f7ca7c899cba00e8116",
+    "repetition": 26,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.009100000199396,
+    "operation_ms": 23.38179999787826,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_2a6cb6b8e1894d9d92c590eda509a952",
+    "repetition": 26,
+    "telemetry": true,
+    "drain_ms": 0.0020000006770715117,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 33.86060000048019,
+    "operation_ms": 26.167800002440345,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_2dc5437142314a93870c7f6d3c61a00a",
+    "repetition": 27,
+    "telemetry": true,
+    "drain_ms": 0.0015999976312741637,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 105.53770000115037,
+    "operation_ms": 45.58790000010049,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_924fd5240fec4e6fbfc9c796f182de21",
+    "repetition": 27,
+    "telemetry": true,
+    "drain_ms": 0.0023000029614195228,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 100.64559999591438,
+    "operation_ms": 53.35139999806415,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_eac1a21899fa495e866f63245a082476",
+    "repetition": 27,
+    "telemetry": false,
+    "drain_ms": 0.000600004568696022,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.887900005211122,
+    "operation_ms": 21.116099997016136,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_dabfbe7cac524262b2c80659e0db5cbd",
+    "repetition": 27,
+    "telemetry": false,
+    "drain_ms": 0.0006999980541877449,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 24.01329999702284,
+    "operation_ms": 22.6461999991443,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_10ac593026944f92a199ab1c4cae0656",
+    "repetition": 28,
+    "telemetry": false,
+    "drain_ms": 0.0012000018614344299,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 55.00429999665357,
+    "operation_ms": 39.78110000025481,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_15387e41f0ed4a9b863f99ba9ccee921",
+    "repetition": 28,
+    "telemetry": true,
+    "drain_ms": 0.0022000021999701858,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 48.40479999984382,
+    "operation_ms": 28.887500004202593,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_249bfe2683e745e1b8e4720d5ab9e310",
+    "repetition": 28,
+    "telemetry": true,
+    "drain_ms": 0.0026000052457675338,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 89.63600000424776,
+    "operation_ms": 36.74909999972442,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_71ce87ef14544d5c822784d0d5e58f02",
+    "repetition": 28,
+    "telemetry": false,
+    "drain_ms": 0.0005999972927384079,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 17.059900004824158,
+    "operation_ms": 19.59809999971185,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_d33a2c0f8b284b6dbbfaff237a6e6f69",
+    "repetition": 29,
+    "telemetry": true,
+    "drain_ms": 0.0016999983927235007,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 98.95429999596672,
+    "operation_ms": 42.33570000360487,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_b117e069984743d9b0ab0fc4b209d27c",
+    "repetition": 29,
+    "telemetry": true,
+    "drain_ms": 0.005399997462518513,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 50.038699999277014,
+    "operation_ms": 27.902000001631677,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_8c9a00e3dfd04edfa1e12b4482bad250",
+    "repetition": 29,
+    "telemetry": false,
+    "drain_ms": 0.000500003807246685,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 48.20990000007441,
+    "operation_ms": 34.85319999890635,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_ac033f4331674729b57a512bfc12fc7a",
+    "repetition": 29,
+    "telemetry": false,
+    "drain_ms": 0.000400003045797348,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 47.50590000185184,
+    "operation_ms": 33.73189999547321,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_fafd45fbe2ee41188a0fe312427ce2cb",
+    "repetition": 30,
+    "telemetry": false,
+    "drain_ms": 0.00039999576983973384,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 17.55050000065239,
+    "operation_ms": 23.554400002467446,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_d3660b77e62e477c82c9c263ab172e1a",
+    "repetition": 30,
+    "telemetry": true,
+    "drain_ms": 0.0017999991541728377,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 96.07970000070054,
+    "operation_ms": 40.063100001134444,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_73c5e806a6c44432bcf7f14107cf553c",
+    "repetition": 30,
+    "telemetry": true,
+    "drain_ms": 0.0017999991541728377,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 47.26030000165338,
+    "operation_ms": 28.647799997997936,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_14becf75c9b24b7fb1cbd9232189dc52",
+    "repetition": 30,
+    "telemetry": false,
+    "drain_ms": 0.0006999980541877449,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 53.85319999913918,
+    "operation_ms": 41.86560000380268,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_0e9a04572b0a4f1d9c2f3ffac054290e",
+    "repetition": 31,
+    "telemetry": true,
+    "drain_ms": 0.0020000006770715117,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 40.00300000188872,
+    "operation_ms": 27.769899999839254,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_f2f01dc2282240de986eaf753b6a8bfc",
+    "repetition": 31,
+    "telemetry": true,
+    "drain_ms": 0.0017999991541728377,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 24.7802000012598,
+    "operation_ms": 27.6019999946584,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_f52b17a9610947a58449fe1a6312f737",
+    "repetition": 31,
+    "telemetry": false,
+    "drain_ms": 0.0008999995770864189,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 60.61779999436112,
+    "operation_ms": 44.26479999528965,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_ba4b83a6d24848a485af11fad54256e1",
+    "repetition": 31,
+    "telemetry": false,
+    "drain_ms": 0.0006999980541877449,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 22.982199996476993,
+    "operation_ms": 23.351000003458466,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_fa6870e30d6c479faf9a3ad765d0de45",
+    "repetition": 32,
+    "telemetry": true,
+    "drain_ms": 0.0033000032999552786,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 86.94430000468856,
+    "operation_ms": 33.54099999705795,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_a42368b0602e4ed78dc0ae2565519cd6",
+    "repetition": 32,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 48.925100003543776,
+    "operation_ms": 36.21969999949215,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_f2f754fc17274f879809e9e66e757f33",
+    "repetition": 32,
+    "telemetry": true,
+    "drain_ms": 0.0017999991541728377,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 49.68869999720482,
+    "operation_ms": 30.80000000045402,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_a37b372e5db94f76accc6d2e0c00dd6a",
+    "repetition": 32,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 22.204799999599345,
+    "operation_ms": 22.34879999741679,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_b02abfa88c0d44b1babd7b45ca508094",
+    "repetition": 33,
+    "telemetry": true,
+    "drain_ms": 0.001600004907231778,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 52.08999999740627,
+    "operation_ms": 30.617700002039783,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_ebfa6b8afc54494d867c53e0927d861c",
+    "repetition": 33,
+    "telemetry": false,
+    "drain_ms": 0.00039999576983973384,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 58.35330000263639,
+    "operation_ms": 40.32110000116518,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_97891962df9c4f4a84472d185b7b5edb",
+    "repetition": 33,
+    "telemetry": false,
+    "drain_ms": 0.0005999972927384079,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 57.771100000536535,
+    "operation_ms": 39.58210000564577,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_69d5c7439c5c4cf3af9c59c1beb915f7",
+    "repetition": 33,
+    "telemetry": true,
+    "drain_ms": 0.0026000052457675338,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 21.56449999893084,
+    "operation_ms": 21.98810000118101,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_7bf52ca72c54442b86a977553a2722fe",
+    "repetition": 34,
+    "telemetry": false,
+    "drain_ms": 0.000500003807246685,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 52.039599999261554,
+    "operation_ms": 38.33179999492131,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_095c901d21f649b0b3040ac2ecfc6903",
+    "repetition": 34,
+    "telemetry": false,
+    "drain_ms": 0.0005999972927384079,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 17.759400005161297,
+    "operation_ms": 20.10600000357954,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_550e11cb52d1455abd9aa4f03a4d134b",
+    "repetition": 34,
+    "telemetry": true,
+    "drain_ms": 0.0018999999156221747,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 74.1651999996975,
+    "operation_ms": 36.44700000586454,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_9056d6e44ecc4aa69950bec6458f586e",
+    "repetition": 34,
+    "telemetry": true,
+    "drain_ms": 0.0017999991541728377,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 69.35979999980191,
+    "operation_ms": 39.0382999976282,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_2ac3d237be1047b2b1164a471229b952",
+    "repetition": 35,
+    "telemetry": true,
+    "drain_ms": 0.0037999998312443495,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 60.3869000042323,
+    "operation_ms": 35.39260000252398,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_18361dd51d454d8ba3b926cc276d97c0",
+    "repetition": 35,
+    "telemetry": false,
+    "drain_ms": 0.000500003807246685,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 16.490699999849312,
+    "operation_ms": 19.21250000305008,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_d1833614663e49b8af62e3f9f4a744d7",
+    "repetition": 35,
+    "telemetry": true,
+    "drain_ms": 0.0021000014385208488,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 47.63130000355886,
+    "operation_ms": 33.9040999970166,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_06be6bb87dbc408ea5d6835bb9dcd27b",
+    "repetition": 35,
+    "telemetry": false,
+    "drain_ms": 0.0005999972927384079,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 48.550300001807045,
+    "operation_ms": 35.01289999985602,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_e84c244220384d8690acb103bc158639",
+    "repetition": 36,
+    "telemetry": false,
+    "drain_ms": 0.0005999972927384079,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 15.569199997116812,
+    "operation_ms": 20.281299999624025,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_7cd224c029eb410aa2ad58c44af44fff",
+    "repetition": 36,
+    "telemetry": true,
+    "drain_ms": 0.0022000021999701858,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 123.24540000554407,
+    "operation_ms": 35.72449999774108,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_983eddbd55f04cd5b21e7b422348c1fe",
+    "repetition": 36,
+    "telemetry": true,
+    "drain_ms": 0.0017999991541728377,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 50.2827999953297,
+    "operation_ms": 35.962199995992705,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_f884a9bc703f41fb87d8dbdf49130c82",
+    "repetition": 36,
+    "telemetry": false,
+    "drain_ms": 0.00039999576983973384,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.763699998089578,
+    "operation_ms": 23.97740000014892,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_af1bc77eba8c469b89df4b215275e61d",
+    "repetition": 37,
+    "telemetry": false,
+    "drain_ms": 0.000400003045797348,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.892100000812206,
+    "operation_ms": 23.078999998688232,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_b9b8def429ff4476a46d057299067e7b",
+    "repetition": 37,
+    "telemetry": true,
+    "drain_ms": 0.0015999976312741637,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 62.55989999772282,
+    "operation_ms": 45.25180000200635,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_9d7445d71d4a4b08b2d1c4e498c7148e",
+    "repetition": 37,
+    "telemetry": false,
+    "drain_ms": 0.000500003807246685,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 61.562499999126885,
+    "operation_ms": 44.84450000018114,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_3a09e686ca73410598a5d75caa2b2d22",
+    "repetition": 37,
+    "telemetry": true,
+    "drain_ms": 0.0023999964469112456,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 21.12939999642549,
+    "operation_ms": 25.650700001278892,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_1739cc4315054903a6059e0c6317c9a1",
+    "repetition": 38,
+    "telemetry": false,
+    "drain_ms": 0.0006999980541877449,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 17.726199999742676,
+    "operation_ms": 22.444599999289494,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_29dd77347d3a4465969884e7c0d497db",
+    "repetition": 38,
+    "telemetry": true,
+    "drain_ms": 0.0023000029614195228,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 102.17399999964982,
+    "operation_ms": 45.816199999535456,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_1259629b7a07479da1a5cf0afc8d19b1",
+    "repetition": 38,
+    "telemetry": false,
+    "drain_ms": 0.000700005330145359,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 54.684000002453104,
+    "operation_ms": 38.07249999954365,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_2349ee3033df4a4ca852d889fda382d1",
+    "repetition": 38,
+    "telemetry": true,
+    "drain_ms": 0.0020000006770715117,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 99.7334999992745,
+    "operation_ms": 39.63400000066031,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_b1d735135db447e7b09fc01ef2afd06d",
+    "repetition": 39,
+    "telemetry": false,
+    "drain_ms": 0.0005999972927384079,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 56.08780000329716,
+    "operation_ms": 43.32260000228416,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_0cc8c905172c4139a5625edf4977d5a4",
+    "repetition": 39,
+    "telemetry": true,
+    "drain_ms": 0.0029000002541579306,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 26.858099998207763,
+    "operation_ms": 26.88059999491088,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_9aaa6bcce40d44f1848bff2bfdbc2eb6",
+    "repetition": 39,
+    "telemetry": true,
+    "drain_ms": 0.0021000014385208488,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 21.64009999978589,
+    "operation_ms": 25.361899999552406,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_c52b4b3a2cbc443f9ca6acf4b0c43044",
+    "repetition": 39,
+    "telemetry": false,
+    "drain_ms": 0.0006999980541877449,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 56.30679999740096,
+    "operation_ms": 40.13400000258116,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_c290652db9824ae488e6fd558794024b",
+    "repetition": 40,
+    "telemetry": false,
+    "drain_ms": 0.000600004568696022,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 20.653400002629496,
+    "operation_ms": 23.83179999742424,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_3915dced987d472882464351ad6f3929",
+    "repetition": 40,
+    "telemetry": true,
+    "drain_ms": 0.0025999979698099196,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 20.003499994345475,
+    "operation_ms": 29.51999999640975,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_44d9aaaecaf7400884b5a57c2623b650",
+    "repetition": 40,
+    "telemetry": false,
+    "drain_ms": 0.000500003807246685,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 59.37310000444995,
+    "operation_ms": 35.90410000470001,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_a561db81329747abb9d211662cb7f476",
+    "repetition": 40,
+    "telemetry": true,
+    "drain_ms": 0.0018999999156221747,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 109.96050000539981,
+    "operation_ms": 36.47199999977602,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_9abf564b3c3e4c41ac5b5f746fe586bc",
+    "repetition": 41,
+    "telemetry": true,
+    "drain_ms": 0.0021999949240125716,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 37.53610000421759,
+    "operation_ms": 35.504899999068584,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_4c0988346db942f6afd9240a9382493f",
+    "repetition": 41,
+    "telemetry": true,
+    "drain_ms": 0.0021999949240125716,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 49.24449999816716,
+    "operation_ms": 38.13679999439046,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_472004f2229f432484b66ff00c1c5daa",
+    "repetition": 41,
+    "telemetry": false,
+    "drain_ms": 0.0005999972927384079,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 49.40129999886267,
+    "operation_ms": 37.607199999911245,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_154f2c28514b428e8bad53b790e871cb",
+    "repetition": 41,
+    "telemetry": false,
+    "drain_ms": 0.0006999980541877449,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 19.318700004077982,
+    "operation_ms": 20.956799999112263,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_97789fab7884433785c68ca03a3c8d99",
+    "repetition": 42,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 15.166600001975894,
+    "operation_ms": 21.849299999303184,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_c689f3bcc21e43c4a7af46572a05f16e",
+    "repetition": 42,
+    "telemetry": true,
+    "drain_ms": 0.0013999961083754897,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 62.266100001579616,
+    "operation_ms": 35.91679999954067,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_66c5ee1d82d346029904dabaae19ec9d",
+    "repetition": 42,
+    "telemetry": false,
+    "drain_ms": 0.00039999576983973384,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 106.5353999947547,
+    "operation_ms": 37.650100006430876,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_048e5ad402734e4da82b95c8bd5197ae",
+    "repetition": 42,
+    "telemetry": true,
+    "drain_ms": 0.0017999991541728377,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 70.78240000555525,
+    "operation_ms": 40.486799996870104,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_b27705f98c304bce92a425139a97a26c",
+    "repetition": 43,
+    "telemetry": true,
+    "drain_ms": 0.0016999983927235007,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 56.12830000609392,
+    "operation_ms": 40.93649999413174,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_b95ca0a3a8014536bde1b35b4e9b7f2d",
+    "repetition": 43,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 19.69470000040019,
+    "operation_ms": 22.715899998729583,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_d926b4c359754925a4ecad70952b37f2",
+    "repetition": 43,
+    "telemetry": false,
+    "drain_ms": 0.0005999972927384079,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.08569999411702,
+    "operation_ms": 27.859499998157844,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_43e4011fa1e64a8c82d5ffedf70cbf38",
+    "repetition": 43,
+    "telemetry": true,
+    "drain_ms": 0.0025999979698099196,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 37.50710000167601,
+    "operation_ms": 26.012799993623048,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_2bd206ebd41746cd9801acc8c72a9c9b",
+    "repetition": 44,
+    "telemetry": false,
+    "drain_ms": 0.0007999988156370819,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 19.00759999989532,
+    "operation_ms": 22.37530000275001,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_b2cf691bfcbd446194cea3917d9cea69",
+    "repetition": 44,
+    "telemetry": true,
+    "drain_ms": 0.0020000006770715117,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 101.05509999993956,
+    "operation_ms": 38.277200001175515,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_2993f476151a42c89b06f9a49e09ba43",
+    "repetition": 44,
+    "telemetry": true,
+    "drain_ms": 0.0021000014385208488,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 84.33850000437815,
+    "operation_ms": 40.86069999902975,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_62ff4463e8c64112b0fe107f4f23323c",
+    "repetition": 44,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 55.55659999663476,
+    "operation_ms": 42.414499999722466,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_d0108f3e190043e7ab03a7128cba850a",
+    "repetition": 45,
+    "telemetry": false,
+    "drain_ms": 0.0008999995770864189,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 19.323000000440516,
+    "operation_ms": 23.121800004446413,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_df3815f0ae3e4730afdcc59b43111446",
+    "repetition": 45,
+    "telemetry": true,
+    "drain_ms": 0.0020000006770715117,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 62.31819999811705,
+    "operation_ms": 41.04959999676794,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_c8cb36c4367f40ec98e22f73e8f13d52",
+    "repetition": 45,
+    "telemetry": true,
+    "drain_ms": 0.0026999987312592566,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 49.037199998565484,
+    "operation_ms": 31.630000004952308,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_d0c622a357fd436ba71a55f81f05ec22",
+    "repetition": 45,
+    "telemetry": false,
+    "drain_ms": 0.0004999965312890708,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 16.696899998351,
+    "operation_ms": 20.206300003337674,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_e8d931bd58b74484ad523c638bc041ff",
+    "repetition": 46,
+    "telemetry": false,
+    "drain_ms": 0.000300002284348011,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 55.59240000002319,
+    "operation_ms": 34.60060000361409,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_568995682dd44f67823fa2a00b833f44",
+    "repetition": 46,
+    "telemetry": false,
+    "drain_ms": 0.0005999972927384079,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 48.19120000320254,
+    "operation_ms": 34.4939000060549,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_8d927fecb59d4ca79bd31bc95a176b1f",
+    "repetition": 46,
+    "telemetry": true,
+    "drain_ms": 0.0017999991541728377,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 36.5557000041008,
+    "operation_ms": 26.88019999914104,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_a62375cda8014466b20e8572fae61ec1",
+    "repetition": 46,
+    "telemetry": true,
+    "drain_ms": 0.001800006430130452,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.781099999614526,
+    "operation_ms": 24.343800003407523,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_7a14607597564066be1e1656d8c7725c",
+    "repetition": 47,
+    "telemetry": true,
+    "drain_ms": 0.0014999968698248267,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 94.56050000153482,
+    "operation_ms": 38.003900001058355,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_fc0c6f23efda4a98b7b26e580ccf4bce",
+    "repetition": 47,
+    "telemetry": true,
+    "drain_ms": 0.0020999941625632346,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 48.623299997416325,
+    "operation_ms": 30.283599997346755,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_f9c124bdd2cf4072a85fdd37d0b9cd6f",
+    "repetition": 47,
+    "telemetry": false,
+    "drain_ms": 0.0008999995770864189,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 51.722100004553795,
+    "operation_ms": 34.161300005507655,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_1af2324466854f88928caf63c47d3e12",
+    "repetition": 47,
+    "telemetry": false,
+    "drain_ms": 0.000600004568696022,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 21.373699994001072,
+    "operation_ms": 22.490199997264426,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_cd1cdbb554c54827bbfbea35c7ba2697",
+    "repetition": 48,
+    "telemetry": true,
+    "drain_ms": 0.0021999949240125716,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 45.666500001971144,
+    "operation_ms": 34.46779999649152,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_d0d60110c5ef44f1a543394a92a4bcac",
+    "repetition": 48,
+    "telemetry": false,
+    "drain_ms": 0.000600004568696022,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 51.983700002892874,
+    "operation_ms": 37.35179999785032,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_ebd66c15af674ef3b4835619fb1ade36",
+    "repetition": 48,
+    "telemetry": true,
+    "drain_ms": 0.0020000006770715117,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 89.35750000091502,
+    "operation_ms": 41.899100004229695,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_32eee622bdac4d5f90c28ed53915b19e",
+    "repetition": 48,
+    "telemetry": false,
+    "drain_ms": 0.0005999972927384079,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 20.2006999970763,
+    "operation_ms": 23.03369999572169,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_de0040feb68947ed8ca0b730b63626ef",
+    "repetition": 49,
+    "telemetry": true,
+    "drain_ms": 0.001600004907231778,
+    "flushed": true,
+    "spans": 11,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 24.868200001947116,
+    "operation_ms": 29.081599997880403,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_a10138210df04880b35aa10277cc683c",
+    "repetition": 49,
+    "telemetry": false,
+    "drain_ms": 0.0005999972927384079,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 59.302599998773076,
+    "operation_ms": 37.87929999816697,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_462c64ecb03b45ba80869609f60f4804",
+    "repetition": 49,
+    "telemetry": false,
+    "drain_ms": 0.0007999988156370819,
+    "flushed": true,
+    "spans": 0,
+    "export_diagnostics": null
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 55.07419999776175,
+    "operation_ms": 35.14520000317134,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_ac553d91db0b4c9f8f0169a53836110b",
+    "repetition": 49,
+    "telemetry": true,
+    "drain_ms": 0.0022000021999701858,
+    "flushed": true,
+    "spans": 14,
+    "export_diagnostics": {
+      "dropped": 0,
+      "export_failures": 0
+    }
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "this_pilot_reported_usd_including_retained_diagnostics": 0.011315844,
+  "paid_attempts": 266,
+  "http_429_attempts": 0,
+  "unknown_cost_attempts": 0,
+  "prompt_tokens": 671186,
+  "completion_tokens": 23123,
+  "cache_hits": 331,
+  "diagnostics": [
+    {
+      "suite": "tau2",
+      "task": "0",
+      "arm": "baseline",
+      "status": "error",
+      "error_type": "JSONDecodeError"
+    }
+  ],
+  "budget_note": "Same non-resetting $5 key cap and durable budget DB as earlier echo probes. Unknown attempts retain worst-case reservations. Earlier echo spend is outside this pilot total and covered by the opening $0.01 reserve."
+}

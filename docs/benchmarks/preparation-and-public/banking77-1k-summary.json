@@ -1,0 +1,20 @@
+{
+  "dataset": "BANKING77",
+  "official_test": false,
+  "n": 1000,
+  "train_n": 10003,
+  "labels": 77,
+  "accuracy": 0.782,
+  "macro_f1": 0.7657631823918771,
+  "macro_f1_denominator": 77,
+  "labels_absent_in_subset": 0,
+  "invalid_outputs": 0,
+  "missing_labels": 0,
+  "train_overlap": 5,
+  "nonoverlap_n": 995,
+  "nonoverlap_accuracy": 0.7819095477386935,
+  "training_ms": 54.657200002111495,
+  "p50_ms": 0.3194999990228098,
+  "p95_ms": 0.7722000009380281,
+  "execution_safety": "not measured; this dataset has no execution ground truth"
+}

@@ -1,0 +1,21 @@
+{
+  "version": "1",
+  "dataset": "BANKING77",
+  "upstream": "https://github.com/PolyAI-LDN/task-specific-datasets",
+  "revision": "57ec275d8078af65b7731c2a98be812d844a6d6b",
+  "license": "CC-BY-4.0",
+  "files": {
+    "banking_data/train.csv": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+    "banking_data/test.csv": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+    "LICENSE": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661"
+  },
+  "train_rows": 10003,
+  "test_rows": 3080,
+  "labels": 77,
+  "seed": 20260928,
+  "baseline": "Multinomial naive Bayes, casefolded word unigrams, Laplace alpha=1, empirical class priors, ignore out-of-vocabulary tokens. Training split only; no tuning.",
+  "sampling": "Seeded shuffle of original test row indices; --limit 1000 is a reproducible subset, default is all 3080. Never treat training rows as held-out evaluation.",
+  "metrics": ["accuracy", "macro_f1", "invalid_outputs", "missing_labels", "inference_p50_p95", "normalized_exact_train_test_overlap"],
+  "scope": "Intent recognition only. No ledger, entitlement labels, authorization, or execution ground truth. Not a framework safety benchmark. Public pretraining contamination is unknown for pretrained models.",
+  "thresholds": "No accuracy threshold; no automatic promotion. Changes guided by this run must label its evaluation as development-informed."
+}

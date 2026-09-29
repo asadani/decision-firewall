@@ -1,0 +1,12 @@
+flowchart TD
+CLI[Typer CLI] --> SDK[Firewall SDK]
+UI[FastAPI and Jinja inspector] --> SDK
+Providers[Fixture / baseline / Laya] --> Contracts[Pydantic assessment contracts]
+Contracts --> SDK
+SDK --> Evaluator[Pure policy evaluator]
+SDK --> Store[(Governance SQLite)]
+SDK --> Signer[Canonical JSON and Ed25519]
+SDK --> Adapter[Payment simulator adapter]
+Adapter --> Ledger[(Independent payment SQLite)]
+Benchmark[Evaluation runner] --> SDK
+Benchmark --> Reports[JSON / CSV / Markdown / HTML]

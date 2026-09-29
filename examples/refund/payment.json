@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "payment_id": "pay_duplicate_valid-0",
+  "customer_id": "customer-demo",
+  "amount_minor": 99900,
+  "refunded_minor": 0,
+  "destination": "original-card",
+  "currency": "INR",
+  "duplicate_verified": true,
+  "age_days": null,
+  "unused": null,
+  "version": 1
+}

@@ -1,0 +1,9 @@
+include requirements-*.lock
+recursive-include tests/fixtures *.json
+recursive-include docs *.md *.mmd *.svg *.html *.json *.csv
+recursive-include examples *.py *.json *.md
+recursive-include scripts *.py *.mjs *.json
+recursive-include benchmarks *.py *.json *.md
+exclude docs/benchmarks/paired-public/*-observations.csv
+exclude docs/benchmarks/paired-public/*-observations.jsonl
+global-exclude .env .env.*

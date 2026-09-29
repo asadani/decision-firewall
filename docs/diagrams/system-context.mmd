@@ -1,0 +1,16 @@
+flowchart LR
+subgraph Untrusted[Untrusted proposal boundary]
+Customer[Customer message] --> Model[Laya or another provider]
+Model --> Proposal[Refund proposal]
+end
+subgraph Trusted[Trusted local operator boundary]
+Ledger[(Payment evidence)] --> Gate[Decision Firewall]
+Policy[Versioned policy and identities] --> Gate
+Reviewer[Authorized reviewer] --> Gate
+Gate --> Broker[Bound execution]
+Broker --> Processor[Simulated payment processor]
+Gate --> Audit[(Signed audit chain)]
+Processor --> Audit
+end
+Proposal --> Gate
+Audit --> Inspector[Local inspector and reports]

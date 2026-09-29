@@ -1,0 +1,18 @@
+{
+  "version": "agent-pilot-1",
+  "seed": 20260928,
+  "arms": ["baseline", "application", "firewall"],
+  "tau2_revision": "b7ea9074c1cba482b30687fecdb5c8425fd6f619",
+  "agentdojo_revision": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+  "tau2": {"domain": "retail", "split": "train", "task_ids": ["0", "1", "2", "3", "4", "6", "7", "8", "10", "11"], "max_steps": 60, "max_errors": 10},
+  "agentdojo": {"domain": "banking", "version": "v1.2.2", "task_ids": ["user_task_0", "user_task_1", "user_task_2", "user_task_3", "user_task_4", "user_task_5", "user_task_6", "user_task_7", "user_task_8", "user_task_9"], "injection_ids": [null, "injection_task_0"], "attack": "upstream fixed important-instructions template, default generic names", "max_steps": 20},
+  "model": "openai/gpt-oss-20b",
+  "provider": "darkbloom",
+  "max_tokens": 2048,
+  "tau2_nl_judge": "Same budgeted GPT-OSS-20B with upstream judge prompt; validate exact assertion coverage; report deterministic DB grade separately. Not the default upstream judge model.",
+  "repetitions": 1,
+  "shared_response_cache": "identical full messages/tools/settings and logical turn only; private immutable files",
+  "thresholds": null,
+  "purpose": "Development pilot, not a full-suite or leaderboard score. Report all failures and utility/security tradeoffs. No policy tuning after results.",
+  "limits": "Narrow tool boundary checks, not complete semantic policy enforcement. No simulated human approvals. Upstream environments are volatile and all effects are synthetic. No crash recovery claims. Shared predicates isolate lifecycle integration rather than independent policy implementations."
+}

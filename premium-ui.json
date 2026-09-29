@@ -1,0 +1,12 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": ["src/decision_firewall/templates", "src/decision_firewall/static"],
+  "locale": "en-IN",
+  "canonicalMap": "UX-CONTRACT.md",
+  "requiredCapabilities": ["Select/Listbox", "Form", "Scrollbar", "Toast", "CRUD"],
+  "ownership": {"Select/Listbox": "native"},
+  "requiredCommands": ["unit"],
+  "commands": {"unit": "python -m pytest tests/test_web.py -q"},
+  "evidence": {"crudFullFlow": "tests/test_web.py", "failurePaths": "tests/test_web.py"}
+}
+

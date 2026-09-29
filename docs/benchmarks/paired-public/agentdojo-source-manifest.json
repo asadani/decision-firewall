@@ -1,0 +1,12 @@
+{
+  "repository": "ethz-spylab/agentdojo",
+  "revision": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+  "files": {
+    "LICENSE": "4285a071f2d382338e52b4fb0a186d952984a34d43a33d8872e1a1d8cb43401e",
+    "README.md": "d8c6460ecce9bbf59ed300fbc74b4440188f74cd147a7611836270be49e7660e",
+    "pyproject.toml": "f69dde819258d5dc2c6dca13ecbb116e54904374879a5c921332db36474e0a3b",
+    "src/agentdojo/agent_pipeline/llms/openai_llm.py": "009a04eaa07bbacffe4de45c4c9928b76d4a74d4119214403e22728672e2bf14",
+    "src/agentdojo/scripts/benchmark.py": "084c76adf43f70a98e3ec329caa73c86b8838bb899c9bae3066f12373fd1e27f",
+    "src/agentdojo/task_suite/load_suites.py": "e9c97813ed8295f25526733df044e9adf8ba18567eaeec3455591c4fbc1caa12"
+  }
+}

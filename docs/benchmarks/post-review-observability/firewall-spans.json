@@ -1,0 +1,214 @@
+[
+  {
+    "name": "assessment.completed",
+    "trace_id": "a6591f9fee0d46a6c4346d8e19e0eb82",
+    "attributes": {
+      "firewall.correlation_id": "39236bd4e8344b129c4378d0c2008c99",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.0,
+      "firewall.assessment_id": "d3b51d18f22bf02eabf471c28c31ef4de9222448e1175e0216895fd895ffbc73"
+    }
+  },
+  {
+    "name": "governance.assess",
+    "trace_id": "a6591f9fee0d46a6c4346d8e19e0eb82",
+    "attributes": {
+      "firewall.correlation_id": "39236bd4e8344b129c4378d0c2008c99",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.18429999181535095
+    }
+  },
+  {
+    "name": "assessment.link",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.0,
+      "firewall.assessment_id": "d3b51d18f22bf02eabf471c28c31ef4de9222448e1175e0216895fd895ffbc73"
+    }
+  },
+  {
+    "name": "audit.proposal_submitted",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.0,
+      "firewall.decision_id": "decision_d334eff814ec4ce692719aa7dddafd0e"
+    }
+  },
+  {
+    "name": "governance.submit",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 7.349299994530156
+    }
+  },
+  {
+    "name": "evidence.resolve",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 1.9577000057324767
+    }
+  },
+  {
+    "name": "audit.policy_evaluated",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.0,
+      "firewall.decision_id": "decision_d334eff814ec4ce692719aa7dddafd0e"
+    }
+  },
+  {
+    "name": "governance.evaluate",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 11.524500005180016
+    }
+  },
+  {
+    "name": "evidence.resolve",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.39400000241585076
+    }
+  },
+  {
+    "name": "audit.review_recorded",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.0,
+      "firewall.decision_id": "decision_d334eff814ec4ce692719aa7dddafd0e"
+    }
+  },
+  {
+    "name": "evidence.resolve",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.23320000036619604
+    }
+  },
+  {
+    "name": "audit.policy_evaluated",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.0,
+      "firewall.decision_id": "decision_d334eff814ec4ce692719aa7dddafd0e"
+    }
+  },
+  {
+    "name": "audit.authorization_issued",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.0,
+      "firewall.decision_id": "decision_d334eff814ec4ce692719aa7dddafd0e"
+    }
+  },
+  {
+    "name": "governance.evaluate",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 10.683699991204776
+    }
+  },
+  {
+    "name": "governance.review",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 18.365399999311194
+    }
+  },
+  {
+    "name": "evidence.resolve",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.3843999875243753
+    }
+  },
+  {
+    "name": "audit.execution_reserved",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.0,
+      "firewall.decision_id": "decision_d334eff814ec4ce692719aa7dddafd0e"
+    }
+  },
+  {
+    "name": "evidence.resolve",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.4276999970898032
+    }
+  },
+  {
+    "name": "audit.execution_outcome",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.0,
+      "firewall.decision_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.attempt_id": "attempt_3ee0096c033449de8ea828a42bc8ac5a",
+      "firewall.authorization_id": "permit_736f769605a142309c1a9ce278771b63"
+    }
+  },
+  {
+    "name": "governance.execute",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 24.834900003043003
+    }
+  },
+  {
+    "name": "audit.execution_outcome",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.0,
+      "firewall.decision_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.attempt_id": "attempt_3ee0096c033449de8ea828a42bc8ac5a",
+      "firewall.authorization_id": "permit_736f769605a142309c1a9ce278771b63"
+    }
+  },
+  {
+    "name": "governance.reconcile",
+    "trace_id": "4835e8d9c316fad667971a4910491405",
+    "attributes": {
+      "firewall.correlation_id": "decision_d334eff814ec4ce692719aa7dddafd0e",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 9.601999990991317
+    }
+  }
+]

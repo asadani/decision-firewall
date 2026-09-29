@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en-IN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{{ title }} · Decision Firewall</title><link rel="stylesheet" href="/static/app.css"><script defer src="/static/app.js"></script></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">DF</span><span>Decision Firewall<small>Refund governance laboratory</small></span></a><span class="simulation">Local sandbox · simulated money</span></header>
+<div class="shell"><nav class="sidebar" aria-label="Main navigation"><p class="nav-label">WORKSPACE</p><a href="/" {% if request.url.path=='/' %}aria-current="page"{% endif %}>Refund requests</a><a href="/reviews" {% if request.url.path=='/reviews' %}aria-current="page"{% endif %}>Review queue</a><a href="/runs" {% if request.url.path=='/runs' %}aria-current="page"{% endif %}>Evaluation runs</a><div class="sidebar-note"><span class="live-dot"></span>Policy before execution<p>A model proposes.<br>Evidence and authority decide.</p></div></nav>
+<main id="main" tabindex="-1">{% block content %}{% endblock %}</main></div>
+<footer>Decision Firewall v0.1 · Synthetic billing records · No real payment connection</footer>
+</body></html>
+

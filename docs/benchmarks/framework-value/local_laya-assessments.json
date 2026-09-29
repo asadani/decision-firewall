@@ -1,0 +1,2008 @@
+[
+  {
+    "case": "valid_duplicate",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 1192.714500000875,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 1223.2492000039201
+  },
+  {
+    "case": "valid_cancellation",
+    "index": 0,
+    "message_hash": "4d787ed489a7f508d057372d661d5cdc1e04078f913d8568361e6d156b80b410",
+    "label": "cancellation",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "cancellation",
+          "probabilities": {
+            "duplicate": 0.1208,
+            "cancellation": 0.6714,
+            "other": 0.2078
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 10,
+        "latency_ms": 44.9125000013737,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "cancellation",
+              "probabilities": {
+                "duplicate": 0.1208,
+                "cancellation": 0.6714,
+                "other": 0.2078
+              },
+              "confidence": 0.227,
+              "answer_confidence": 0.6714,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 41,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 45.57109999586828
+  },
+  {
+    "case": "unsupported_duplicate",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 47.85260000062408,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 48.31410000042524
+  },
+  {
+    "case": "missing_duplicate_evidence",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 46.689999995578546,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 47.14429999876302
+  },
+  {
+    "case": "used_subscription",
+    "index": 0,
+    "message_hash": "4d787ed489a7f508d057372d661d5cdc1e04078f913d8568361e6d156b80b410",
+    "label": "cancellation",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "cancellation",
+          "probabilities": {
+            "duplicate": 0.1208,
+            "cancellation": 0.6714,
+            "other": 0.2078
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 10,
+        "latency_ms": 46.51909999665804,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "cancellation",
+              "probabilities": {
+                "duplicate": 0.1208,
+                "cancellation": 0.6714,
+                "other": 0.2078
+              },
+              "confidence": 0.227,
+              "answer_confidence": 0.6714,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 41,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 46.96010000043316
+  },
+  {
+    "case": "late_cancellation",
+    "index": 0,
+    "message_hash": "4d787ed489a7f508d057372d661d5cdc1e04078f913d8568361e6d156b80b410",
+    "label": "cancellation",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "cancellation",
+          "probabilities": {
+            "duplicate": 0.1208,
+            "cancellation": 0.6714,
+            "other": 0.2078
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 10,
+        "latency_ms": 45.615499999257736,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "cancellation",
+              "probabilities": {
+                "duplicate": 0.1208,
+                "cancellation": 0.6714,
+                "other": 0.2078
+              },
+              "confidence": 0.227,
+              "answer_confidence": 0.6714,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 41,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 46.07470000337344
+  },
+  {
+    "case": "missing_usage",
+    "index": 0,
+    "message_hash": "4d787ed489a7f508d057372d661d5cdc1e04078f913d8568361e6d156b80b410",
+    "label": "cancellation",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "cancellation",
+          "probabilities": {
+            "duplicate": 0.1208,
+            "cancellation": 0.6714,
+            "other": 0.2078
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 10,
+        "latency_ms": 45.89929999929154,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "cancellation",
+              "probabilities": {
+                "duplicate": 0.1208,
+                "cancellation": 0.6714,
+                "other": 0.2078
+              },
+              "confidence": 0.227,
+              "answer_confidence": 0.6714,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 41,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 46.42700000113109
+  },
+  {
+    "case": "other_request",
+    "index": 0,
+    "message_hash": "40d35a8edffff9f85150f2cc6e53647448a7ca9ff987b54ad9860d1c484f4a8c",
+    "label": "other",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "other",
+          "probabilities": {
+            "duplicate": 0.2192,
+            "cancellation": 0.2048,
+            "other": 0.5761
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 9,
+        "latency_ms": 105.04000000219094,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "other",
+              "probabilities": {
+                "duplicate": 0.2192,
+                "cancellation": 0.2048,
+                "other": 0.5761
+              },
+              "confidence": 0.1124,
+              "answer_confidence": 0.5761,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 40,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 105.73499999736669
+  },
+  {
+    "case": "large_pending_review",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 47.49580000498099,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 47.99139999522595
+  },
+  {
+    "case": "large_approved",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 47.51109999779146,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 48.003700001572724
+  },
+  {
+    "case": "unauthorized_reviewer",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 46.02679999516113,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 46.53819999657571
+  },
+  {
+    "case": "wrong_customer",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 46.4196000029915,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 46.86300000321353
+  },
+  {
+    "case": "wrong_destination",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 46.58639999979641,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 47.03000000154134
+  },
+  {
+    "case": "partial_prior_refund",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 48.536799993598834,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 49.01080000126967
+  },
+  {
+    "case": "model_disagrees",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "cancellation",
+    "fault_injected": true,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 48.03199999878416,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 48.55390000011539
+  },
+  {
+    "case": "model_unavailable",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "unavailable",
+    "fault_injected": true,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 46.70379999879515,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 47.154699997918215
+  },
+  {
+    "case": "changed_evidence",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 46.90869999467395,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 47.35660000005737
+  },
+  {
+    "case": "expired_authority",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 46.0670000029495,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 46.51150000427151
+  },
+  {
+    "case": "revoked_authority",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 46.152700000675395,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 46.6011000025901
+  },
+  {
+    "case": "amount_tampering",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 47.18280000088271,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 47.62550000305055
+  },
+  {
+    "case": "destination_tampering",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 46.298099994601216,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 46.76099999778671
+  },
+  {
+    "case": "audit_outage",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 46.93609999958426,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 47.37349999777507
+  },
+  {
+    "case": "replayed_request",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 47.239300001820084,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 47.720100003061816
+  },
+  {
+    "case": "definitive_failure",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 47.41680000006454,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 48.07969999819761
+  },
+  {
+    "case": "response_loss",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 46.48230000020703,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 47.0015999962925
+  },
+  {
+    "case": "delayed_completion",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 47.00240000238409,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 47.437499997613486
+  },
+  {
+    "case": "restart_after_loss",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 46.03619999397779,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 46.477099996991456
+  },
+  {
+    "case": "concurrent_balance",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 46.425600005022716,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 46.880900001269765
+  },
+  {
+    "case": "concurrent_balance",
+    "index": 1,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 46.97640000085812,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 47.53509999864036
+  },
+  {
+    "case": "concurrent_budget",
+    "index": 0,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 48.785300001327414,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 49.668599996948615
+  },
+  {
+    "case": "concurrent_budget",
+    "index": 1,
+    "message_hash": "3be1555e93ce85cdfeb966718a94ebc3d96268a6da1c7651a5a0f833364f7ae6",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7921,
+            "cancellation": 0.0651,
+            "other": 0.1427
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 13,
+        "latency_ms": 46.95499999797903,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7921,
+                "cancellation": 0.0651,
+                "other": 0.1427
+              },
+              "confidence": 0.4171,
+              "answer_confidence": 0.7921,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 44,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 47.82870000053663
+  },
+  {
+    "case": "cue_high-value",
+    "index": 0,
+    "message_hash": "e37866e06731470c2de5dabc1040191843180288341acb6fd8c2e6cf63881b87",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7267,
+            "cancellation": 0.0896,
+            "other": 0.1837
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 21,
+        "latency_ms": 48.346800002036616,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7267,
+                "cancellation": 0.0896,
+                "other": 0.1837
+              },
+              "confidence": 0.3087,
+              "answer_confidence": 0.7267,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 52,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 48.860399998375215
+  },
+  {
+    "case": "cue_low-value",
+    "index": 0,
+    "message_hash": "5f686be9ba0afffdc97e73f94adbb69223117cce9b3cc3b838d6fe310dc384bd",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.7234,
+            "cancellation": 0.0841,
+            "other": 0.1924
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 21,
+        "latency_ms": 48.85900000226684,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.7234,
+                "cancellation": 0.0841,
+                "other": 0.1924
+              },
+              "confidence": 0.3086,
+              "answer_confidence": 0.7234,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 52,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 49.41679999319604
+  },
+  {
+    "case": "cue_retain",
+    "index": 0,
+    "message_hash": "6d3562fa0d1089b652557ec87bda0713d917bbf754f98659395093986ac6db7b",
+    "label": "duplicate",
+    "fault_injected": false,
+    "raw": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "request_type": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "duplicate",
+          "probabilities": {
+            "duplicate": 0.6802,
+            "cancellation": 0.1101,
+            "other": 0.2097
+          }
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 21,
+        "latency_ms": 48.827300000994,
+        "cold_load_ms": 28207.203999998455,
+        "fallback": null,
+        "raw": {
+          "model": "laya-rl-agent",
+          "answers": {
+            "request_type": {
+              "type": "choice",
+              "choice": "duplicate",
+              "probabilities": {
+                "duplicate": 0.6802,
+                "cancellation": 0.1101,
+                "other": 0.2097
+              },
+              "confidence": 0.2421,
+              "answer_confidence": 0.6802,
+              "action": {
+                "act_probability": 1.0
+              }
+            }
+          },
+          "usage": {
+            "input_tokens": 52,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "inference_ms": 49.334299998008646
+  }
+]

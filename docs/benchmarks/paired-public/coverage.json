@@ -1,0 +1,44 @@
+{
+  "banking77-official-test": {
+    "direct": {
+      "unique_rows": 3080,
+      "each_scored_once": true
+    },
+    "framework_assess": {
+      "unique_rows": 3080,
+      "each_scored_once": true
+    },
+    "framework_prepared": {
+      "unique_rows": 3080,
+      "each_scored_once": true
+    }
+  },
+  "banking77-training-oof": {
+    "direct": {
+      "unique_rows": 10003,
+      "each_scored_once": true
+    },
+    "framework_assess": {
+      "unique_rows": 10003,
+      "each_scored_once": true
+    },
+    "framework_prepared": {
+      "unique_rows": 10003,
+      "each_scored_once": true
+    }
+  },
+  "bitext-all-oof": {
+    "direct": {
+      "unique_rows": 26872,
+      "each_scored_once": true
+    },
+    "framework_assess": {
+      "unique_rows": 26872,
+      "each_scored_once": true
+    },
+    "framework_prepared": {
+      "unique_rows": 26872,
+      "each_scored_once": true
+    }
+  }
+}

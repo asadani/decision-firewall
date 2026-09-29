@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "payment_id": "pay_duplicate_valid-0",
+  "customer_id": "customer-demo",
+  "message": "I was charged twice. Please refund the duplicate INR 999.",
+  "amount_minor": 99900,
+  "currency": "INR",
+  "destination": "original-card",
+  "requested_reason": "duplicate",
+  "objective": "Resolve the customer request under the published refund policy",
+  "incentives": {}
+}

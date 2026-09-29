@@ -1,0 +1,26 @@
+sequenceDiagram
+participant C as Customer / app
+participant M as Laya
+participant F as Firewall
+participant E as Trusted evidence
+participant R as Reviewer
+participant P as Payment simulator
+C->>M: Classify refund request
+M-->>C: Typed assessment, no authority
+C->>F: Submit exact refund proposal
+F->>E: Resolve payment and remaining balance
+E-->>F: Versioned transaction facts
+F->>F: Evaluate deterministic policy
+alt Missing facts
+F-->>C: REQUIRE_EVIDENCE
+else Review needed
+F->>R: Request bounded review
+R->>F: Decision and reason
+F->>F: Re-evaluate hard constraints
+end
+F-->>C: Signed exact authorization if allowed
+C->>F: Execute authorization
+F->>F: Revalidate and reserve atomically
+F->>P: Refund with stable idempotency key
+P-->>F: Success / failure / uncertain response
+F-->>C: Signed outcome-linked receipt

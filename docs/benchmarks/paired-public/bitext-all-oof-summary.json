@@ -1,0 +1,70 @@
+{
+  "dataset": "bitext-all-oof",
+  "source_rows_scored": 26872,
+  "oof": true,
+  "labels": 27,
+  "fold_counts": {
+    "0": 5394,
+    "1": 5448,
+    "4": 5293,
+    "3": 5321,
+    "2": 5416
+  },
+  "runtime_setup_ms": 152.01040000101784,
+  "training_ms": 459.54949999577366,
+  "arms": {
+    "direct": {
+      "n": 26872,
+      "correct": 26419,
+      "accuracy": 0.9831423042572194,
+      "macro_f1": 0.9831556991834408,
+      "macro_f1_denominator": 27,
+      "invalid_outputs": 0,
+      "missing_labels": 0,
+      "p50_ms": 0.2347999979974702,
+      "p95_ms": 0.47559999802615494,
+      "sum_operation_seconds": 6.939643199919374,
+      "exact_normalized_training_overlap": 0,
+      "p50_first_1000_ms": 0.23489999875891954,
+      "p50_last_1000_ms": 0.20854999820585363
+    },
+    "framework_assess": {
+      "n": 26872,
+      "correct": 26419,
+      "accuracy": 0.9831423042572194,
+      "macro_f1": 0.9831556991834408,
+      "macro_f1_denominator": 27,
+      "invalid_outputs": 0,
+      "missing_labels": 0,
+      "p50_ms": 0.3317000009701587,
+      "p95_ms": 0.6327000010060146,
+      "sum_operation_seconds": 9.74786179902003,
+      "exact_normalized_training_overlap": 0,
+      "p50_first_1000_ms": 0.3322500015201513,
+      "p50_last_1000_ms": 0.293100001726998,
+      "prediction_disagreements_with_direct": 0,
+      "paired_delta_p50_ms": 0.0897999998414889,
+      "paired_delta_p95_ms": 0.34690000757109374
+    },
+    "framework_prepared": {
+      "n": 26872,
+      "correct": 26419,
+      "accuracy": 0.9831423042572194,
+      "macro_f1": 0.9831556991834408,
+      "macro_f1_denominator": 27,
+      "invalid_outputs": 0,
+      "missing_labels": 0,
+      "p50_ms": 14.50480000130483,
+      "p95_ms": 19.661699996504467,
+      "sum_operation_seconds": 408.3419930006712,
+      "exact_normalized_training_overlap": 0,
+      "p50_first_1000_ms": 15.122900000278605,
+      "p50_last_1000_ms": 13.826950002112426,
+      "prediction_disagreements_with_direct": 0,
+      "paired_delta_p50_ms": 14.237899998988723,
+      "paired_delta_p95_ms": 19.349000001966488
+    }
+  },
+  "audit_events": 53744,
+  "permits": 0
+}

@@ -1,0 +1,79 @@
+{
+  "started_at": "2026-09-28T17:53:37.364083+00:00",
+  "model": "openai/gpt-oss-20b",
+  "provider": "darkbloom",
+  "purpose": "tool protocol smoke, not benchmark score",
+  "max_requests": 2,
+  "max_tokens_per_request": 1024,
+  "automatic_retries": 0,
+  "tool_call_valid": true,
+  "roundtrip_valid": false,
+  "requests": [
+    {
+      "id": "gen-1790618017-n9lA7ueP3FuJVaXw88rO",
+      "model": "openai/gpt-oss-20b",
+      "provider": "Darkbloom",
+      "usage": {
+        "prompt_tokens": 137,
+        "completion_tokens": 31,
+        "total_tokens": 168,
+        "cost": 5.256e-06,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 5.256e-06,
+          "upstream_inference_prompt_cost": 2.466e-06,
+          "upstream_inference_completions_cost": 2.79e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "tool_calls",
+      "latency_ms": 1312.7404000115348
+    },
+    {
+      "id": "gen-1790618019-jsOoU8UiZeWxC7maySAr",
+      "model": "openai/gpt-oss-20b",
+      "provider": "Darkbloom",
+      "usage": {
+        "prompt_tokens": 117,
+        "completion_tokens": 18,
+        "total_tokens": 135,
+        "cost": 3.726e-06,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.726e-06,
+          "upstream_inference_prompt_cost": 2.106e-06,
+          "upstream_inference_completions_cost": 1.62e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "finish_reason": "stop",
+      "latency_ms": 1292.999500001315
+    }
+  ],
+  "key_limit_usd": 5,
+  "usage_before_usd": 0,
+  "usage_after_usd": 0,
+  "limit_remaining_usd": 5,
+  "reported_cost_usd": 8.982e-06,
+  "ready": false
+}

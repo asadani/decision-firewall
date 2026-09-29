@@ -1,0 +1,14 @@
+{
+  "without_preparation": {
+    "n": 200,
+    "matches": 200,
+    "model_calls": 200,
+    "p50_ms": 15.104199999768753
+  },
+  "with_preparation": {
+    "n": 200,
+    "matches": 200,
+    "model_calls": 50,
+    "p50_ms": 18.66909999807831
+  }
+}

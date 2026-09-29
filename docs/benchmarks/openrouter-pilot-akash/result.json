@@ -1,0 +1,17 @@
+{
+  "started_at": "2026-09-28T17:53:12.895854+00:00",
+  "model": "openai/gpt-oss-20b",
+  "provider": "akashml",
+  "purpose": "tool protocol smoke, not benchmark score",
+  "max_requests": 2,
+  "max_tokens_per_request": 1024,
+  "automatic_retries": 0,
+  "tool_call_valid": false,
+  "roundtrip_valid": false,
+  "requests": [],
+  "key_limit_usd": 5,
+  "usage_before_usd": 0,
+  "error_type": "HTTPError",
+  "http_status": 404,
+  "ready": false
+}

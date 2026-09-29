@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Refund evaluation</title>
+<style>body{font:16px/1.6 system-ui;background:#edf2f7;color:#172d43;max-width:1000px;margin:40px auto;padding:24px}article{background:white;padding:32px;border-radius:12px}.bar{display:flex;gap:20px;margin:18px 0}.bar span{width:210px}meter{flex:1}table{border-collapse:collapse;width:100%}td,th{text-align:left;padding:8px;border-bottom:1px solid #ccd7e2}svg{max-width:100%;background:#f5f8fb}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style>
+<article><p>DECISION FIREWALL / SIMULATED TRANSACTIONS</p><h1>Laya evaluation</h1><p>81 held-out-family scenarios. Synthetic evidence, actual runtime measurements.</p><div class="bar"><span>classification_accuracy</span><meter min="0" max="1" value="0.9753086419753086"></meter><strong>97.5%</strong></div><div class="bar"><span>policy_agreement</span><meter min="0" max="1" value="1.0"></meter><strong>100.0%</strong></div>
+<h2>Refund-request probability calibration</h2><svg viewBox="0 0 320 300" width="320" role="img" aria-label="Observed versus predicted refund-request probability"><path d="M30 30V270H270M30 270L270 30" fill="none" stroke="#94a3b8"/><polyline points="164.49692307692308,30 185.5667027027027,30 206.532,30" fill="none" stroke="#175ec4" stroke-width="3"/></svg><p>Ten fixed bins; empty bins omitted. Counts are available in results.json.</p><table><tr><th>n</th><td>81</td></tr><tr><th>classification_accuracy</th><td>0.9753086419753086</td></tr><tr><th>policy_agreement</th><td>1.0</td></tr><tr><th>false_allows</th><td>0</td></tr><tr><th>false_blocks</th><td>0</td></tr><tr><th>review_count</th><td>14</td></tr><tr><th>refund_brier</th><td>0.1347636375308642</td></tr><tr><th>probability_n</th><td>81</td></tr><tr><th>refund_ece_10_bins</th><td>0.3605728395061728</td></tr><tr><th>invalid_outputs</th><td>0</td></tr><tr><th>gate_p50_ms</th><td>9.131199999501405</td></tr><tr><th>gate_p95_ms</th><td>11.965000000600412</td></tr><tr><th>inference_p50_ms</th><td>75.24569999986852</td></tr><tr><th>inference_p95_ms</th><td>104.01509999974223</td></tr><tr><th>successful_effects</th><td>35</td></tr><tr><th>unresolved_executions</th><td>0</td></tr><tr><th>over_refunds</th><td>0</td></tr><tr><th>duplicate_effects</th><td>0</td></tr><tr><th>ordinal_error</th><td>None</td></tr><tr><th>ordinal_note</th><td>No ordinal labels in the refund dataset</td></tr></table>
+<h2>Reproducibility and limitations</h2><pre>{
+  &quot;schema_version&quot;: 1,
+  &quot;source_tree_hash&quot;: &quot;66de00e4e3f7152d3af6b7ee925dfac3a271cba9cfca97e96aa20e8a98cb9ba9&quot;,
+  &quot;provider&quot;: &quot;laya&quot;,
+  &quot;seed&quot;: 42,
+  &quot;dataset_hash&quot;: &quot;728caf7b909bfc75128770ca2be1165d7d38aec493fd8df12ad07cde22617340&quot;,
+  &quot;policy_hash&quot;: &quot;6614940b513449ea4adfa713e15a88e855adea9c118eb3cddea766b95e0af5e1&quot;,
+  &quot;platform&quot;: &quot;Windows-11-10.0.26200-SP0&quot;,
+  &quot;python&quot;: &quot;3.12.14&quot;,
+  &quot;versions&quot;: {
+    &quot;decision-firewall&quot;: &quot;0.1.0&quot;,
+    &quot;pydantic&quot;: &quot;2.13.5&quot;,
+    &quot;cryptography&quot;: &quot;50.0.1&quot;,
+    &quot;laya&quot;: &quot;0.3.20&quot;,
+    &quot;torch&quot;: &quot;2.6.0+cu124&quot;,
+    &quot;transformers&quot;: &quot;5.17.0&quot;
+  },
+  &quot;device&quot;: &quot;cuda&quot;,
+  &quot;fallback&quot;: null,
+  &quot;model_revision&quot;: &quot;1a793eb568e6718f15941d08f85432581df534e3&quot;,
+  &quot;cold_load_ms&quot;: 9343.908999999258,
+  &quot;elapsed_seconds&quot;: 58.532706199999666,
+  &quot;end_to_end_cases_per_second&quot;: 4.100271721248408,
+  &quot;peak_rss_bytes_sampled&quot;: 3147436032,
+  &quot;peak_gpu_allocated_bytes&quot;: 1703006208,
+  &quot;limitations&quot;: [
+    &quot;Synthetic English data; not production effectiveness&quot;,
+    &quot;Fixture uses oracle labels; it is not a competing learned model&quot;,
+    &quot;Seeded variations are paraphrase wrappers, not independent samples&quot;,
+    &quot;Review-required cases are not auto-approved in benchmarks&quot;,
+    &quot;Concurrency and fault injection are measured by the separate adversarial test suite&quot;
+  ]
+}</pre></article></html>

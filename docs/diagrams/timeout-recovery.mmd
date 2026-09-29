@@ -1,0 +1,12 @@
+sequenceDiagram
+participant F as Firewall ledger
+participant P as Payment ledger
+F->>F: Persist reservation and attempt key K
+F->>P: Refund using K
+P->>P: Atomically record K and refund
+P--xF: Response lost
+F->>F: Record UNKNOWN, retain balance reservation
+Note over F,P: Restart is safe - no new refund key
+F->>P: Query authoritative status of K
+P-->>F: SUCCEEDED
+F->>F: Record success and finalize reservation

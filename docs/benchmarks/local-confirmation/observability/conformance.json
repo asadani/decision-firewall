@@ -1,0 +1,2830 @@
+[
+  {
+    "case": "refund-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 21.508999998332,
+    "operation_ms": 26.2323999995715,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_8f6eea90fd3a41a792b08c9434459a3b",
+    "passed": true
+  },
+  {
+    "case": "refund-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 72.85579999734182,
+    "operation_ms": 41.34720000001835,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_c8f1a2b6a2084572ab2f4a8f0e72acbf",
+    "passed": true
+  },
+  {
+    "case": "refund-base-threshold_change",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 19.104700004390907,
+    "operation_ms": 21.438499999931082,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_6d3a0f40d10e4014a8222ab4647afa6f",
+    "passed": true
+  },
+  {
+    "case": "refund-base-threshold_change",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 54.4473999980255,
+    "operation_ms": 34.87190000305418,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_185204ddc516466b8f96aa1515510bef",
+    "passed": true
+  },
+  {
+    "case": "refund-base-review_approved",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 23.953399999300018,
+    "operation_ms": 29.472700000042096,
+    "errors": [],
+    "audit_records": 4,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_160eabd686964d009560425b4395ecde",
+    "passed": true
+  },
+  {
+    "case": "refund-base-review_approved",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 54.47450000065146,
+    "operation_ms": 55.6021000011242,
+    "errors": [],
+    "audit_records": 7,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_e1900aab44764b91950a0802b0b502af",
+    "passed": true
+  },
+  {
+    "case": "refund-base-review_unauthorized",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 18.720899999607354,
+    "operation_ms": 7.815299999492709,
+    "errors": [
+      "ValueError",
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_c7ace4efa73b422ea5bc6eecd27f5039",
+    "passed": true
+  },
+  {
+    "case": "refund-base-review_unauthorized",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 56.229900001198985,
+    "operation_ms": 25.436100004299078,
+    "errors": [
+      "FirewallError",
+      "ValueError"
+    ],
+    "audit_records": 3,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_d9c9257df4c24f1fa4ca49f5eca5638f",
+    "passed": true
+  },
+  {
+    "case": "refund-base-destination_denied",
+    "arm": "modular_application",
+    "initial": [
+      "DENY"
+    ],
+    "expected_initial": "DENY",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 18.53549999941606,
+    "operation_ms": 6.538499997986946,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_087e0d097d7e48c18058e847c419142b",
+    "passed": true
+  },
+  {
+    "case": "refund-base-destination_denied",
+    "arm": "firewall",
+    "initial": [
+      "DENY"
+    ],
+    "expected_initial": "DENY",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 55.44009999721311,
+    "operation_ms": 16.42780000111088,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_55bd33e0e08a4116910e4469981d3dc0",
+    "passed": true
+  },
+  {
+    "case": "refund-base-missing_evidence",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_EVIDENCE"
+    ],
+    "expected_initial": "REQUIRE_EVIDENCE",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 16.743699998187367,
+    "operation_ms": 6.021399996825494,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": false,
+    "rid": "job_499641806ff04be6a8b14fbfaa59968a",
+    "passed": true
+  },
+  {
+    "case": "refund-base-missing_evidence",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_EVIDENCE"
+    ],
+    "expected_initial": "REQUIRE_EVIDENCE",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 55.83529999421444,
+    "operation_ms": 17.479599999205675,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": false,
+    "rid": "decision_30c953e5f70a4dc0963d52dc8ffea82d",
+    "passed": true
+  },
+  {
+    "case": "refund-base-model_unavailable",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 22.192399999767076,
+    "operation_ms": 8.47799999610288,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_b64cb80f5bad422585d82376759645d0",
+    "passed": true
+  },
+  {
+    "case": "refund-base-model_unavailable",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 62.96440000005532,
+    "operation_ms": 22.093400002631824,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_d941a2e1df9a4b1fbfca12e4d478908c",
+    "passed": true
+  },
+  {
+    "case": "refund-base-legal_hold",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 19.731200001842808,
+    "operation_ms": 25.154700000712182,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_988cedda5d66429dae5d9364247031a0",
+    "passed": true
+  },
+  {
+    "case": "refund-base-legal_hold",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 57.95450000005076,
+    "operation_ms": 43.525000000954606,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_576205b0c9ec4746a0f9e8efc9d20437",
+    "passed": true
+  },
+  {
+    "case": "refund-base-expired",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 22.113400002126582,
+    "operation_ms": 10.235299996566027,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_1741d349a2b7456286c3af48db3be67e",
+    "passed": true
+  },
+  {
+    "case": "refund-base-expired",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 62.08860000333516,
+    "operation_ms": 20.241600002918858,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 3,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_c00bd7d6d9f54cdd8074579dc8a64535",
+    "passed": true
+  },
+  {
+    "case": "refund-base-revoked",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 19.160899995767977,
+    "operation_ms": 11.861199993290938,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_f591ec224d33457cabeaa8977707c868",
+    "passed": true
+  },
+  {
+    "case": "refund-base-revoked",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 50.98679999355227,
+    "operation_ms": 22.664699994493276,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 4,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_297529991b2c4c5186fbd2c9c8d4d9c9",
+    "passed": true
+  },
+  {
+    "case": "refund-base-changed_evidence",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 15.888099995208904,
+    "operation_ms": 14.33040000119945,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_736784b4fb54400b931b44662ddb9256",
+    "passed": true
+  },
+  {
+    "case": "refund-base-changed_evidence",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 47.97179999877699,
+    "operation_ms": 19.197599998733494,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 3,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_e94f98f32de048e58bea34cc75e0aaa3",
+    "passed": true
+  },
+  {
+    "case": "refund-base-response_loss_restart",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.02799999859417,
+    "operation_ms": 436.37040000612615,
+    "errors": [],
+    "audit_records": 4,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_68a1018a5ae14ac08f84e92807f65bb5",
+    "passed": true
+  },
+  {
+    "case": "refund-base-response_loss_restart",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 65.2948999995715,
+    "operation_ms": 474.6429000006174,
+    "errors": [],
+    "audit_records": 6,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_2296664fd6d84220b4e8e19e657a95ed",
+    "passed": true
+  },
+  {
+    "case": "refund-base-repeat",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 19.88129999517696,
+    "operation_ms": 23.516300003393553,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_0d9b929c8432499cb976b4e0495d9943",
+    "passed": true
+  },
+  {
+    "case": "refund-base-repeat",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 53.60340000333963,
+    "operation_ms": 46.94500000186963,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_def9673a6b5a41a489baf32f056d0ce9",
+    "passed": true
+  },
+  {
+    "case": "refund-base-audit_failure",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 25.27109999937238,
+    "operation_ms": 11.319700002786703,
+    "errors": [
+      "OSError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_541184f60b7d43a8a40a1c254f4ccf4c",
+    "passed": true
+  },
+  {
+    "case": "refund-base-audit_failure",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 54.78130000119563,
+    "operation_ms": 28.20100000099046,
+    "errors": [
+      "OSError"
+    ],
+    "audit_records": 3,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_2f816652a182402aac6b2b961f7be252",
+    "passed": true
+  },
+  {
+    "case": "refund-base-concurrent_capacity",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW",
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED",
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.813199996657204,
+    "operation_ms": 49.07619999721646,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 4,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_635b078b1e3b4cb192eadc4aca05bc04",
+    "passed": true
+  },
+  {
+    "case": "refund-base-concurrent_capacity",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW",
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED",
+      "BLOCKED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 59.440400000312366,
+    "operation_ms": 75.38879999628989,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 8,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_e9c020a2959147679662e88f201f2e18",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 22.2589999975753,
+    "operation_ms": 22.807399996963795,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_90612143a4674131a4674b6cbaa8d6d3",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 60.25159999990137,
+    "operation_ms": 44.73610000422923,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_3d683c3ebb4140df95e743cc64404337",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-threshold_change",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 21.316000005754177,
+    "operation_ms": 8.602200003224425,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_191d6c6f0ff543eeafdbd174e420c0c2",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-threshold_change",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 64.78510000306414,
+    "operation_ms": 21.27749999635853,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_7f88b411a4644c26ad0b37828c29f020",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-review_approved",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 21.088699999381788,
+    "operation_ms": 31.43189999536844,
+    "errors": [],
+    "audit_records": 4,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_8dec8ae6307e4d078600d2e00b40555f",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-review_approved",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 57.175500005541835,
+    "operation_ms": 57.521700000506826,
+    "errors": [],
+    "audit_records": 7,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_edb217fe30a24b1a931c5644d44ef541",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-review_unauthorized",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 19.874900004651863,
+    "operation_ms": 9.871800000837538,
+    "errors": [
+      "ValueError",
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_7c8aa8ffe9664f539da7eebc740b317c",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-review_unauthorized",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 58.97420000110287,
+    "operation_ms": 24.015199996938463,
+    "errors": [
+      "FirewallError",
+      "ValueError"
+    ],
+    "audit_records": 3,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_ee22831dc5354eb68ae6c7f73cac65ab",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-destination_denied",
+    "arm": "modular_application",
+    "initial": [
+      "DENY"
+    ],
+    "expected_initial": "DENY",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 17.916900003910996,
+    "operation_ms": 7.119900001271162,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_d98306fd4447491ca59ac6e45ae67d8c",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-destination_denied",
+    "arm": "firewall",
+    "initial": [
+      "DENY"
+    ],
+    "expected_initial": "DENY",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 59.319699998013675,
+    "operation_ms": 17.068599998310674,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_50367d259951448b9716084ac13a06ae",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-missing_evidence",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_EVIDENCE"
+    ],
+    "expected_initial": "REQUIRE_EVIDENCE",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 17.15600000170525,
+    "operation_ms": 7.8053999968688,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": false,
+    "rid": "job_30014c968b8448e5b322e35505642299",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-missing_evidence",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_EVIDENCE"
+    ],
+    "expected_initial": "REQUIRE_EVIDENCE",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 63.84080000134418,
+    "operation_ms": 15.550000003713649,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": false,
+    "rid": "decision_a2160a412d3849c380222f6f30fa7ef1",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-model_unavailable",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 18.084900002577342,
+    "operation_ms": 9.27199999568984,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_7f878fbf53ff4699a0aab22c6230235b",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-model_unavailable",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 56.65639999642735,
+    "operation_ms": 17.885599998407997,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_b053942c1c694ff7a2e1b2a2815ac95a",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-legal_hold",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 19.21549999678973,
+    "operation_ms": 22.371200000634417,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_fb7dfb3feea646d386e70e81142b980b",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-legal_hold",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 66.74209999619052,
+    "operation_ms": 43.25740000058431,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_c0668aaa4f9846a3bc67b14c5e55bcd9",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-expired",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 21.464700002979953,
+    "operation_ms": 10.081100001116283,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_0ca410ecaa6346aea8119a298b6f3465",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-expired",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 58.57290000130888,
+    "operation_ms": 24.57029999641236,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 3,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_fe016f1a951a4af08107970993bedb82",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-revoked",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 18.72909999656258,
+    "operation_ms": 14.26500000525266,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_cd330e7d77fc4920afa64c50c01f83f5",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-revoked",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 64.43969999963883,
+    "operation_ms": 29.840800001693424,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 4,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_cb65416435e84e54adf7ba0fee55faa9",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-changed_evidence",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 18.093300001055468,
+    "operation_ms": 10.134700001799501,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_d115d674ada042888a387fd0611bf122",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-changed_evidence",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 55.884399997012224,
+    "operation_ms": 21.46270000230288,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 3,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_c46d7f4f2f5e40f9a6f8941fb5a1b1c1",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-response_loss_restart",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.471499999577645,
+    "operation_ms": 434.51769999956014,
+    "errors": [],
+    "audit_records": 4,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_092a3493240a42cfb28ec389cced38f5",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-response_loss_restart",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 57.48699999821838,
+    "operation_ms": 488.03870000119787,
+    "errors": [],
+    "audit_records": 6,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_c1c39ae968a3441ebec4a4dd31ba06d0",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-repeat",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.151600001147017,
+    "operation_ms": 24.284999999508727,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_61de84954a564ca69c0899e15d4fccef",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-repeat",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 61.4960999955656,
+    "operation_ms": 40.93090000242228,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_130af39a60024160b5afe12d3137f4c5",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-audit_failure",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 18.273000001499895,
+    "operation_ms": 11.174400002346374,
+    "errors": [
+      "OSError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_4f1271c1468140efb37676d6642fe8d6",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-audit_failure",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 59.501799994905014,
+    "operation_ms": 22.5983999989694,
+    "errors": [
+      "OSError"
+    ],
+    "audit_records": 3,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_77008ffc5e2e407280daee254263059e",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-concurrent_capacity",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW",
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED",
+      "BLOCKED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 17.570999996678438,
+    "operation_ms": 44.12890000094194,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 4,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_7f95d8dadfd941769224a535592e5518",
+    "passed": true
+  },
+  {
+    "case": "refund-changed-concurrent_capacity",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW",
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED",
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 64.5315000001574,
+    "operation_ms": 69.97579999733716,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 8,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_2474318c65a54e5f814b48d0de84aa7b",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 17.5530999986222,
+    "operation_ms": 29.66329999617301,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_9705932673f546c097414161a3d24893",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 60.328499996103346,
+    "operation_ms": 43.77070000191452,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_955bba3ece894402b79e8891366e7943",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-threshold_change",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 22.025199999916367,
+    "operation_ms": 28.169099998194724,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_659d942c40d44c14a574b8b8281fd351",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-threshold_change",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 59.839800000190735,
+    "operation_ms": 43.936800000665244,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_d8f5d8be609541d4a36d440c24b65e3b",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-review_approved",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.452600001182873,
+    "operation_ms": 31.094099998881575,
+    "errors": [],
+    "audit_records": 4,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_05dbd8ce7ee84fe195be8b28be145d58",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-review_approved",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 66.9826999946963,
+    "operation_ms": 56.27020000247285,
+    "errors": [],
+    "audit_records": 7,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_449cd4ce4e984f939219c76ed22cbc8a",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-review_unauthorized",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 18.155300000216812,
+    "operation_ms": 9.505300004093442,
+    "errors": [
+      "ValueError",
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_f4e02761da0741b4bc2078890c785b25",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-review_unauthorized",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 55.03270000190241,
+    "operation_ms": 25.879400003759656,
+    "errors": [
+      "FirewallError",
+      "ValueError"
+    ],
+    "audit_records": 3,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_bb5cad44371848f0afa7e2fe02292b8e",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-destination_denied",
+    "arm": "modular_application",
+    "initial": [
+      "DENY"
+    ],
+    "expected_initial": "DENY",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 17.88500000111526,
+    "operation_ms": 7.85330000508111,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_51c63e953ddc4dcb925d6499c6f89c57",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-destination_denied",
+    "arm": "firewall",
+    "initial": [
+      "DENY"
+    ],
+    "expected_initial": "DENY",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 58.83940000057919,
+    "operation_ms": 21.72459999565035,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_58d11c9d96e74a7894f9975ad2fc9d30",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-missing_evidence",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_EVIDENCE"
+    ],
+    "expected_initial": "REQUIRE_EVIDENCE",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 17.300899999099784,
+    "operation_ms": 6.846899996162392,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": false,
+    "rid": "job_98f1e9f46cd24174bc2efb6947892371",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-missing_evidence",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_EVIDENCE"
+    ],
+    "expected_initial": "REQUIRE_EVIDENCE",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 53.327199995692354,
+    "operation_ms": 16.63610000105109,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": false,
+    "rid": "decision_83eaabd6332345b999ce7b1e1e44fd4e",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-model_unavailable",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 18.754200005787425,
+    "operation_ms": 8.541700000932906,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_1ca47d5b2ba449eea88cfbc02b1e491f",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-model_unavailable",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 59.544399999140296,
+    "operation_ms": 19.461999996565282,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_30794dbbb28e4091a650c88664253773",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-legal_hold",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 19.117199997708667,
+    "operation_ms": 29.906200004916172,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_26f501838f7a4760aa1c7e670de3f8c9",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-legal_hold",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 59.49839999811957,
+    "operation_ms": 40.72209999867482,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_0b5b5ab45da34378a6adc278002261ec",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-expired",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 20.503499996266328,
+    "operation_ms": 9.47720000112895,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_839071aa5ef047a3b3de6f8ae4d7d2f4",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-expired",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 67.60159999976167,
+    "operation_ms": 23.707299995294306,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 3,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_6c911e9fbaf146f3a240c6c16ca9c517",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-revoked",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 20.376100001158193,
+    "operation_ms": 14.266700003645383,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_ab5386acb82f405cb7dddb638f29f476",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-revoked",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 59.63039999915054,
+    "operation_ms": 28.113500004110392,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 4,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_b5ef466be9b44e598b44a35811767607",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-changed_evidence",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 18.6080999992555,
+    "operation_ms": 21.41449999908218,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_9a32025c80e8467bbe9540bbab50b03e",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-changed_evidence",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 62.92029999895021,
+    "operation_ms": 25.09739999368321,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 3,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_c70dc96587a54969bd7e02cdcf28f99b",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-response_loss_restart",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 17.375299998093396,
+    "operation_ms": 428.22739999974146,
+    "errors": [],
+    "audit_records": 4,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_88de22aa268b4e26a0116e3e1e2c9f98",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-response_loss_restart",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 55.67200000223238,
+    "operation_ms": 496.7544999963138,
+    "errors": [],
+    "audit_records": 6,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_47896929320b41c2b22046dba42d1dff",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-repeat",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.076899999869056,
+    "operation_ms": 23.13020000292454,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_f45df5874d154f5c83dc6290bb3997ed",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-repeat",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 53.66870000580093,
+    "operation_ms": 37.3570000010659,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_dbf2830940d5431fa2e52df6a39405f5",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-audit_failure",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 17.71559999906458,
+    "operation_ms": 9.845599997788668,
+    "errors": [
+      "OSError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_dde2bc83eacd4e2b9f11859a5b79e5d3",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-audit_failure",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 62.32570000429405,
+    "operation_ms": 27.13630000653211,
+    "errors": [
+      "OSError"
+    ],
+    "audit_records": 3,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_0cbcf1d24f5241f19f651b064c71449f",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-concurrent_capacity",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW",
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED",
+      "BLOCKED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 17.04510000126902,
+    "operation_ms": 51.69390000082785,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 4,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_f0d45e44add9432e896b3eb2aa933125",
+    "passed": true
+  },
+  {
+    "case": "data_export-base-concurrent_capacity",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW",
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED",
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 62.462699999741744,
+    "operation_ms": 70.45080000534654,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 8,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_a5a799b959f64e2c8e56a59d15ee473b",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-allow",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 20.69150000170339,
+    "operation_ms": 25.795699999434873,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_4b4210bee9c347ebb3e88a787e8c4d9d",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-allow",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 62.82449999707751,
+    "operation_ms": 44.89350000221748,
+    "errors": [],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_4aa90fc73af944abbf3e1abf255f1d29",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-threshold_change",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 21.200199997110758,
+    "operation_ms": 9.49199999740813,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_49e06a902ede444caef6ffa420775177",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-threshold_change",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 62.82330000249203,
+    "operation_ms": 19.658800003526267,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_d16bf0fb7b614643bf5507085e567d17",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-review_approved",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 17.96230000036303,
+    "operation_ms": 37.198199999693315,
+    "errors": [],
+    "audit_records": 4,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_98c1908061e845e48f8ceca9c8096c75",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-review_approved",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 58.07539999659639,
+    "operation_ms": 69.983699999284,
+    "errors": [],
+    "audit_records": 7,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_6d734fe00c0444a1a680f57d76530426",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-review_unauthorized",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 18.269800006237347,
+    "operation_ms": 8.7368999957107,
+    "errors": [
+      "ValueError",
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_5f4d8195ec944435b9ca2332e1db1bbd",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-review_unauthorized",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 54.49120000412222,
+    "operation_ms": 24.82369999779621,
+    "errors": [
+      "FirewallError",
+      "ValueError"
+    ],
+    "audit_records": 3,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_6f10e79bad1348d39ae0aa3f92bc7b20",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-destination_denied",
+    "arm": "modular_application",
+    "initial": [
+      "DENY"
+    ],
+    "expected_initial": "DENY",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 19.699800002854317,
+    "operation_ms": 8.13449999986915,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_78b301a3e0ad4e66bc849866f519af7c",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-destination_denied",
+    "arm": "firewall",
+    "initial": [
+      "DENY"
+    ],
+    "expected_initial": "DENY",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 55.16450000141049,
+    "operation_ms": 16.737099998863414,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_1940d1434484430194a67299b070e985",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-missing_evidence",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_EVIDENCE"
+    ],
+    "expected_initial": "REQUIRE_EVIDENCE",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 18.391599995084107,
+    "operation_ms": 7.692700004554354,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": false,
+    "rid": "job_3e87b34394de4e44942a076ab139f662",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-missing_evidence",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_EVIDENCE"
+    ],
+    "expected_initial": "REQUIRE_EVIDENCE",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 58.0749000000651,
+    "operation_ms": 18.650799996976275,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": false,
+    "rid": "decision_c16cea715dd74d8993e4f8b798c2728f",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-model_unavailable",
+    "arm": "modular_application",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 21.27479999762727,
+    "operation_ms": 9.925400001520757,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_faf7aaf203684da799bd92c597cf39c0",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-model_unavailable",
+    "arm": "firewall",
+    "initial": [
+      "REQUIRE_REVIEW"
+    ],
+    "expected_initial": "REQUIRE_REVIEW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 62.93960000039078,
+    "operation_ms": 17.479399997682776,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_13554fa97c834fdf8f60e69df6562141",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-legal_hold",
+    "arm": "modular_application",
+    "initial": [
+      "DENY"
+    ],
+    "expected_initial": "DENY",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 20.251599999028258,
+    "operation_ms": 10.122399995452724,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_483e3603f5a94bbbba349e01b830d923",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-legal_hold",
+    "arm": "firewall",
+    "initial": [
+      "DENY"
+    ],
+    "expected_initial": "DENY",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 58.16839999897638,
+    "operation_ms": 15.570600000501145,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_044a8fe12cfc479c9567bf2d36371e06",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-expired",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 18.2111000031,
+    "operation_ms": 8.409099995333236,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_649b1a45bac24c59b5aa0e4dc1bb8fac",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-expired",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 60.988800003542565,
+    "operation_ms": 25.67830000043614,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 3,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_3094b80bd9f0405a8bec0af18833b96e",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-revoked",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 18.962399997690227,
+    "operation_ms": 14.674999998533167,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 2,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_a7765f0f26bd4623bb3f1a5460b0c8d8",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-revoked",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 63.77489999431418,
+    "operation_ms": 31.18269999686163,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 4,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_bcab80958da049a78d8b3ed89fdfcfb4",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-changed_evidence",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 24.960700000519864,
+    "operation_ms": 12.174199997389223,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_4e593758d0544dd185e3c0d133e5d17b",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-changed_evidence",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 60.18430000403896,
+    "operation_ms": 26.44999999756692,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 3,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_ab81897990694c5b9ef8a20b1593b33b",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-response_loss_restart",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 20.34569999523228,
+    "operation_ms": 433.1008999943151,
+    "errors": [],
+    "audit_records": 4,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_eda445284881466fa70ca591092ed613",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-response_loss_restart",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 57.70390000543557,
+    "operation_ms": 548.1803000002401,
+    "errors": [],
+    "audit_records": 6,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_c109b8440c054009aba1d93419ef6398",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-repeat",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 18.01500000146916,
+    "operation_ms": 32.19459999672836,
+    "errors": [],
+    "audit_records": 3,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_86e4703723b343e0ad9b70aa5c33ce15",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-repeat",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 53.92209999990882,
+    "operation_ms": 38.71829999843612,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 5,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_273765c3a7314cb4bc86c9ed34ac33bf",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-audit_failure",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 19.606300003943034,
+    "operation_ms": 10.289099998772144,
+    "errors": [
+      "OSError"
+    ],
+    "audit_records": 1,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_6fd8dc7226464322840f847734a2e0c3",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-audit_failure",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED"
+    ],
+    "effects": 0,
+    "expected_effects": 0,
+    "setup_ms": 55.559599997650366,
+    "operation_ms": 26.059000003442634,
+    "errors": [
+      "OSError"
+    ],
+    "audit_records": 3,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_85de635e93f2439faedfe523fa18889c",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-concurrent_capacity",
+    "arm": "modular_application",
+    "initial": [
+      "ALLOW",
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED",
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 19.384199993510265,
+    "operation_ms": 40.099300000292715,
+    "errors": [
+      "ValueError"
+    ],
+    "audit_records": 4,
+    "audit_verified": null,
+    "audit_tamper_rejected": null,
+    "audit_contains_canaries": true,
+    "rid": "job_86e5d0dfe9404ea0995c1dc1a54ebfb7",
+    "passed": true
+  },
+  {
+    "case": "data_export-changed-concurrent_capacity",
+    "arm": "firewall",
+    "initial": [
+      "ALLOW",
+      "ALLOW"
+    ],
+    "expected_initial": "ALLOW",
+    "statuses": [
+      "BLOCKED",
+      "SUCCEEDED"
+    ],
+    "effects": 1,
+    "expected_effects": 1,
+    "setup_ms": 58.373699997900985,
+    "operation_ms": 62.79010000434937,
+    "errors": [
+      "FirewallError"
+    ],
+    "audit_records": 8,
+    "audit_verified": true,
+    "audit_tamper_rejected": true,
+    "audit_contains_canaries": true,
+    "rid": "decision_c0faf507df364711aad98ff77b9b19de",
+    "passed": true
+  }
+]

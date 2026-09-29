@@ -1,0 +1,11 @@
+{
+  "version": "1",
+  "seed": 20260928,
+  "cases": 200,
+  "families": ["model_needed", "structured", "missing_evidence", "mandatory_block"],
+  "arms": ["without_preparation", "with_preparation"],
+  "model": "Counting fixture, no inference delay. No model-accuracy claim.",
+  "design": "Equal synthetic mix, shuffled paired order. Both arms use the unchanged final framework gate. Compare readiness routing, model calls, final gate outcomes and latency, not extra safety versus an application baseline.",
+  "expected": "50 cases per family. Preparation invokes the model only for model_needed; the other arm invokes it for all 200. Missing evidence and mandatory blocks cannot create decisions/permits through preparation. For successful preparation final policy remains authoritative. Never dispatch an effect.",
+  "interpretation": "Avoided-call rate is determined by this declared mix and does not estimate a production rate. Zero-delay fixtures may make preparation slower; report that cost without assuming real model savings. No threshold selected after execution."
+}

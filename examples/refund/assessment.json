@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "provider": "fixture",
+  "model": "oracle-fixture",
+  "revision": "1",
+  "request_type": "duplicate",
+  "probabilities": {
+    "duplicate": 1.0
+  },
+  "refund_requested_probability": 1.0,
+  "ordinal_score": null,
+  "calibration": "synthetic_oracle",
+  "metadata": {
+    "latency_ms": 0.0,
+    "device": "none"
+  }
+}

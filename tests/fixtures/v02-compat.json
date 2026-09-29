@@ -1,0 +1,108 @@
+{
+  "manifest": {
+    "name": "access",
+    "version": "1",
+    "policy_version": "access-demo-v1",
+    "policy_config": {
+      "automatic_max_hours": 8,
+      "simulated": true
+    },
+    "action_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "employee": {
+          "minLength": 1,
+          "title": "Employee",
+          "type": "string"
+        },
+        "resource": {
+          "minLength": 1,
+          "title": "Resource",
+          "type": "string"
+        },
+        "hours": {
+          "exclusiveMinimum": 0,
+          "maximum": 168,
+          "title": "Hours",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "employee",
+        "resource",
+        "hours"
+      ],
+      "title": "AccessAction",
+      "type": "object"
+    },
+    "executor": "simulated-actions",
+    "executor_version": "1",
+    "constraints": [
+      "exact_action",
+      "single_use"
+    ],
+    "authorization_seconds": 300
+  },
+  "fingerprint": "cb9448fb713e66863885d025b938436c3986d95c9f9c57dc49c550c293191b74",
+  "check": {
+    "id": "evaluation_3d8cad7444b24a46b10972b76a29e6c8",
+    "request_id": "decision_41c826c6a4f3433ea3972b4e03bc8746",
+    "domain_hash": "cb9448fb713e66863885d025b938436c3986d95c9f9c57dc49c550c293191b74",
+    "manifest": "{\"name\": \"access\", \"version\": \"1\", \"policy_version\": \"access-demo-v1\", \"policy_config\": {\"automatic_max_hours\": 8, \"simulated\": true}, \"action_schema\": {\"additionalProperties\": false, \"properties\": {\"schema_version\": {\"const\": 1, \"default\": 1, \"title\": \"Schema Version\", \"type\": \"integer\"}, \"employee\": {\"minLength\": 1, \"title\": \"Employee\", \"type\": \"string\"}, \"resource\": {\"minLength\": 1, \"title\": \"Resource\", \"type\": \"string\"}, \"hours\": {\"exclusiveMinimum\": 0, \"maximum\": 168, \"title\": \"Hours\", \"type\": \"integer\"}}, \"required\": [\"employee\", \"resource\", \"hours\"], \"title\": \"AccessAction\", \"type\": \"object\"}, \"executor\": \"simulated-actions\", \"executor_version\": \"1\", \"constraints\": [\"exact_action\", \"single_use\"], \"authorization_seconds\": 300}",
+    "context": "{\"schema_version\": 1, \"proposal\": {\"schema_version\": 1, \"domain\": \"access\", \"action\": {\"schema_version\": 1, \"employee\": \"alice\", \"resource\": \"engineering-docs\", \"hours\": 4}, \"message\": \"Fixture access request\", \"objective\": \"\"}, \"assessment\": {\"schema_version\": 1, \"provider\": \"fixture\", \"model\": \"compat\", \"revision\": \"1\", \"signals\": {}, \"status\": \"available\", \"calibration\": \"uncalibrated\", \"metadata\": {}}, \"evidence\": {\"schema_version\": 1, \"facts\": {\"employee\": {\"active\": true, \"resources\": [\"engineering-docs\"], \"version\": 1}}, \"versions\": {\"directory\": \"1\"}, \"missing\": []}, \"review\": null, \"usage\": {}, \"now\": 1000.0}",
+    "result": "{\"schema_version\":1,\"disposition\":\"ALLOW_WITH_CONSTRAINTS\",\"reasons\":[\"directory_permits_access\"],\"errors\":[],\"constraints\":[\"exact_action\",\"single_use\"],\"claims\":[]}"
+  },
+  "receipt": {
+    "public_key": "KiqguPlp9jLz+57D/JY0zFLjpzDSP5H+idB7iPx6vk0=",
+    "events": [
+      {
+        "seq": 1,
+        "request_id": "decision_41c826c6a4f3433ea3972b4e03bc8746",
+        "body": "{\"schema_version\": 1, \"seq\": 1, \"previous\": \"0000000000000000000000000000000000000000000000000000000000000000\", \"request_id\": \"decision_41c826c6a4f3433ea3972b4e03bc8746\", \"kind\": \"proposal_submitted\", \"timestamp\": 1000.0, \"data\": {\"revision\": 1, \"actor\": \"requester\", \"proposal\": {\"schema_version\": 1, \"domain\": \"access\", \"action\": {\"schema_version\": 1, \"employee\": \"alice\", \"resource\": \"engineering-docs\", \"hours\": 4}, \"message\": \"Fixture access request\", \"objective\": \"\"}, \"assessment\": {\"schema_version\": 1, \"provider\": \"fixture\", \"model\": \"compat\", \"revision\": \"1\", \"signals\": {}, \"status\": \"available\", \"calibration\": \"uncalibrated\", \"metadata\": {}}}}",
+        "hash": "328d53c4196e7f5a1fdcb63294fd910efa357235794d0ad787d0ef32ed55f249",
+        "signature": "vwXr1yklveW4LrC13Wd4H3mVKHmgBvW/3vm014gVPkmGlX31V29wLddwg5cq0ajNELKcTavWtR31qvdNI7cnBg=="
+      },
+      {
+        "seq": 2,
+        "request_id": "decision_41c826c6a4f3433ea3972b4e03bc8746",
+        "body": "{\"schema_version\": 1, \"seq\": 2, \"previous\": \"328d53c4196e7f5a1fdcb63294fd910efa357235794d0ad787d0ef32ed55f249\", \"request_id\": \"decision_41c826c6a4f3433ea3972b4e03bc8746\", \"kind\": \"policy_evaluated\", \"timestamp\": 1000.0, \"data\": {\"id\": \"evaluation_3d8cad7444b24a46b10972b76a29e6c8\", \"domain\": {\"name\": \"access\", \"version\": \"1\", \"policy_version\": \"access-demo-v1\", \"policy_config\": {\"automatic_max_hours\": 8, \"simulated\": true}, \"action_schema\": {\"additionalProperties\": false, \"properties\": {\"schema_version\": {\"const\": 1, \"default\": 1, \"title\": \"Schema Version\", \"type\": \"integer\"}, \"employee\": {\"minLength\": 1, \"title\": \"Employee\", \"type\": \"string\"}, \"resource\": {\"minLength\": 1, \"title\": \"Resource\", \"type\": \"string\"}, \"hours\": {\"exclusiveMinimum\": 0, \"maximum\": 168, \"title\": \"Hours\", \"type\": \"integer\"}}, \"required\": [\"employee\", \"resource\", \"hours\"], \"title\": \"AccessAction\", \"type\": \"object\"}, \"executor\": \"simulated-actions\", \"executor_version\": \"1\", \"constraints\": [\"exact_action\", \"single_use\"], \"authorization_seconds\": 300}, \"context\": {\"schema_version\": 1, \"proposal\": {\"schema_version\": 1, \"domain\": \"access\", \"action\": {\"schema_version\": 1, \"employee\": \"alice\", \"resource\": \"engineering-docs\", \"hours\": 4}, \"message\": \"Fixture access request\", \"objective\": \"\"}, \"assessment\": {\"schema_version\": 1, \"provider\": \"fixture\", \"model\": \"compat\", \"revision\": \"1\", \"signals\": {}, \"status\": \"available\", \"calibration\": \"uncalibrated\", \"metadata\": {}}, \"evidence\": {\"schema_version\": 1, \"facts\": {\"employee\": {\"active\": true, \"resources\": [\"engineering-docs\"], \"version\": 1}}, \"versions\": {\"directory\": \"1\"}, \"missing\": []}, \"review\": null, \"usage\": {}, \"now\": 1000.0}, \"result\": {\"schema_version\": 1, \"disposition\": \"ALLOW_WITH_CONSTRAINTS\", \"reasons\": [\"directory_permits_access\"], \"errors\": [], \"constraints\": [\"exact_action\", \"single_use\"], \"claims\": []}}}",
+        "hash": "c4300cbbeaac69f53dc779ebdd75969dba80547ad78ef940e36d9b824ac8c13f",
+        "signature": "HjoAy+xqsJg+r8eWY8vaW/ZzJ87IGkkM5nFqgFzu028AWslIbXZULtnBYegUm8QmeM+QPZ4fplVjwui+skELBA=="
+      },
+      {
+        "seq": 3,
+        "request_id": "decision_41c826c6a4f3433ea3972b4e03bc8746",
+        "body": "{\"schema_version\": 1, \"seq\": 3, \"previous\": \"c4300cbbeaac69f53dc779ebdd75969dba80547ad78ef940e36d9b824ac8c13f\", \"request_id\": \"decision_41c826c6a4f3433ea3972b4e03bc8746\", \"kind\": \"authorization_issued\", \"timestamp\": 1000.0, \"data\": {\"schema_version\": 1, \"id\": \"permit_dee14550ca8f4b2c9d14aa532f83b9be\", \"request_id\": \"decision_41c826c6a4f3433ea3972b4e03bc8746\", \"revision\": 1, \"proposal_hash\": \"03a8c711158f286c4cf20eacb258536682acbc565481da74f42dbc008abf13ed\", \"assessment_hash\": \"18e1b7ff7e8554a727247f812a35c0d8c82af877bce3cdcb3997ffcf28533c26\", \"evidence_hash\": \"6c4947e3e9930debb013b507bd9b06b5d342c61b7530366253a5441c9e55bc27\", \"domain_hash\": \"cb9448fb713e66863885d025b938436c3986d95c9f9c57dc49c550c293191b74\", \"approval_id\": null, \"requester_generation\": 1, \"executor\": \"executor\", \"executor_generation\": 1, \"expires\": 1300.0, \"decision_hash\": \"9bb3534c48b215fd0729abea0e3b99dc3b6abdc61fe08cf88b130942c1ebe31d\"}}",
+        "hash": "568c9b226169fd7335c4a8583d16700ac2b303ec20712553ba3614ae1b14cc45",
+        "signature": "gVshykHU7UpHvM9dqIaRl7sXLZ6ph1if11A8nujsEtnANtf+37BIFxdMWoFKje5HGFDWgJ0Zm/mHyVXHWfK0Cw=="
+      },
+      {
+        "seq": 4,
+        "request_id": "decision_41c826c6a4f3433ea3972b4e03bc8746",
+        "body": "{\"schema_version\": 1, \"seq\": 4, \"previous\": \"568c9b226169fd7335c4a8583d16700ac2b303ec20712553ba3614ae1b14cc45\", \"request_id\": \"decision_41c826c6a4f3433ea3972b4e03bc8746\", \"kind\": \"execution_reserved\", \"timestamp\": 1000.0, \"data\": {\"permit_id\": \"permit_dee14550ca8f4b2c9d14aa532f83b9be\", \"attempt\": \"attempt_fae05dd55ed94c778e0baee3b0252679\", \"claims\": []}}",
+        "hash": "f208ec9b41015391882390d005693bea6a2187eb950cef9f26548de37dd8edcf",
+        "signature": "9Sgm0F8H56xjDqfmRND+socWGv0cFEndgIAnOQqKoYGscsfIU63C7YtqmAxImCunYV1O4MtZQm4o+5NM9FFdCw=="
+      },
+      {
+        "seq": 5,
+        "request_id": "decision_41c826c6a4f3433ea3972b4e03bc8746",
+        "body": "{\"schema_version\": 1, \"seq\": 5, \"previous\": \"f208ec9b41015391882390d005693bea6a2187eb950cef9f26548de37dd8edcf\", \"request_id\": \"decision_41c826c6a4f3433ea3972b4e03bc8746\", \"kind\": \"execution_outcome\", \"timestamp\": 1000.0, \"data\": {\"authorization_id\": \"permit_dee14550ca8f4b2c9d14aa532f83b9be\", \"attempt_id\": \"attempt_fae05dd55ed94c778e0baee3b0252679\", \"schema_version\": 1, \"status\": \"SUCCEEDED\", \"detail\": {}}}",
+        "hash": "571344d2e49cdd8cf0de220d832fc2588c545fd403d41d3cc7dfc964dc3ed5f0",
+        "signature": "lYkerFvXFu/z2CmwG3qzYZiw9bSCRocQi2ZZz5JXj1XiWQgDOBNSfw2RHDK9Y+8HM8ToT6dxFaQMMcUOppWKBw=="
+      }
+    ],
+    "checkpoint": {
+      "payload": {
+        "count": 5,
+        "head": "571344d2e49cdd8cf0de220d832fc2588c545fd403d41d3cc7dfc964dc3ed5f0"
+      },
+      "signature": "14I4WqorO/AM0PEOqKPDTAi0wRDoPStGr/BYEZ9KAM3W62uYdNo+r92rEAe3QmNnTOIxZlczNt7hrtWcuugICA=="
+    }
+  }
+}

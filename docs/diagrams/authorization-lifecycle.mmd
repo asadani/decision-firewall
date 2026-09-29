@@ -1,0 +1,13 @@
+stateDiagram-v2
+[*] --> ISSUED: Policy permits
+ISSUED --> REVOKED: Revision / revocation / replacement
+ISSUED --> RESERVED: Revalidate and claim atomically
+RESERVED --> SUCCEEDED: Downstream commit confirmed
+RESERVED --> FAILED: Definitive failure
+RESERVED --> UNKNOWN: Timeout or delayed outcome
+UNKNOWN --> SUCCEEDED: Reconciliation confirms commit
+UNKNOWN --> FAILED: Authoritative failure
+UNKNOWN --> UNKNOWN: Still pending
+SUCCEEDED --> [*]
+FAILED --> [*]
+REVOKED --> [*]

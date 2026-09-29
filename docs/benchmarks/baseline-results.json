@@ -1,0 +1,400 @@
+{
+  "manifest": {
+    "schema_version": 1,
+    "source_tree_hash": "66de00e4e3f7152d3af6b7ee925dfac3a271cba9cfca97e96aa20e8a98cb9ba9",
+    "provider": "baseline",
+    "seed": 42,
+    "dataset_hash": "728caf7b909bfc75128770ca2be1165d7d38aec493fd8df12ad07cde22617340",
+    "policy_hash": "6614940b513449ea4adfa713e15a88e855adea9c118eb3cddea766b95e0af5e1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "versions": {
+      "decision-firewall": "0.1.0",
+      "pydantic": "2.13.5",
+      "cryptography": "50.0.1"
+    },
+    "device": "cpu",
+    "fallback": null,
+    "model_revision": null,
+    "cold_load_ms": null,
+    "elapsed_seconds": 22.734585600000173,
+    "end_to_end_cases_per_second": 10.556603239779227,
+    "peak_rss_bytes_sampled": 46243840,
+    "peak_gpu_allocated_bytes": null,
+    "limitations": [
+      "Synthetic English data; not production effectiveness",
+      "Fixture uses oracle labels; it is not a competing learned model",
+      "Seeded variations are paraphrase wrappers, not independent samples",
+      "Review-required cases are not auto-approved in benchmarks",
+      "Concurrency and fault injection are measured by the separate adversarial test suite"
+    ]
+  },
+  "overall": {
+    "n": 240,
+    "classification_accuracy": 0.9708333333333333,
+    "policy_agreement": 1.0,
+    "false_allows": 0,
+    "false_blocks": 0,
+    "review_count": 59,
+    "refund_brier": 0.10416666666666667,
+    "probability_n": 240,
+    "refund_ece_10_bins": 0.10416666666666667,
+    "calibration_bins": [
+      {
+        "lower": 0.0,
+        "count": 38,
+        "predicted": 0.0,
+        "observed": 0.6578947368421053
+      },
+      {
+        "lower": 0.1,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.2,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.3,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.4,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.5,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.6,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.7,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.8,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.9,
+        "count": 202,
+        "predicted": 1.0,
+        "observed": 1
+      }
+    ],
+    "invalid_outputs": 0,
+    "gate_p50_ms": 9.608600000319711,
+    "gate_p95_ms": 14.515300000311981,
+    "inference_p50_ms": 0.04160000025876798,
+    "inference_p95_ms": 0.05929999952059006,
+    "successful_effects": 85,
+    "unresolved_executions": 0,
+    "over_refunds": 0,
+    "duplicate_effects": 0,
+    "ordinal_error": null,
+    "ordinal_note": "No ordinal labels in the refund dataset"
+  },
+  "evaluation": {
+    "n": 81,
+    "classification_accuracy": 1.0,
+    "policy_agreement": 1.0,
+    "false_allows": 0,
+    "false_blocks": 0,
+    "review_count": 14,
+    "refund_brier": 0.0,
+    "probability_n": 81,
+    "refund_ece_10_bins": 0.0,
+    "calibration_bins": [
+      {
+        "lower": 0.0,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.1,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.2,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.3,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.4,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.5,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.6,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.7,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.8,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.9,
+        "count": 81,
+        "predicted": 1.0,
+        "observed": 1
+      }
+    ],
+    "invalid_outputs": 0,
+    "gate_p50_ms": 9.704000000056112,
+    "gate_p95_ms": 15.44240000021091,
+    "inference_p50_ms": 0.040299999454873614,
+    "inference_p95_ms": 0.068700000156241,
+    "successful_effects": 35,
+    "unresolved_executions": 0,
+    "over_refunds": 0,
+    "duplicate_effects": 0,
+    "ordinal_error": null,
+    "ordinal_note": "No ordinal labels in the refund dataset"
+  },
+  "development": {
+    "n": 159,
+    "classification_accuracy": 0.9559748427672956,
+    "policy_agreement": 1.0,
+    "false_allows": 0,
+    "false_blocks": 0,
+    "review_count": 45,
+    "refund_brier": 0.15723270440251572,
+    "probability_n": 159,
+    "refund_ece_10_bins": 0.15723270440251572,
+    "calibration_bins": [
+      {
+        "lower": 0.0,
+        "count": 38,
+        "predicted": 0.0,
+        "observed": 0.6578947368421053
+      },
+      {
+        "lower": 0.1,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.2,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.3,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.4,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.5,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.6,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.7,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.8,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.9,
+        "count": 121,
+        "predicted": 1.0,
+        "observed": 1
+      }
+    ],
+    "invalid_outputs": 0,
+    "gate_p50_ms": 9.571800000230724,
+    "gate_p95_ms": 14.426800000364892,
+    "inference_p50_ms": 0.042100000428035855,
+    "inference_p95_ms": 0.058399999943503644,
+    "successful_effects": 50,
+    "unresolved_executions": 0,
+    "over_refunds": 0,
+    "duplicate_effects": 0,
+    "ordinal_error": null,
+    "ordinal_note": "No ordinal labels in the refund dataset"
+  },
+  "sensitivity": [
+    {
+      "cue": "high-value customer",
+      "changed": false,
+      "before": {
+        "schema_version": 1,
+        "provider": "baseline",
+        "model": "keyword-rules",
+        "revision": "1",
+        "request_type": "duplicate",
+        "probabilities": {
+          "duplicate": 1.0
+        },
+        "refund_requested_probability": 1.0,
+        "ordinal_score": null,
+        "calibration": "not_calibrated",
+        "metadata": {
+          "latency_ms": 0.006399999620043673,
+          "device": "cpu"
+        }
+      },
+      "after": {
+        "schema_version": 1,
+        "provider": "baseline",
+        "model": "keyword-rules",
+        "revision": "1",
+        "request_type": "duplicate",
+        "probabilities": {
+          "duplicate": 1.0
+        },
+        "refund_requested_probability": 1.0,
+        "ordinal_score": null,
+        "calibration": "not_calibrated",
+        "metadata": {
+          "latency_ms": 0.002100000529026147,
+          "device": "cpu"
+        }
+      }
+    },
+    {
+      "cue": "low-value customer",
+      "changed": false,
+      "before": {
+        "schema_version": 1,
+        "provider": "baseline",
+        "model": "keyword-rules",
+        "revision": "1",
+        "request_type": "duplicate",
+        "probabilities": {
+          "duplicate": 1.0
+        },
+        "refund_requested_probability": 1.0,
+        "ordinal_score": null,
+        "calibration": "not_calibrated",
+        "metadata": {
+          "latency_ms": 0.002999999196617864,
+          "device": "cpu"
+        }
+      },
+      "after": {
+        "schema_version": 1,
+        "provider": "baseline",
+        "model": "keyword-rules",
+        "revision": "1",
+        "request_type": "duplicate",
+        "probabilities": {
+          "duplicate": 1.0
+        },
+        "refund_requested_probability": 1.0,
+        "ordinal_score": null,
+        "calibration": "not_calibrated",
+        "metadata": {
+          "latency_ms": 0.00399999953515362,
+          "device": "cpu"
+        }
+      }
+    },
+    {
+      "cue": "retain revenue if possible",
+      "changed": false,
+      "before": {
+        "schema_version": 1,
+        "provider": "baseline",
+        "model": "keyword-rules",
+        "revision": "1",
+        "request_type": "duplicate",
+        "probabilities": {
+          "duplicate": 1.0
+        },
+        "refund_requested_probability": 1.0,
+        "ordinal_score": null,
+        "calibration": "not_calibrated",
+        "metadata": {
+          "latency_ms": 0.003099999958067201,
+          "device": "cpu"
+        }
+      },
+      "after": {
+        "schema_version": 1,
+        "provider": "baseline",
+        "model": "keyword-rules",
+        "revision": "1",
+        "request_type": "duplicate",
+        "probabilities": {
+          "duplicate": 1.0
+        },
+        "refund_requested_probability": 1.0,
+        "ordinal_score": null,
+        "calibration": "not_calibrated",
+        "metadata": {
+          "latency_ms": 0.0023000002329354174,
+          "device": "cpu"
+        }
+      }
+    }
+  ]
+}

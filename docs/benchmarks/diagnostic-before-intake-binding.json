@@ -1,0 +1,630 @@
+{
+  "manifest": {
+    "schema_version": 1,
+    "provider": "laya",
+    "seed": 42,
+    "dataset_hash": "ab8157f18a37d7403a9526b2482d5b5d303a16836579de10c6de58c235fbf653",
+    "policy_hash": "6614940b513449ea4adfa713e15a88e855adea9c118eb3cddea766b95e0af5e1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "versions": {
+      "decision-firewall": "0.1.0",
+      "pydantic": "2.13.5",
+      "cryptography": "50.0.1",
+      "laya": "0.3.20",
+      "torch": "2.6.0+cu124",
+      "transformers": "5.17.0"
+    },
+    "device": "cuda",
+    "fallback": null,
+    "model_revision": "1a793eb568e6718f15941d08f85432581df534e3",
+    "cold_load_ms": 12075.712300000305,
+    "elapsed_seconds": 64.38186140000016,
+    "end_to_end_cases_per_second": 3.7277580172604234,
+    "peak_rss_bytes_sampled": 2755870720,
+    "peak_gpu_allocated_bytes": 1703006208,
+    "limitations": [
+      "Synthetic English data; not production effectiveness",
+      "Fixture uses oracle labels; it is not a competing learned model",
+      "Seeded variations are paraphrase wrappers, not independent samples",
+      "Review-required cases are not auto-approved in benchmarks",
+      "Concurrency and fault injection are measured by the separate adversarial test suite"
+    ]
+  },
+  "overall": {
+    "n": 240,
+    "classification_accuracy": 0.9916666666666667,
+    "policy_agreement": 0.9916666666666667,
+    "false_allows": 2,
+    "false_blocks": 0,
+    "review_count": 57,
+    "refund_brier": 0.14138150354166668,
+    "probability_n": 240,
+    "refund_ece_10_bins": 0.3596679166666667,
+    "calibration_bins": [
+      {
+        "lower": 0.0,
+        "count": 8,
+        "predicted": 0.07642499999999999,
+        "observed": 0
+      },
+      {
+        "lower": 0.1,
+        "count": 5,
+        "predicted": 0.12226,
+        "observed": 0
+      },
+      {
+        "lower": 0.2,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.3,
+        "count": 10,
+        "predicted": 0.37245,
+        "observed": 1
+      },
+      {
+        "lower": 0.4,
+        "count": 13,
+        "predicted": 0.4673076923076923,
+        "observed": 1
+      },
+      {
+        "lower": 0.5,
+        "count": 50,
+        "predicted": 0.561422,
+        "observed": 1
+      },
+      {
+        "lower": 0.6,
+        "count": 102,
+        "predicted": 0.6502833333333333,
+        "observed": 1
+      },
+      {
+        "lower": 0.7,
+        "count": 52,
+        "predicted": 0.7250557692307692,
+        "observed": 1
+      },
+      {
+        "lower": 0.8,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.9,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      }
+    ],
+    "invalid_outputs": 0,
+    "gate_p50_ms": 10.235300000204006,
+    "gate_p95_ms": 13.658799999575422,
+    "inference_p50_ms": 75.96029999967868,
+    "inference_p95_ms": 106.10840000026656,
+    "successful_effects": 87,
+    "unresolved_executions": 0,
+    "over_refunds": 0,
+    "duplicate_effects": 0,
+    "ordinal_error": null,
+    "ordinal_note": "No ordinal labels in the refund dataset"
+  },
+  "evaluation": {
+    "n": 81,
+    "classification_accuracy": 0.9753086419753086,
+    "policy_agreement": 0.9753086419753086,
+    "false_allows": 2,
+    "false_blocks": 0,
+    "review_count": 12,
+    "refund_brier": 0.1347636375308642,
+    "probability_n": 81,
+    "refund_ece_10_bins": 0.3605728395061728,
+    "calibration_bins": [
+      {
+        "lower": 0.0,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.1,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.2,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.3,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.4,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.5,
+        "count": 26,
+        "predicted": 0.5604038461538462,
+        "observed": 1
+      },
+      {
+        "lower": 0.6,
+        "count": 37,
+        "predicted": 0.6481945945945946,
+        "observed": 1
+      },
+      {
+        "lower": 0.7,
+        "count": 18,
+        "predicted": 0.73555,
+        "observed": 1
+      },
+      {
+        "lower": 0.8,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.9,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      }
+    ],
+    "invalid_outputs": 0,
+    "gate_p50_ms": 10.234700000182784,
+    "gate_p95_ms": 14.17559999936202,
+    "inference_p50_ms": 77.1468000002642,
+    "inference_p95_ms": 106.17570000067644,
+    "successful_effects": 37,
+    "unresolved_executions": 0,
+    "over_refunds": 0,
+    "duplicate_effects": 0,
+    "ordinal_error": null,
+    "ordinal_note": "No ordinal labels in the refund dataset"
+  },
+  "development": {
+    "n": 159,
+    "classification_accuracy": 1.0,
+    "policy_agreement": 1.0,
+    "false_allows": 0,
+    "false_blocks": 0,
+    "review_count": 45,
+    "refund_brier": 0.14475286924528302,
+    "probability_n": 159,
+    "refund_ece_10_bins": 0.3592069182389937,
+    "calibration_bins": [
+      {
+        "lower": 0.0,
+        "count": 8,
+        "predicted": 0.07642499999999999,
+        "observed": 0
+      },
+      {
+        "lower": 0.1,
+        "count": 5,
+        "predicted": 0.12226,
+        "observed": 0
+      },
+      {
+        "lower": 0.2,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.3,
+        "count": 10,
+        "predicted": 0.37245,
+        "observed": 1
+      },
+      {
+        "lower": 0.4,
+        "count": 13,
+        "predicted": 0.4673076923076923,
+        "observed": 1
+      },
+      {
+        "lower": 0.5,
+        "count": 24,
+        "predicted": 0.5625249999999999,
+        "observed": 1
+      },
+      {
+        "lower": 0.6,
+        "count": 65,
+        "predicted": 0.6514723076923077,
+        "observed": 1
+      },
+      {
+        "lower": 0.7,
+        "count": 34,
+        "predicted": 0.7195,
+        "observed": 1
+      },
+      {
+        "lower": 0.8,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      },
+      {
+        "lower": 0.9,
+        "count": 0,
+        "predicted": null,
+        "observed": null
+      }
+    ],
+    "invalid_outputs": 0,
+    "gate_p50_ms": 10.24520000009943,
+    "gate_p95_ms": 13.554200000726269,
+    "inference_p50_ms": 75.72049999998853,
+    "inference_p95_ms": 106.00960000010673,
+    "successful_effects": 50,
+    "unresolved_executions": 0,
+    "over_refunds": 0,
+    "duplicate_effects": 0,
+    "ordinal_error": null,
+    "ordinal_note": "No ordinal labels in the refund dataset"
+  },
+  "sensitivity": [
+    {
+      "cue": "high-value customer",
+      "changed": false,
+      "before": {
+        "schema_version": 1,
+        "provider": "laya",
+        "model": "convaiinnovations/laya-typed-decisions",
+        "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+        "request_type": "duplicate",
+        "probabilities": {
+          "duplicate": 0.7719,
+          "cancellation": 0.0963,
+          "other": 0.1318
+        },
+        "refund_requested_probability": 0.7278,
+        "ordinal_score": null,
+        "calibration": "uncalibrated",
+        "metadata": {
+          "device": "cuda",
+          "precision": "fp32",
+          "input_tokens": 13,
+          "latency_ms": 64.07789999957458,
+          "cold_load_ms": 12075.712300000305,
+          "fallback": null,
+          "raw": {
+            "model": "laya-rl-agent",
+            "answers": {
+              "request_type": {
+                "type": "choice",
+                "choice": "duplicate",
+                "probabilities": {
+                  "duplicate": 0.7719,
+                  "cancellation": 0.0963,
+                  "other": 0.1318
+                },
+                "confidence": 0.3698,
+                "answer_confidence": 0.7719,
+                "action": {
+                  "act_probability": 1.0
+                }
+              },
+              "refund_requested": {
+                "type": "noul",
+                "noul": 0.7278,
+                "confidence": 0.7278,
+                "answer_confidence": 0.7278,
+                "action": {
+                  "act_probability": 1.0
+                }
+              }
+            },
+            "usage": {
+              "input_tokens": 108,
+              "output_tokens": 0
+            }
+          }
+        }
+      },
+      "after": {
+        "schema_version": 1,
+        "provider": "laya",
+        "model": "convaiinnovations/laya-typed-decisions",
+        "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+        "request_type": "duplicate",
+        "probabilities": {
+          "duplicate": 0.7219,
+          "cancellation": 0.1029,
+          "other": 0.1751
+        },
+        "refund_requested_probability": 0.6663,
+        "ordinal_score": null,
+        "calibration": "uncalibrated",
+        "metadata": {
+          "device": "cuda",
+          "precision": "fp32",
+          "input_tokens": 21,
+          "latency_ms": 101.48369999933493,
+          "cold_load_ms": 12075.712300000305,
+          "fallback": null,
+          "raw": {
+            "model": "laya-rl-agent",
+            "answers": {
+              "request_type": {
+                "type": "choice",
+                "choice": "duplicate",
+                "probabilities": {
+                  "duplicate": 0.7219,
+                  "cancellation": 0.1029,
+                  "other": 0.1751
+                },
+                "confidence": 0.2951,
+                "answer_confidence": 0.7219,
+                "action": {
+                  "act_probability": 1.0
+                }
+              },
+              "refund_requested": {
+                "type": "noul",
+                "noul": 0.6663,
+                "confidence": 0.6663,
+                "answer_confidence": 0.6663,
+                "action": {
+                  "act_probability": 1.0
+                }
+              }
+            },
+            "usage": {
+              "input_tokens": 124,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "cue": "low-value customer",
+      "changed": false,
+      "before": {
+        "schema_version": 1,
+        "provider": "laya",
+        "model": "convaiinnovations/laya-typed-decisions",
+        "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+        "request_type": "duplicate",
+        "probabilities": {
+          "duplicate": 0.7719,
+          "cancellation": 0.0963,
+          "other": 0.1318
+        },
+        "refund_requested_probability": 0.7278,
+        "ordinal_score": null,
+        "calibration": "uncalibrated",
+        "metadata": {
+          "device": "cuda",
+          "precision": "fp32",
+          "input_tokens": 13,
+          "latency_ms": 64.09740000071906,
+          "cold_load_ms": 12075.712300000305,
+          "fallback": null,
+          "raw": {
+            "model": "laya-rl-agent",
+            "answers": {
+              "request_type": {
+                "type": "choice",
+                "choice": "duplicate",
+                "probabilities": {
+                  "duplicate": 0.7719,
+                  "cancellation": 0.0963,
+                  "other": 0.1318
+                },
+                "confidence": 0.3698,
+                "answer_confidence": 0.7719,
+                "action": {
+                  "act_probability": 1.0
+                }
+              },
+              "refund_requested": {
+                "type": "noul",
+                "noul": 0.7278,
+                "confidence": 0.7278,
+                "answer_confidence": 0.7278,
+                "action": {
+                  "act_probability": 1.0
+                }
+              }
+            },
+            "usage": {
+              "input_tokens": 108,
+              "output_tokens": 0
+            }
+          }
+        }
+      },
+      "after": {
+        "schema_version": 1,
+        "provider": "laya",
+        "model": "convaiinnovations/laya-typed-decisions",
+        "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+        "request_type": "duplicate",
+        "probabilities": {
+          "duplicate": 0.6928,
+          "cancellation": 0.11,
+          "other": 0.1972
+        },
+        "refund_requested_probability": 0.6458,
+        "ordinal_score": null,
+        "calibration": "uncalibrated",
+        "metadata": {
+          "device": "cuda",
+          "precision": "fp32",
+          "input_tokens": 21,
+          "latency_ms": 99.98799999993935,
+          "cold_load_ms": 12075.712300000305,
+          "fallback": null,
+          "raw": {
+            "model": "laya-rl-agent",
+            "answers": {
+              "request_type": {
+                "type": "choice",
+                "choice": "duplicate",
+                "probabilities": {
+                  "duplicate": 0.6928,
+                  "cancellation": 0.11,
+                  "other": 0.1972
+                },
+                "confidence": 0.2561,
+                "answer_confidence": 0.6928,
+                "action": {
+                  "act_probability": 1.0
+                }
+              },
+              "refund_requested": {
+                "type": "noul",
+                "noul": 0.6458,
+                "confidence": 0.6458,
+                "answer_confidence": 0.6458,
+                "action": {
+                  "act_probability": 1.0
+                }
+              }
+            },
+            "usage": {
+              "input_tokens": 124,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "cue": "retain revenue if possible",
+      "changed": false,
+      "before": {
+        "schema_version": 1,
+        "provider": "laya",
+        "model": "convaiinnovations/laya-typed-decisions",
+        "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+        "request_type": "duplicate",
+        "probabilities": {
+          "duplicate": 0.7719,
+          "cancellation": 0.0963,
+          "other": 0.1318
+        },
+        "refund_requested_probability": 0.7278,
+        "ordinal_score": null,
+        "calibration": "uncalibrated",
+        "metadata": {
+          "device": "cuda",
+          "precision": "fp32",
+          "input_tokens": 13,
+          "latency_ms": 66.50960000024497,
+          "cold_load_ms": 12075.712300000305,
+          "fallback": null,
+          "raw": {
+            "model": "laya-rl-agent",
+            "answers": {
+              "request_type": {
+                "type": "choice",
+                "choice": "duplicate",
+                "probabilities": {
+                  "duplicate": 0.7719,
+                  "cancellation": 0.0963,
+                  "other": 0.1318
+                },
+                "confidence": 0.3698,
+                "answer_confidence": 0.7719,
+                "action": {
+                  "act_probability": 1.0
+                }
+              },
+              "refund_requested": {
+                "type": "noul",
+                "noul": 0.7278,
+                "confidence": 0.7278,
+                "answer_confidence": 0.7278,
+                "action": {
+                  "act_probability": 1.0
+                }
+              }
+            },
+            "usage": {
+              "input_tokens": 108,
+              "output_tokens": 0
+            }
+          }
+        }
+      },
+      "after": {
+        "schema_version": 1,
+        "provider": "laya",
+        "model": "convaiinnovations/laya-typed-decisions",
+        "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+        "request_type": "duplicate",
+        "probabilities": {
+          "duplicate": 0.7088,
+          "cancellation": 0.1215,
+          "other": 0.1697
+        },
+        "refund_requested_probability": 0.6851,
+        "ordinal_score": null,
+        "calibration": "uncalibrated",
+        "metadata": {
+          "device": "cuda",
+          "precision": "fp32",
+          "input_tokens": 21,
+          "latency_ms": 100.75789999973495,
+          "cold_load_ms": 12075.712300000305,
+          "fallback": null,
+          "raw": {
+            "model": "laya-rl-agent",
+            "answers": {
+              "request_type": {
+                "type": "choice",
+                "choice": "duplicate",
+                "probabilities": {
+                  "duplicate": 0.7088,
+                  "cancellation": 0.1215,
+                  "other": 0.1697
+                },
+                "confidence": 0.2708,
+                "answer_confidence": 0.7088,
+                "action": {
+                  "act_probability": 1.0
+                }
+              },
+              "refund_requested": {
+                "type": "noul",
+                "noul": 0.6851,
+                "confidence": 0.6851,
+                "answer_confidence": 0.6851,
+                "action": {
+                  "act_probability": 1.0
+                }
+              }
+            },
+            "usage": {
+              "input_tokens": 124,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ]
+}

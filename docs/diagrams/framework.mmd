@@ -1,0 +1,29 @@
+flowchart TB
+    App[Your application / CLI] --> Model[DecisionModel adapter]
+    Model --> Assessment[Typed assessment signals]
+    App --> Proposal[Independent intent and typed action]
+    Assessment --> Core
+    Proposal --> Core
+    subgraph Core[Shared governance runtime]
+      Validate[Validate and persist] --> Evaluate[Evaluate / review]
+      Evaluate --> Permit[Bound authorization]
+      Permit --> Reserve[Revalidate and reserve]
+      Reserve --> Dispatch[Dispatch once]
+      Dispatch --> Reconcile[Outcome / reconciliation]
+      Reconcile --> Receipt[Signed receipt / replay]
+    end
+    subgraph Pack[Your registered domain pack]
+      Schema[Action schema]
+      Evidence[Trusted evidence resolver]
+      Policy[Versioned deterministic policy]
+      Executor[Idempotent executor]
+    end
+    Schema --> Validate
+    Evidence --> Evaluate
+    Policy --> Evaluate
+    Dispatch --> Executor
+    Executor --> Reconcile
+    Core --> DB[(SQLite + linked audit)]
+    Refunds[Refund reference domain] -. implements .-> Pack
+    Access[Access reference domain] -. implements .-> Pack
+    Custom[Your use case] -. implements .-> Pack

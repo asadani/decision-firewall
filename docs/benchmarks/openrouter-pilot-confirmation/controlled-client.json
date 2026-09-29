@@ -1,0 +1,55 @@
+{
+  "base_url": "https://openrouter.ai/api/v1",
+  "model": "openai/gpt-oss-20b",
+  "api_reachable": true,
+  "tool_call_valid": true,
+  "tool_result_roundtrip": true,
+  "error": null,
+  "duration_ms": 2300.415500008967,
+  "ready": true,
+  "attempts": [
+    {
+      "case_id": "echo-turn-1",
+      "seed": 873631410,
+      "attempt": 1,
+      "settings": {
+        "model": "openai/gpt-oss-20b",
+        "provider": "darkbloom",
+        "seed": 20260928,
+        "max_tokens": 1024,
+        "max_attempts": 4,
+        "max_wait_seconds": 60,
+        "input_price": 0.03,
+        "output_price": 0.15,
+        "context_tokens": 131072
+      },
+      "reservation_usd": 0.00408576,
+      "elapsed_ms": 1137.5763000105508,
+      "cost_usd": 5.4e-06,
+      "prompt_tokens": 145,
+      "completion_tokens": 31
+    },
+    {
+      "case_id": "echo-turn-3",
+      "seed": 606424395,
+      "attempt": 1,
+      "settings": {
+        "model": "openai/gpt-oss-20b",
+        "provider": "darkbloom",
+        "seed": 20260928,
+        "max_tokens": 1024,
+        "max_attempts": 4,
+        "max_wait_seconds": 60,
+        "input_price": 0.03,
+        "output_price": 0.15,
+        "context_tokens": 131072
+      },
+      "reservation_usd": 0.00408576,
+      "elapsed_ms": 1142.8439999872353,
+      "cost_usd": 3.834e-06,
+      "prompt_tokens": 123,
+      "completion_tokens": 18
+    }
+  ],
+  "purpose": "Protocol smoke only; no official benchmark tasks"
+}

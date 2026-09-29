@@ -1,0 +1,63 @@
+{
+  "date": "2026-09-27",
+  "hardware": "GTX 1650, 4096 MiB, Windows 11, Python 3.12.14",
+  "note": "One inference per path; not an accuracy or warm-latency benchmark. Access load ran alongside packaging work.",
+  "samples": {
+    "access": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "signals": {
+        "intent": {
+          "schema_version": 1,
+          "kind": "choice",
+          "value": "access",
+          "probabilities": {
+            "access": 0.7298,
+            "other": 0.2702
+          }
+        },
+        "urgent": {
+          "schema_version": 1,
+          "kind": "probability",
+          "value": 0.3928,
+          "probabilities": {}
+        }
+      },
+      "status": "available",
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 10,
+        "latency_ms": 1699.0881000001536,
+        "cold_load_ms": 29281.329199999163,
+        "fallback": null
+      }
+    },
+    "refund-compatibility": {
+      "schema_version": 1,
+      "provider": "laya",
+      "model": "convaiinnovations/laya-typed-decisions",
+      "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+      "request_type": "duplicate",
+      "probabilities": {
+        "duplicate": 0.7281,
+        "cancellation": 0.1003,
+        "other": 0.1716
+      },
+      "refund_requested_probability": 0.614,
+      "ordinal_score": null,
+      "calibration": "uncalibrated",
+      "metadata": {
+        "device": "cuda",
+        "precision": "fp32",
+        "input_tokens": 8,
+        "latency_ms": 1655.9758000003058,
+        "cold_load_ms": 11865.674099999524,
+        "fallback": null
+      }
+    }
+  }
+}

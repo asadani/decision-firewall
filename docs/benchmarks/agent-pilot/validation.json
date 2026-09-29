@@ -1,0 +1,17 @@
+{
+  "validation": "244 pytest tests; Ruff, mypy, package build; installed-upstream no-network checks across three arms",
+  "episode_counts": {
+    "scheduled": 90,
+    "scored": 78,
+    "incomplete": 12
+  },
+  "invalid_outputs": {
+    "inconsistent_completion": 10,
+    "incomplete_or_filtered_finish": 2
+  },
+  "private_diagnostic_wrappers": {
+    "observe_run.py": "044b1bb7af6a941fcfa068ee5039bbc6ac88fa0662f4658fd253498b0345f7df",
+    "supervise.py": "b4b92d8312ef26a1bcd8cc5572d028c1114613da8933eedd47db708e1fb1fc0c"
+  },
+  "wrapper_note": "Read-only response capture and bounded advancement past retained invalid-output episodes. No request, validator, policy or grader changes; no episode retries. Private response bodies are excluded."
+}

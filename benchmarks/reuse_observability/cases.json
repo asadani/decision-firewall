@@ -1,0 +1,1800 @@
+[
+  {
+    "id": "refund-base-allow",
+    "name": "allow",
+    "domain": "refund",
+    "changed": false,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 100000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-base-threshold_change",
+    "name": "threshold_change",
+    "domain": "refund",
+    "changed": false,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 100000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 75000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-base-review_approved",
+    "name": "review_approved",
+    "domain": "refund",
+    "changed": false,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 100000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 150000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "REQUIRE_REVIEW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-base-review_unauthorized",
+    "name": "review_unauthorized",
+    "domain": "refund",
+    "changed": false,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 100000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 150000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "REQUIRE_REVIEW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-base-destination_denied",
+    "name": "destination_denied",
+    "domain": "refund",
+    "changed": false,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 100000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "forbidden",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "DENY",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-base-missing_evidence",
+    "name": "missing_evidence",
+    "domain": "refund",
+    "changed": false,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 100000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": null,
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "REQUIRE_EVIDENCE",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-base-model_unavailable",
+    "name": "model_unavailable",
+    "domain": "refund",
+    "changed": false,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 100000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "REQUIRE_REVIEW",
+    "label": "unavailable"
+  },
+  {
+    "id": "refund-base-legal_hold",
+    "name": "legal_hold",
+    "domain": "refund",
+    "changed": false,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 100000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-base-expired",
+    "name": "expired",
+    "domain": "refund",
+    "changed": false,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 100000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-base-revoked",
+    "name": "revoked",
+    "domain": "refund",
+    "changed": false,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 100000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-base-changed_evidence",
+    "name": "changed_evidence",
+    "domain": "refund",
+    "changed": false,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 100000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-base-response_loss_restart",
+    "name": "response_loss_restart",
+    "domain": "refund",
+    "changed": false,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 100000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-base-repeat",
+    "name": "repeat",
+    "domain": "refund",
+    "changed": false,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 100000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-base-audit_failure",
+    "name": "audit_failure",
+    "domain": "refund",
+    "changed": false,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 100000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-base-concurrent_capacity",
+    "name": "concurrent_capacity",
+    "domain": "refund",
+    "changed": false,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 100000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 40000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 60000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 2,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-changed-allow",
+    "name": "allow",
+    "domain": "refund",
+    "changed": true,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 50000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-changed-threshold_change",
+    "name": "threshold_change",
+    "domain": "refund",
+    "changed": true,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 50000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 75000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "REQUIRE_REVIEW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-changed-review_approved",
+    "name": "review_approved",
+    "domain": "refund",
+    "changed": true,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 50000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 150000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "REQUIRE_REVIEW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-changed-review_unauthorized",
+    "name": "review_unauthorized",
+    "domain": "refund",
+    "changed": true,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 50000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 150000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "REQUIRE_REVIEW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-changed-destination_denied",
+    "name": "destination_denied",
+    "domain": "refund",
+    "changed": true,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 50000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "forbidden",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "DENY",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-changed-missing_evidence",
+    "name": "missing_evidence",
+    "domain": "refund",
+    "changed": true,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 50000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": null,
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "REQUIRE_EVIDENCE",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-changed-model_unavailable",
+    "name": "model_unavailable",
+    "domain": "refund",
+    "changed": true,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 50000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "REQUIRE_REVIEW",
+    "label": "unavailable"
+  },
+  {
+    "id": "refund-changed-legal_hold",
+    "name": "legal_hold",
+    "domain": "refund",
+    "changed": true,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 50000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-changed-expired",
+    "name": "expired",
+    "domain": "refund",
+    "changed": true,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 50000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-changed-revoked",
+    "name": "revoked",
+    "domain": "refund",
+    "changed": true,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 50000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-changed-changed_evidence",
+    "name": "changed_evidence",
+    "domain": "refund",
+    "changed": true,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 50000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-changed-response_loss_restart",
+    "name": "response_loss_restart",
+    "domain": "refund",
+    "changed": true,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 50000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-changed-repeat",
+    "name": "repeat",
+    "domain": "refund",
+    "changed": true,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 50000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-changed-audit_failure",
+    "name": "audit_failure",
+    "domain": "refund",
+    "changed": true,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 50000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 25000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 200000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "refund-changed-concurrent_capacity",
+    "name": "concurrent_capacity",
+    "domain": "refund",
+    "changed": true,
+    "config": {
+      "version": "refund-1",
+      "auto_amount_minor": 50000,
+      "daily_auto_limit_minor": 1000000,
+      "cancellation_days": 7
+    },
+    "action": {
+      "customer_id": "customer",
+      "payment_id": "payment",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 40000,
+      "requested_reason": "duplicate"
+    },
+    "facts": {
+      "customer_id": "customer",
+      "destination": "original",
+      "currency": "INR",
+      "amount_minor": 60000,
+      "refunded_minor": 0,
+      "duplicate_verified": true,
+      "unused": true,
+      "age_days": 2,
+      "version": 1
+    },
+    "count": 2,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "duplicate"
+  },
+  {
+    "id": "data_export-base-allow",
+    "name": "allow",
+    "domain": "data_export",
+    "changed": false,
+    "config": {
+      "version": "export-1",
+      "automatic_rows": 1000
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-base-threshold_change",
+    "name": "threshold_change",
+    "domain": "data_export",
+    "changed": false,
+    "config": {
+      "version": "export-1",
+      "automatic_rows": 1000
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 750
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-base-review_approved",
+    "name": "review_approved",
+    "domain": "data_export",
+    "changed": false,
+    "config": {
+      "version": "export-1",
+      "automatic_rows": 1000
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 1500
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "REQUIRE_REVIEW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-base-review_unauthorized",
+    "name": "review_unauthorized",
+    "domain": "data_export",
+    "changed": false,
+    "config": {
+      "version": "export-1",
+      "automatic_rows": 1000
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 1500
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "REQUIRE_REVIEW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-base-destination_denied",
+    "name": "destination_denied",
+    "domain": "data_export",
+    "changed": false,
+    "config": {
+      "version": "export-1",
+      "automatic_rows": 1000
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "forbidden",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "DENY",
+    "label": "export"
+  },
+  {
+    "id": "data_export-base-missing_evidence",
+    "name": "missing_evidence",
+    "domain": "data_export",
+    "changed": false,
+    "config": {
+      "version": "export-1",
+      "automatic_rows": 1000
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": null,
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "REQUIRE_EVIDENCE",
+    "label": "export"
+  },
+  {
+    "id": "data_export-base-model_unavailable",
+    "name": "model_unavailable",
+    "domain": "data_export",
+    "changed": false,
+    "config": {
+      "version": "export-1",
+      "automatic_rows": 1000
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "REQUIRE_REVIEW",
+    "label": "unavailable"
+  },
+  {
+    "id": "data_export-base-legal_hold",
+    "name": "legal_hold",
+    "domain": "data_export",
+    "changed": false,
+    "config": {
+      "version": "export-1",
+      "automatic_rows": 1000
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": true,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-base-expired",
+    "name": "expired",
+    "domain": "data_export",
+    "changed": false,
+    "config": {
+      "version": "export-1",
+      "automatic_rows": 1000
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-base-revoked",
+    "name": "revoked",
+    "domain": "data_export",
+    "changed": false,
+    "config": {
+      "version": "export-1",
+      "automatic_rows": 1000
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-base-changed_evidence",
+    "name": "changed_evidence",
+    "domain": "data_export",
+    "changed": false,
+    "config": {
+      "version": "export-1",
+      "automatic_rows": 1000
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-base-response_loss_restart",
+    "name": "response_loss_restart",
+    "domain": "data_export",
+    "changed": false,
+    "config": {
+      "version": "export-1",
+      "automatic_rows": 1000
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-base-repeat",
+    "name": "repeat",
+    "domain": "data_export",
+    "changed": false,
+    "config": {
+      "version": "export-1",
+      "automatic_rows": 1000
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-base-audit_failure",
+    "name": "audit_failure",
+    "domain": "data_export",
+    "changed": false,
+    "config": {
+      "version": "export-1",
+      "automatic_rows": 1000
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-base-concurrent_capacity",
+    "name": "concurrent_capacity",
+    "domain": "data_export",
+    "changed": false,
+    "config": {
+      "version": "export-1",
+      "automatic_rows": 1000
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 400
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 600,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 2,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-changed-allow",
+    "name": "allow",
+    "domain": "data_export",
+    "changed": true,
+    "config": {
+      "version": "export-2",
+      "automatic_rows": 500
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-changed-threshold_change",
+    "name": "threshold_change",
+    "domain": "data_export",
+    "changed": true,
+    "config": {
+      "version": "export-2",
+      "automatic_rows": 500
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 750
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "REQUIRE_REVIEW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-changed-review_approved",
+    "name": "review_approved",
+    "domain": "data_export",
+    "changed": true,
+    "config": {
+      "version": "export-2",
+      "automatic_rows": 500
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 1500
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "REQUIRE_REVIEW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-changed-review_unauthorized",
+    "name": "review_unauthorized",
+    "domain": "data_export",
+    "changed": true,
+    "config": {
+      "version": "export-2",
+      "automatic_rows": 500
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 1500
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "REQUIRE_REVIEW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-changed-destination_denied",
+    "name": "destination_denied",
+    "domain": "data_export",
+    "changed": true,
+    "config": {
+      "version": "export-2",
+      "automatic_rows": 500
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "forbidden",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "DENY",
+    "label": "export"
+  },
+  {
+    "id": "data_export-changed-missing_evidence",
+    "name": "missing_evidence",
+    "domain": "data_export",
+    "changed": true,
+    "config": {
+      "version": "export-2",
+      "automatic_rows": 500
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": null,
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "REQUIRE_EVIDENCE",
+    "label": "export"
+  },
+  {
+    "id": "data_export-changed-model_unavailable",
+    "name": "model_unavailable",
+    "domain": "data_export",
+    "changed": true,
+    "config": {
+      "version": "export-2",
+      "automatic_rows": 500
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "REQUIRE_REVIEW",
+    "label": "unavailable"
+  },
+  {
+    "id": "data_export-changed-legal_hold",
+    "name": "legal_hold",
+    "domain": "data_export",
+    "changed": true,
+    "config": {
+      "version": "export-2",
+      "automatic_rows": 500
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": true,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "DENY",
+    "label": "export"
+  },
+  {
+    "id": "data_export-changed-expired",
+    "name": "expired",
+    "domain": "data_export",
+    "changed": true,
+    "config": {
+      "version": "export-2",
+      "automatic_rows": 500
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-changed-revoked",
+    "name": "revoked",
+    "domain": "data_export",
+    "changed": true,
+    "config": {
+      "version": "export-2",
+      "automatic_rows": 500
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-changed-changed_evidence",
+    "name": "changed_evidence",
+    "domain": "data_export",
+    "changed": true,
+    "config": {
+      "version": "export-2",
+      "automatic_rows": 500
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-changed-response_loss_restart",
+    "name": "response_loss_restart",
+    "domain": "data_export",
+    "changed": true,
+    "config": {
+      "version": "export-2",
+      "automatic_rows": 500
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-changed-repeat",
+    "name": "repeat",
+    "domain": "data_export",
+    "changed": true,
+    "config": {
+      "version": "export-2",
+      "automatic_rows": 500
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-changed-audit_failure",
+    "name": "audit_failure",
+    "domain": "data_export",
+    "changed": true,
+    "config": {
+      "version": "export-2",
+      "automatic_rows": 500
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 250
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 10000,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 1,
+    "expected_effects": 0,
+    "initial": "ALLOW",
+    "label": "export"
+  },
+  {
+    "id": "data_export-changed-concurrent_capacity",
+    "name": "concurrent_capacity",
+    "domain": "data_export",
+    "changed": true,
+    "config": {
+      "version": "export-2",
+      "automatic_rows": 500
+    },
+    "action": {
+      "requester": "employee",
+      "destination": "sandbox",
+      "rows": 400
+    },
+    "facts": {
+      "active": true,
+      "destination": "sandbox",
+      "available_rows": 600,
+      "legal_hold": false,
+      "version": 1
+    },
+    "count": 2,
+    "expected_effects": 1,
+    "initial": "ALLOW",
+    "label": "export"
+  }
+]

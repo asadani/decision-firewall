@@ -1,0 +1,20 @@
+{
+  "model": "convaiinnovations/laya-typed-decisions",
+  "revision": "1a793eb568e6718f15941d08f85432581df534e3",
+  "sdk": "laya==0.3.20",
+  "questions": {
+    "request_type": {
+      "type": "choice",
+      "instructions": "What is the customer's main billing request?",
+      "criteria": {
+        "duplicate": "Refund a duplicate charge or being billed twice",
+        "cancellation": "Cancel a subscription and refund its charge",
+        "other": "Any other request or complaint"
+      }
+    },
+    "refund_requested": {
+      "type": "noul",
+      "instructions": "Does the customer explicitly ask for a refund or their money back?"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# Preserve the pre-execution byte hashes of these frozen benchmark inputs on every OS.
+benchmarks/framework_value/protocol.json -text
+benchmarks/framework_value/cases.json -text
+benchmarks/reuse_observability/protocol.json -text
+benchmarks/reuse_observability/cases.json -text
+benchmarks/public_intent/protocol.json -text
+benchmarks/preparation/protocol.json -text
+benchmarks/paired_public/protocol.json -text

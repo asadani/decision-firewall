@@ -1,0 +1,18 @@
+Decision Firewall v0.1
+Copyright 2026 Decision Firewall contributors
+
+New source code and original documentation are licensed under Apache License 2.0.
+The pre-existing files in refer/ are reference material and are not relicensed by this repository.
+Laya model weights and its SDK are separate optional dependencies with their own licenses.
+
+BANKING77 dataset-derived observation files in docs/benchmarks/preparation-and-public/
+retain CC-BY-4.0 attribution to PolyAI and Casanueva et al., Efficient Intent Detection
+with Dual Sentence Encoders (NLP for ConvAI / ACL 2020).
+Original dataset: https://github.com/PolyAI-LDN/task-specific-datasets
+Raw dataset files are downloaded separately and excluded from Git.
+
+Bitext-derived observations in docs/benchmarks/paired-public/ retain CDLA-Sharing-1.0
+rights and attribution to Bitext Innovations (2024). BANKING77 observations in that
+directory retain the CC-BY-4.0 attribution above. Dataset licenses do not change the
+Apache-2.0 license on the benchmark runner or framework source code.
+

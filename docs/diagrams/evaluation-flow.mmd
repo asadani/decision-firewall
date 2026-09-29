@@ -1,0 +1,14 @@
+flowchart LR
+Fixtures[40 curated scenarios] --> Split[Family-separated dev and evaluation]
+Variations[200 seeded wrappers] --> Split
+Split --> Assess[Fixture / keywords / Laya]
+Assess --> Gate[Policy and execution]
+Gate --> Ledger[(Durable simulated effects)]
+Assess --> ModelStats[Accuracy / Brier / calibration]
+Gate --> GateStats[Agreement / false allows / reviews]
+Ledger --> EffectStats[Over-refunds / duplicates / unknowns]
+Tests[Adversarial pytest suite] --> Faults[Concurrency / outages / revocation]
+ModelStats --> Report[Measured report and manifest]
+GateStats --> Report
+EffectStats --> Report
+Faults --> Report

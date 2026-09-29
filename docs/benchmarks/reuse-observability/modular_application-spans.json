@@ -1,0 +1,159 @@
+[
+  {
+    "name": "application.assessment",
+    "trace_id": "d709692151bb27e14ed57b147a5a8b91",
+    "attributes": {
+      "firewall.correlation_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.0,
+      "firewall.assessment_id": "d3b51d18f22bf02eabf471c28c31ef4de9222448e1175e0216895fd895ffbc73"
+    }
+  },
+  {
+    "name": "application.evidence",
+    "trace_id": "d709692151bb27e14ed57b147a5a8b91",
+    "attributes": {
+      "firewall.correlation_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 1.3285000022733584
+    }
+  },
+  {
+    "name": "application.policy",
+    "trace_id": "d709692151bb27e14ed57b147a5a8b91",
+    "attributes": {
+      "firewall.correlation_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.status": "REQUIRE_REVIEW",
+      "firewall.duration_ms": 0.07579999510198832,
+      "firewall.evaluation_id": "cfa2335a39934491bb526dd2879f0bbb",
+      "firewall.policy_version": "export-1"
+    }
+  },
+  {
+    "name": "application.prepare",
+    "trace_id": "d709692151bb27e14ed57b147a5a8b91",
+    "attributes": {
+      "firewall.correlation_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 7.371499996224884
+    }
+  },
+  {
+    "name": "application.evidence",
+    "trace_id": "d709692151bb27e14ed57b147a5a8b91",
+    "attributes": {
+      "firewall.correlation_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.15430000348715112
+    }
+  },
+  {
+    "name": "application.policy",
+    "trace_id": "d709692151bb27e14ed57b147a5a8b91",
+    "attributes": {
+      "firewall.correlation_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.status": "ALLOW",
+      "firewall.duration_ms": 0.07650000043213367,
+      "firewall.evaluation_id": "15d785378ef9435bb9cc5f95ec399d1c",
+      "firewall.policy_version": "export-1"
+    }
+  },
+  {
+    "name": "application.authorization",
+    "trace_id": "d709692151bb27e14ed57b147a5a8b91",
+    "attributes": {
+      "firewall.correlation_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.0,
+      "firewall.authorization_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf"
+    }
+  },
+  {
+    "name": "application.review",
+    "trace_id": "d709692151bb27e14ed57b147a5a8b91",
+    "attributes": {
+      "firewall.correlation_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 4.0063999986159615
+    }
+  },
+  {
+    "name": "application.evidence",
+    "trace_id": "d709692151bb27e14ed57b147a5a8b91",
+    "attributes": {
+      "firewall.correlation_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.24329999723704532
+    }
+  },
+  {
+    "name": "application.policy",
+    "trace_id": "d709692151bb27e14ed57b147a5a8b91",
+    "attributes": {
+      "firewall.correlation_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.status": "ALLOW",
+      "firewall.duration_ms": 0.09249999857274815,
+      "firewall.evaluation_id": "15d785378ef9435bb9cc5f95ec399d1c",
+      "firewall.policy_version": "export-1"
+    }
+  },
+  {
+    "name": "application.evidence",
+    "trace_id": "d709692151bb27e14ed57b147a5a8b91",
+    "attributes": {
+      "firewall.correlation_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 0.5248000015853904
+    }
+  },
+  {
+    "name": "application.policy",
+    "trace_id": "d709692151bb27e14ed57b147a5a8b91",
+    "attributes": {
+      "firewall.correlation_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.status": "ALLOW",
+      "firewall.duration_ms": 0.06510000093840063,
+      "firewall.evaluation_id": "15d785378ef9435bb9cc5f95ec399d1c",
+      "firewall.policy_version": "export-1"
+    }
+  },
+  {
+    "name": "application.outcome",
+    "trace_id": "d709692151bb27e14ed57b147a5a8b91",
+    "attributes": {
+      "firewall.correlation_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.status": "UNKNOWN",
+      "firewall.duration_ms": 0.0,
+      "firewall.attempt_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.authorization_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf"
+    }
+  },
+  {
+    "name": "application.dispatch",
+    "trace_id": "d709692151bb27e14ed57b147a5a8b91",
+    "attributes": {
+      "firewall.correlation_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 14.641100002336316
+    }
+  },
+  {
+    "name": "application.outcome",
+    "trace_id": "d709692151bb27e14ed57b147a5a8b91",
+    "attributes": {
+      "firewall.correlation_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.status": "SUCCEEDED",
+      "firewall.duration_ms": 0.0,
+      "firewall.attempt_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf"
+    }
+  },
+  {
+    "name": "application.reconciliation",
+    "trace_id": "d709692151bb27e14ed57b147a5a8b91",
+    "attributes": {
+      "firewall.correlation_id": "job_a79d5f2d34e045bf82c4af57ffbfe5bf",
+      "firewall.status": "ok",
+      "firewall.duration_ms": 6.151300003693905
+    }
+  }
+]

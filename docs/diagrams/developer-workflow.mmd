@@ -1,0 +1,15 @@
+flowchart LR
+  Files[CSV / JSONL] --> Validate[Explicit mapping and atomic validation]
+  Validate --> History[Separate history database]
+  History --> Labels[Independent reviewed labels]
+  Labels --> Snapshot[Immutable grouped dataset splits]
+  Snapshot --> Context[Optional prior development context]
+  Snapshot --> Runner[Offline experiment runner]
+  Context --> Model[Context-aware model adapter]
+  Model --> Runner
+  Runner --> Gate[Shared deterministic policy gate]
+  Gate --> Rules[Mandatory checks then review rules]
+  Rules --> Report[Case differences and predeclared thresholds]
+  Report --> Adopt[Explicit human configuration adoption]
+  Gate -. safe telemetry .-> OTLP[Optional bounded OTLP export]
+  Adopt --> Runtime[Runtime authorization and simulation]
