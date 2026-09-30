@@ -1,3 +1,5 @@
+<img src="docs/brand/icon.png" width="96" height="96" alt="Decision Firewall: a decision path through an authorization gate to an audit record">
+
 # Decision Firewall
 
 **A tested reference implementation and conformance kit for action-bound authorization and recovery.**
