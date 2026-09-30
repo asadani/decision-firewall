@@ -71,4 +71,4 @@ The framework illustration is a separate documentation surface; the inspector to
 
 ## Repository mark
 
-`docs/brand/icon.png` is the generated slate/blue/amber project icon. It uses the architecture palette and depicts input, authorization gate and audit record. Preserve its square aspect ratio and opaque background; the README uses 96 pixels. Asset provenance and the refinement prompt are recorded in `docs/brand/README.md`.
+`docs/brand/icon.png` is the generated slate/blue/amber project icon. It uses the architecture palette and depicts input, authorization gate and audit record. Preserve its square aspect ratio and opaque background; the README uses a centered 220-pixel image. Asset provenance and the refinement prompt are recorded in `docs/brand/README.md`.

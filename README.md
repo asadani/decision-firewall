@@ -1,8 +1,12 @@
-<img src="docs/brand/icon.png" width="96" height="96" alt="Decision Firewall: a decision path through an authorization gate to an audit record">
+<p align="center">
+  <img src="docs/brand/icon.png" width="220" height="220" alt="Decision Firewall: a decision path through an authorization gate to an audit record">
+</p>
 
-# Decision Firewall
+<h1 align="center">Decision Firewall</h1>
 
-**A tested reference implementation and conformance kit for action-bound authorization and recovery.**
+<p align="center">
+  <strong>A tested reference implementation and conformance kit for action-bound authorization and recovery.</strong>
+</p>
 
 **Status: narrowed; feature expansion and adoption/migration claims have stopped.** An independent paired agent pilot found equal correctness and investigation scores, more integration workarounds and about 9× longer held-out-suite execution time in the framework arm. This is one diagnostic pilot, not a statistical or human-productivity study. Read the unchanged [comparison](docs/evaluations/2026-09-29/COMPARISON.md), [review findings](docs/evaluations/2026-09-29/findings.md) and [0.3.1 corrective release](docs/verification/0.3.1/README.md).
 

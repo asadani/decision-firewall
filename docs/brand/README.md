@@ -2,7 +2,7 @@
 
 [icon.png](icon.png) is the repository mark: an input node and blue decision path, an amber authorization gate, and an audit record. Its opaque slate background works on light and dark pages. The mark represents the lifecycle; it is not a security certification. No mascot or third-party logo is used.
 
-The README displays the icon at 96 pixels. Keep the original square aspect ratio and the surrounding space; do not stretch it. Very small renderings retain the gate/path silhouette but lose the record's internal detail. GitHub does not offer an individual repository avatar; this is a README/project asset, not a change to the owner's account avatar.
+The README displays the icon centered at 220 pixels, above a centered title and introduction. Keep the original square aspect ratio and the surrounding space; do not stretch it. Very small renderings retain the gate/path silhouette but lose the record's internal detail. GitHub does not offer an individual repository avatar; this is a README/project asset, not a change to the owner's account avatar.
 
 Created with the built-in image-generation tool, then refined using the initial image as a reference. No external image API credentials were used. The selected PNG is stored here rather than depending on the generator's local output directory.
 
