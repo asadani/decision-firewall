@@ -1,0 +1,53 @@
+[
+ {
+  "nodeid": "test_visible_v2.py::test_v2_threshold_lowered[po-policy-v2]",
+  "req": [
+   "P2"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_visible_v2.py::test_v2_high_risk_vendor_denied[po-policy-v2]",
+  "req": [
+   "P2"
+  ],
+  "hard": [
+   "HI-2"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_visible_v2.py::test_v1_authorization_rechecked_under_v2",
+  "req": [
+   "P2"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_visible_v2.py::test_v1_bundle_still_verifies_under_v2",
+  "req": [
+   "P2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_visible_v2.py::test_unsupported_policy_rejected",
+  "req": [
+   "P2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ }
+]

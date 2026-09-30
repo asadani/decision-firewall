@@ -1,0 +1,102 @@
+[
+ {
+  "nodeid": "test_hidden_v2.py::test_hv2_v1_approved_high_risk_denied_after_switch",
+  "req": [
+   "P2"
+  ],
+  "hard": [
+   "HI-2"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_v2.py::test_hv2_v1_pending_approval_high_risk_cannot_be_approved",
+  "req": [
+   "P2"
+  ],
+  "hard": [
+   "HI-2"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_v2.py::test_hv2_high_risk_hardware_large_denied_not_reviewable[po-policy-v2]",
+  "req": [
+   "P2"
+  ],
+  "hard": [
+   "HI-2"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_v2.py::test_hv2_vendor_becomes_high_risk_after_approval[po-policy-v2]",
+  "req": [
+   "P2"
+  ],
+  "hard": [
+   "HI-2"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_v2.py::test_hv2_threshold_boundary_needs_approval[po-policy-v2]",
+  "req": [
+   "P2"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_v2.py::test_hv2_v1_unknown_reconciled_without_reevaluation",
+  "req": [
+   "P2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_v2.py::test_hv2_audit_records_policy_per_step",
+  "req": [
+   "P2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_v2.py::test_hv2_v1_behaviour_retained_when_selected",
+  "req": [
+   "P2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_v2.py::test_hv2_idempotent_replay_across_policy_change",
+  "req": [
+   "P2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_v2.py::test_hv2_v1_issued_untouched",
+  "req": [
+   "P2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ }
+]

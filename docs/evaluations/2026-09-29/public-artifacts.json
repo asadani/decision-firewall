@@ -1,0 +1,105 @@
+{
+  "scope": "Selected unchanged numerical results, public task documents and provenance; not full raw study archive",
+  "artifacts": [
+    {
+      "path": "results/observations.json",
+      "sha256": "137292dd2d3a9e8c176816c2a8f14c5f524df90eb6fa72f9239103c9eaaa5dba"
+    },
+    {
+      "path": "results/observations.csv",
+      "sha256": "66c4ccf760b8eab4634ab2ee6cb58caa513192414281271a88aa483e168c1b60"
+    },
+    {
+      "path": "results/investigation-scoring/scores.json",
+      "sha256": "dbbe8744fea11abe58a3421b868e1280011e193bd556ba5706ba5b1b513c3729"
+    },
+    {
+      "path": "results/investigation-scoring/scores.md",
+      "sha256": "258f118be4e9fc0914931018fcce13142b935ad8fd8624672f59dc326dc37f19"
+    },
+    {
+      "path": "results/scoring/baseline-maint/v1-tests.json",
+      "sha256": "a9a95e110af7987a5f05885fd689f515482ac6f82fb5d6b3baa19ac5f7af25ef"
+    },
+    {
+      "path": "results/scoring/baseline-maint/v1-tests_hidden.json",
+      "sha256": "7dfb69b861979484b3b37707c7e69d982240754ade51ab0909a09e3c9b2bb380"
+    },
+    {
+      "path": "results/scoring/baseline-maint/v2-tests_hidden_v2.json",
+      "sha256": "75ae868b8628767597249af9a3942efe5012b5d516f7dba9ddaa29da28846ecb"
+    },
+    {
+      "path": "results/scoring/baseline-maint/v2-tests_visible_v2.json",
+      "sha256": "097d880b8d17f29a937f20693cc1622cae185e93263a43011ef0de507083c724"
+    },
+    {
+      "path": "results/scoring/baseline-phase2/v1-tests.json",
+      "sha256": "a9a95e110af7987a5f05885fd689f515482ac6f82fb5d6b3baa19ac5f7af25ef"
+    },
+    {
+      "path": "results/scoring/baseline-phase2/v1-tests_hidden.json",
+      "sha256": "7dfb69b861979484b3b37707c7e69d982240754ade51ab0909a09e3c9b2bb380"
+    },
+    {
+      "path": "results/scoring/framework-interrupted/v1-tests.json",
+      "sha256": "a9a95e110af7987a5f05885fd689f515482ac6f82fb5d6b3baa19ac5f7af25ef"
+    },
+    {
+      "path": "results/scoring/framework-interrupted/v1-tests_hidden.json",
+      "sha256": "7dfb69b861979484b3b37707c7e69d982240754ade51ab0909a09e3c9b2bb380"
+    },
+    {
+      "path": "results/scoring/framework-maint/v1-tests.json",
+      "sha256": "a9a95e110af7987a5f05885fd689f515482ac6f82fb5d6b3baa19ac5f7af25ef"
+    },
+    {
+      "path": "results/scoring/framework-maint/v1-tests_hidden.json",
+      "sha256": "7dfb69b861979484b3b37707c7e69d982240754ade51ab0909a09e3c9b2bb380"
+    },
+    {
+      "path": "results/scoring/framework-maint/v2-tests_hidden_v2.json",
+      "sha256": "75ae868b8628767597249af9a3942efe5012b5d516f7dba9ddaa29da28846ecb"
+    },
+    {
+      "path": "results/scoring/framework-maint/v2-tests_visible_v2.json",
+      "sha256": "097d880b8d17f29a937f20693cc1622cae185e93263a43011ef0de507083c724"
+    },
+    {
+      "path": "results/scoring/framework-phase2/v1-tests.json",
+      "sha256": "a9a95e110af7987a5f05885fd689f515482ac6f82fb5d6b3baa19ac5f7af25ef"
+    },
+    {
+      "path": "results/scoring/framework-phase2/v1-tests_hidden.json",
+      "sha256": "7dfb69b861979484b3b37707c7e69d982240754ade51ab0909a09e3c9b2bb380"
+    },
+    {
+      "path": "protocol/public/ADAPTER.md",
+      "sha256": "65adca80adb7a7a7bdd09398793bf700d7f4d114d432dc8df004b75bad14c3d4"
+    },
+    {
+      "path": "protocol/public/BUILDER-BRIEF.md",
+      "sha256": "dae66a90e39fc32d9bec66ba0fd24dbb0d182f7ded287b9bb02578560620b5c0"
+    },
+    {
+      "path": "protocol/public/PROTOCOL.md",
+      "sha256": "720c10b6468246bedead51457a2fe8cd7a0b00df012bbd583a9ac294eca54dd5"
+    },
+    {
+      "path": "protocol/public/REQUIREMENTS.md",
+      "sha256": "ca6412653a4e02f861e9fc06762b312cf80f36205f9da35776667d3dba4cfb20"
+    },
+    {
+      "path": "hashes/source-sha256.txt",
+      "sha256": "6a7b8331e71403185dfa007d9965fff90fd72c5ce40e499efdeecdb343e907d8"
+    },
+    {
+      "path": "hashes/protocol-public-freeze.sha256",
+      "sha256": "22a7e8ea264fdf37fe2ca96ae5e7f1ee504108841caf8b7301d0c1e03e858474"
+    },
+    {
+      "path": "hashes/protocol-sealed-freeze.sha256",
+      "sha256": "839adfddbf625732ffba8556156297e4de83a7a18b32e33791245843b14bc33f"
+    }
+  ]
+}

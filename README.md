@@ -35,7 +35,7 @@ Classification-only applications usually do not need this runtime. An applicatio
 
 Authorization, recovery and durable audit are the core product. History, policy evaluation and optional telemetry support that lifecycle. General prompt orchestration, model tuning, retrieval infrastructure and a generic workflow builder are outside the current direction. See the [product scope](docs/framework/product-direction.md).
 
-## How we will test its value
+## What the evaluation establishes
 
 The original adoption question was whether another integration, a policy change and an investigation would be easier than with an equally capable shared application library. The paired agent pilot established no advantage. The hypotheses below remain unproven; no follow-up study is scheduled.
 
@@ -136,7 +136,7 @@ Open the generated `.runtime/experiment/report.html`. The example intentionally 
 | [Full-data classification comparison](docs/benchmarks/paired-public/summary.md) | Same classifier accuracy across arms, with added governance/preparation latency | Model accuracy improvement |
 | [Agent pilot](docs/benchmarks/agent-pilot/summary.md) | 90 scheduled episodes, 78 scored and 12 incomplete; application and framework controls both blocked the scored injected attacks | A full benchmark result or a unique framework safety advantage |
 
-No study has yet measured the five engineering benefits above. Existing code inventories are not productivity measurements. See the [framework review](docs/framework/full-review-2026-09-28.md) and report-specific denominators and limitations. The [original comparison](docs/benchmarks/framework-value/summary.md) and [earlier telemetry report](docs/benchmarks/reuse-observability/summary.md) remain historical snapshots.
+The independent pilot measured agent implementation/maintenance effort and investigation outcomes, finding no advantage under its protocol. Human productivity and benefits across repeated integrations remain untested. Existing code inventories are not productivity measurements. The [evidence index](docs/EVIDENCE.md) maps claims to results, methods and limitations. The [original comparison](docs/benchmarks/framework-value/summary.md) and [earlier telemetry report](docs/benchmarks/reuse-observability/summary.md) remain historical snapshots.
 
 ## Included refund workbench
 
@@ -180,7 +180,7 @@ python -m mypy src/decision_firewall
 python -m build
 ```
 
-Version 0.3 is an experimental embedded framework. SQLite serializes dispatch for local correctness. Production authentication, credential isolation, non-bypassable routing, distributed coordination and externally anchored audit require deployment integration. Local signatures cannot defend against a fully compromised host.
+Version 0.3.1 is an experimental embedded reference implementation. A global SQLite write lock spans adapter I/O, so a slow adapter blocks other governance operations. This concurrency limitation is intentionally retained; no throughput suitability is claimed. Production authentication, credential isolation, non-bypassable routing, distributed coordination and externally anchored audit require deployment integration. Local signatures cannot defend against a fully compromised host.
 
 [v0.1 measured refund results](docs/verification.md) include real local Laya inference on a GTX 1650; they are historical synthetic regression evidence. See [v0.3 verification](docs/v03-verification.md) and the subsequent [framework review](docs/framework/full-review-2026-09-28.md) for checks and limits. [Roadmap](ROADMAP.md) distinguishes implemented features from future work.
 

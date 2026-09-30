@@ -1,0 +1,174 @@
+{
+  "study": "Decision Firewall paired diagnostic pilot (n=1 task, 1 builder run per arm); not a statistical study",
+  "evaluated_source_manifest_sha256": "6a7b8331e71403185dfa007d9965fff90fd72c5ce40e499efdeecdb343e907d8",
+  "protocol_freeze": {
+    "public_manifest_sha256": "22a7e8ea264fdf37fe2ca96ae5e7f1ee504108841caf8b7301d0c1e03e858474",
+    "sealed_manifest_sha256": "839adfddbf625732ffba8556156297e4de83a7a18b32e33791245843b14bc33f",
+    "frozen_at": "2026-09-29T14:40:24Z",
+    "builders_started": "2026-09-29T14:40:44Z"
+  },
+  "model": {
+    "configured": "claude-opus-5-5 (inherited by all subagents)",
+    "served_model_verified": false
+  },
+  "arms": {
+    "framework": {
+      "completion": "complete",
+      "phase2": {
+        "visible": {
+          "passed": 26,
+          "total": 26
+        },
+        "hidden": {
+          "passed": 114,
+          "total": 115
+        },
+        "hard_invariant_failures": [
+          "test_hidden_eligibility.py::test_h_records_outage_at_issue_blocks_dispatch [HI-1]"
+        ],
+        "distinct_HIs_violated": [
+          "HI-1"
+        ]
+      },
+      "maintenance": {
+        "completion": "complete",
+        "v2_visible": {
+          "passed": 5,
+          "total": 5
+        },
+        "v2_hidden": {
+          "passed": 10,
+          "total": 10
+        },
+        "v1_visible_after": {
+          "passed": 26,
+          "total": 26
+        },
+        "v1_hidden_after": {
+          "passed": 114,
+          "total": 115
+        },
+        "regressions": 0,
+        "fixed_incidentally": 0
+      },
+      "investigation": {
+        "score": 48,
+        "max": 48,
+        "incorrect_conclusions": 0,
+        "incidents": 4,
+        "scored_blind": true
+      },
+      "effort": {
+        "build_tool_calls": 45,
+        "build_active_elapsed_s": 1079,
+        "build_setup_s": 336,
+        "build_impl_plus_debug_s": 743,
+        "build_debug_s": null,
+        "build_tokens": null,
+        "build_tokens_note": "segment 1 usage lost at 429 termination; segment 2 subagent_tokens=259222 (not comparable)",
+        "interruptions": 1,
+        "interventions": 1,
+        "intervention_note": "resumed once after API spend-limit termination with a neutral continue message",
+        "maint_tool_calls": 32,
+        "maint_elapsed_s": 712.5,
+        "maint_tokens": 141571,
+        "maint_src_lines_added": 95,
+        "maint_src_lines_removed": 17,
+        "maint_new_tests": 18,
+        "invest_tool_calls": 24,
+        "invest_elapsed_s": 475.4,
+        "invest_tokens": 160862,
+        "workarounds": 8,
+        "core_change_requests": 7,
+        "framework_core_changes": 0,
+        "src_loc": 1429,
+        "own_test_loc": 468,
+        "own_tests_phase2": 28,
+        "hidden_suite_exec_s": 39.57,
+        "visible_suite_exec_s": 9.75
+      }
+    },
+    "baseline": {
+      "completion": "complete",
+      "phase2": {
+        "visible": {
+          "passed": 26,
+          "total": 26
+        },
+        "hidden": {
+          "passed": 114,
+          "total": 115
+        },
+        "hard_invariant_failures": [
+          "test_hidden_eligibility.py::test_h_records_outage_at_issue_blocks_dispatch [HI-1]"
+        ],
+        "distinct_HIs_violated": [
+          "HI-1"
+        ]
+      },
+      "maintenance": {
+        "completion": "complete",
+        "v2_visible": {
+          "passed": 5,
+          "total": 5
+        },
+        "v2_hidden": {
+          "passed": 10,
+          "total": 10
+        },
+        "v1_visible_after": {
+          "passed": 26,
+          "total": 26
+        },
+        "v1_hidden_after": {
+          "passed": 114,
+          "total": 115
+        },
+        "regressions": 0,
+        "fixed_incidentally": 0
+      },
+      "investigation": {
+        "score": 48,
+        "max": 48,
+        "incorrect_conclusions": 0,
+        "incidents": 4,
+        "scored_blind": true
+      },
+      "effort": {
+        "build_tool_calls": 34,
+        "build_active_elapsed_s": 658,
+        "build_setup_s": 130,
+        "build_impl_plus_debug_s": 528,
+        "build_debug_s": null,
+        "build_tokens": 176412,
+        "build_tokens_note": "subagent_tokens as reported by the orchestrator; semantics not documented",
+        "interruptions": 0,
+        "interventions": 0,
+        "intervention_note": null,
+        "maint_tool_calls": 20,
+        "maint_elapsed_s": 371.9,
+        "maint_tokens": 116643,
+        "maint_src_lines_added": 52,
+        "maint_src_lines_removed": 13,
+        "maint_new_tests": 13,
+        "invest_tool_calls": 23,
+        "invest_elapsed_s": 349.0,
+        "invest_tokens": 130660,
+        "workarounds": 2,
+        "core_change_requests": 0,
+        "framework_core_changes": null,
+        "src_loc": 1398,
+        "own_test_loc": 507,
+        "own_tests_phase2": 45,
+        "hidden_suite_exec_s": 4.49,
+        "visible_suite_exec_s": 0.97
+      }
+    }
+  },
+  "notes": [
+    "Elapsed times are agent wall-clock from transcript timestamps, not developer hours.",
+    "Suite execution time is harness wall time for the same tests (execution latency), separate from agent elapsed time.",
+    "Both arms fail the same held-out test tagged HI-1 for the same reason (spec ambiguity flagged by both builders before scoring); no unauthorized downstream effect occurred.",
+    "Investigation reached ceiling (48/48 both arms): the incident set did not discriminate."
+  ]
+}

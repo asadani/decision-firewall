@@ -1,0 +1,1151 @@
+[
+ {
+  "nodeid": "test_hidden_audit.py::test_h_tamper_detected[add-field]",
+  "req": [
+   "R10"
+  ],
+  "hard": [
+   "HI-6"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_tamper_detected[amount]",
+  "req": [
+   "R10"
+  ],
+  "hard": [
+   "HI-6"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_tamper_detected[approver]",
+  "req": [
+   "R10"
+  ],
+  "hard": [
+   "HI-6"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_tamper_detected[auth-approver]",
+  "req": [
+   "R10"
+  ],
+  "hard": [
+   "HI-6"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_tamper_detected[delete-event]",
+  "req": [
+   "R10"
+  ],
+  "hard": [
+   "HI-6"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_tamper_detected[downstream-key]",
+  "req": [
+   "R10"
+  ],
+  "hard": [
+   "HI-6"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_tamper_detected[exec-state]",
+  "req": [
+   "R10"
+  ],
+  "hard": [
+   "HI-6"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_tamper_detected[exported-at]",
+  "req": [
+   "R10"
+  ],
+  "hard": [
+   "HI-6"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_tamper_detected[integrity]",
+  "req": [
+   "R10"
+  ],
+  "hard": [
+   "HI-6"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_tamper_detected[policy]",
+  "req": [
+   "R10"
+  ],
+  "hard": [
+   "HI-6"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_tamper_detected[remove-field]",
+  "req": [
+   "R10"
+  ],
+  "hard": [
+   "HI-6"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_tamper_detected[reorder-events]",
+  "req": [
+   "R10"
+  ],
+  "hard": [
+   "HI-6"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_tamper_detected[revision]",
+  "req": [
+   "R10"
+  ],
+  "hard": [
+   "HI-6"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_tamper_detected[status]",
+  "req": [
+   "R10"
+  ],
+  "hard": [
+   "HI-6"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_tamper_detected[vendor-version]",
+  "req": [
+   "R10"
+  ],
+  "hard": [
+   "HI-6"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_bundle_verifies_on_fresh_instance_and_after_later_events",
+  "req": [
+   "R10"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_verify_rejects_junk_without_raising[empty]",
+  "req": [
+   "R10"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_verify_rejects_junk_without_raising[no-integrity]",
+  "req": [
+   "R10"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_verify_rejects_junk_without_raising[null-integrity]",
+  "req": [
+   "R10"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_bundle_content_approved_issued",
+  "req": [
+   "R10"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_bundle_content_unknown_then_reconciled",
+  "req": [
+   "R10"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_bundle_content_denied_and_amended",
+  "req": [
+   "R10"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_bundle_records_reapproval_after_evidence_change",
+  "req": [
+   "R10"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_rejected_operation_changes_nothing",
+  "req": [
+   "R11"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_audit.py::test_h_status_reason_code_shapes",
+  "req": [
+   "R11"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_binding_lifecycle.py::test_h_budget_record_change_invalidates_approval",
+  "req": [
+   "R5"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_binding_lifecycle.py::test_h_vendor_restored_values_still_invalidate",
+  "req": [
+   "R5"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_binding_lifecycle.py::test_h_auto_authorization_refreshed_after_evidence_change",
+  "req": [
+   "R5"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_binding_lifecycle.py::test_h_effect_matches_amended_content",
+  "req": [
+   "R5"
+  ],
+  "hard": [
+   "HI-5"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_binding_lifecycle.py::test_h_amend_to_other_vendor_after_approval",
+  "req": [
+   "R5"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_binding_lifecycle.py::test_h_amend_identical_content_still_discards_approval",
+  "req": [
+   "R5"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_binding_lifecycle.py::test_h_approval_on_changed_evidence_binds_new_versions",
+  "req": [
+   "R5"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_binding_lifecycle.py::test_h_expiry_boundary_just_before",
+  "req": [
+   "R6"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_binding_lifecycle.py::test_h_expiry_measured_from_approval",
+  "req": [
+   "R6"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_binding_lifecycle.py::test_h_expiry_from_approval_not_submission",
+  "req": [
+   "R6"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_binding_lifecycle.py::test_h_expiry_survives_restart",
+  "req": [
+   "R6"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_binding_lifecycle.py::test_h_expired_is_terminal",
+  "req": [
+   "R6"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_binding_lifecycle.py::test_h_revocation_of_approved_request_survives_restart",
+  "req": [
+   "R6"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_binding_lifecycle.py::test_h_revoke_permissions",
+  "req": [
+   "R6"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_binding_lifecycle.py::test_h_revoke_after_issue_not_allowed",
+  "req": [
+   "R6"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_binding_lifecycle.py::test_h_revoke_pending_approval_blocks_later_approval",
+  "req": [
+   "R6"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_budget_idempotency.py::test_h_concurrency_stress_mixed_amounts",
+  "req": [
+   "R7"
+  ],
+  "hard": [
+   "HI-4"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_budget_idempotency.py::test_h_unknown_outcome_keeps_budget_reserved_across_restart",
+  "req": [
+   "R7"
+  ],
+  "hard": [
+   "HI-4"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_budget_idempotency.py::test_h_pending_downstream_counts_against_budget",
+  "req": [
+   "R7"
+  ],
+  "hard": [
+   "HI-4"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_budget_idempotency.py::test_h_failed_via_reconcile_releases_budget",
+  "req": [
+   "R7"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_budget_idempotency.py::test_h_non_dispatched_requests_do_not_consume_budget",
+  "req": [
+   "R7"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_budget_idempotency.py::test_h_budget_evaluated_at_submission",
+  "req": [
+   "R7"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_budget_idempotency.py::test_h_budget_lowered_after_authorization",
+  "req": [
+   "R7"
+  ],
+  "hard": [
+   "HI-4"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_budget_idempotency.py::test_h_concurrent_issue_of_same_request",
+  "req": [
+   "R7"
+  ],
+  "hard": [
+   "HI-3"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_budget_idempotency.py::test_h_departments_are_independent",
+  "req": [
+   "R7"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_budget_idempotency.py::test_h_idempotency_scoped_per_caller",
+  "req": [
+   "R8"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_budget_idempotency.py::test_h_conflicting_key_reuse_never_creates_second_effect",
+  "req": [
+   "R8"
+  ],
+  "hard": [
+   "HI-3"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_budget_idempotency.py::test_h_idempotency_durable_after_crash_restart",
+  "req": [
+   "R8"
+  ],
+  "hard": [
+   "HI-3"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_budget_idempotency.py::test_h_concurrent_same_key_submissions",
+  "req": [
+   "R8"
+  ],
+  "hard": [
+   "HI-3"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_budget_idempotency.py::test_h_replay_returns_current_state_and_compares_original_payload",
+  "req": [
+   "R8"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_budget_idempotency.py::test_h_denied_request_consumes_key",
+  "req": [
+   "R8"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_po[bool]",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_po[zero]",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_po[negative]",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_po[too-large]",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_po[string-amount]",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_po[missing-field]",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_po[cur-2]",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_po[cur-4]",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_po[cur-int]",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_po[desc-empty]",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_po[desc-201]",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_po[vendor-int]",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_po[dept-empty]",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_idempotency_key[empty]",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_idempotency_key[129]",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_idempotency_key[none]",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_boundary_values_are_valid",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_invalid_submission_does_not_consume_key",
+  "req": [
+   "R8"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_non_usd_threshold_applies_in_minor_units",
+  "req": [
+   "R2"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_budget_currency_change_after_authorization",
+  "req": [
+   "R2"
+  ],
+  "hard": [
+   "HI-2"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_missing_budget_record",
+  "req": [
+   "R1"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_records_outage_needs_evidence",
+  "req": [
+   "R1"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_records_outage_at_issue_blocks_dispatch",
+  "req": [
+   "R1"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": false,
+  "failures": [
+   "call: test_hidden_eligibility.py:140: AssertionError"
+  ]
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_vendor_deleted_after_authorization",
+  "req": [
+   "R1"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_reevaluate_rules",
+  "req": [
+   "R1"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_all_applicable_restrictions_reported",
+  "req": [
+   "R3"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_category_not_offered_by_vendor",
+  "req": [
+   "R3"
+  ],
+  "hard": [
+   "HI-2"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_vendor_blocked_after_auto_authorization",
+  "req": [
+   "R3"
+  ],
+  "hard": [
+   "HI-2"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_sanctioned_after_approval_blocks_issue",
+  "req": [
+   "R3"
+  ],
+  "hard": [
+   "HI-2"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_department_category_withdrawn_after_approval",
+  "req": [
+   "R3"
+  ],
+  "hard": [
+   "HI-2"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_approval_cannot_waive_sanction_before_approval",
+  "req": [
+   "R3"
+  ],
+  "hard": [
+   "HI-2"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_unauthorized_approvers[dave-NOT_PERMITTED]",
+  "req": [
+   "R4"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_unauthorized_approvers[alice-NOT_PERMITTED]",
+  "req": [
+   "R4"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_unauthorized_approvers[oscar-NOT_PERMITTED]",
+  "req": [
+   "R4"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_unauthorized_approvers[ivan-UNKNOWN_CALLER]",
+  "req": [
+   "R4"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_unauthorized_approvers[ghost-UNKNOWN_CALLER]",
+  "req": [
+   "R4"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_unauthorized_approval_attempts_never_issue",
+  "req": [
+   "R4"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_self_approval_by_dual_role_never_issues",
+  "req": [
+   "R4"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_self_rejection_rejected",
+  "req": [
+   "R4"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_rejected_request_is_terminal",
+  "req": [
+   "R4"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_approve_requires_needs_approval_state",
+  "req": [
+   "R4"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_approver_deactivated_before_issue",
+  "req": [
+   "R4"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_threshold_reached_by_amend",
+  "req": [
+   "R4"
+  ],
+  "hard": [
+   "HI-1"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_issue_permissions",
+  "req": [
+   "R11"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_amend_permissions_and_states",
+  "req": [
+   "R11"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_eligibility.py::test_h_not_found",
+  "req": [
+   "R11"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_execution.py::test_h_crash_after_accept_then_reconcile",
+  "req": [
+   "R9"
+  ],
+  "hard": [
+   "HI-3"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_execution.py::test_h_crash_before_receive_then_reconcile",
+  "req": [
+   "R9"
+  ],
+  "hard": [
+   "HI-5"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_execution.py::test_h_lost_response_is_not_failure",
+  "req": [
+   "R9"
+  ],
+  "hard": [
+   "HI-5"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_execution.py::test_h_lost_request_is_not_success",
+  "req": [
+   "R9"
+  ],
+  "hard": [
+   "HI-5"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_execution.py::test_h_queued_order_stays_unknown_until_settled",
+  "req": [
+   "R9"
+  ],
+  "hard": [
+   "HI-5"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_execution.py::test_h_queued_order_rejected_later",
+  "req": [
+   "R9"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_execution.py::test_h_lookup_unavailable_keeps_unknown",
+  "req": [
+   "R9"
+  ],
+  "hard": [
+   "HI-5"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_execution.py::test_h_reconcile_never_resubmits",
+  "req": [
+   "R9"
+  ],
+  "hard": [
+   "HI-3"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_execution.py::test_h_definitive_rejection_is_terminal",
+  "req": [
+   "R9"
+  ],
+  "hard": [
+   "HI-3"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_execution.py::test_h_issue_after_issued_is_idempotent",
+  "req": [
+   "R9"
+  ],
+  "hard": [
+   "HI-3"
+  ],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_execution.py::test_h_restart_does_not_dispatch_or_resolve",
+  "req": [
+   "R9"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_execution.py::test_h_reconcile_permissions_and_noop",
+  "req": [
+   "R9"
+  ],
+  "hard": [],
+  "passed": true,
+  "failures": []
+ },
+ {
+  "nodeid": "test_hidden_execution.py::test_h_many_unknowns_reconciled_after_restart",
+  "req": [
+   "R9"
+  ],
+  "hard": [
+   "HI-3"
+  ],
+  "passed": true,
+  "failures": []
+ }
+]
