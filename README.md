@@ -14,7 +14,12 @@ Proposals can originate from a human, deterministic program or model. Model infe
 
 Working with a coding agent? Start with [AGENTS.md](AGENTS.md) and the [agent entry guide](docs/framework/agent-guide.md) for setup, integration steps and verification requirements.
 
-![Framework architecture](docs/diagrams/framework.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/diagrams/framework-dark.svg">
+  <img alt="Decision Firewall: proposal and optional assessment, trusted evidence, policy and review, bound authorization, reserved resources, idempotent execution and reconciliation, with linked audit records." src="docs/diagrams/framework.svg">
+</picture>
+
+[Interactive architecture walkthrough](docs/diagrams/framework.html) — download and open locally for step-by-step flow, play/pause and theme controls. GitHub displays the HTML source. [Diagram sources and rendering](docs/diagrams/README.md).
 
 ## What you can build
 

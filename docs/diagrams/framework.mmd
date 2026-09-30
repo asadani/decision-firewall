@@ -1,3 +1,4 @@
+%% Editable topology. Custom light/dark SVG and HTML layout: scripts/render-framework.mjs
 flowchart TB
     App[Your application / CLI] --> Model[DecisionModel adapter]
     Model --> Assessment[Typed assessment signals]
@@ -26,4 +27,5 @@ flowchart TB
     Core --> DB[(SQLite + linked audit)]
     Refunds[Refund reference domain] -. implements .-> Pack
     Access[Access reference domain] -. implements .-> Pack
+    Deployment[Deployment reference domain] -. implements .-> Pack
     Custom[Your use case] -. implements .-> Pack

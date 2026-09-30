@@ -2,7 +2,12 @@
 
 `DecisionFirewall` accepts registered `DomainPack` instances and validated assessments. Packs define business semantics; core lifecycle code never imports domains or model libraries. A test enforces that boundary.
 
-![Architecture](../diagrams/framework.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../diagrams/framework-dark.svg">
+  <img alt="Decision Firewall architecture: proposals, trusted evidence, policy, bound authorization, idempotent execution and signed records." src="../diagrams/framework.svg">
+</picture>
+
+[Interactive walkthrough and diagram sources](../diagrams/README.md).
 
 The core owns submission revisions, assessment snapshots, identity checks, policy snapshots, reviews, authorization bindings, reservations, execution attempts, reconciliation and signed receipts. Domain code owns action validation, evidence resolution, deterministic rules and executor implementation. Applications choose trusted plugins and actors.
 

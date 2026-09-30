@@ -64,3 +64,7 @@ Shared base template, panels, notices, tables, labels, buttons, badges, and time
 
 Keep simulated-money labels visible. Preserve explicit unknown values and original evidence. Do not call approval execution, hide critical errors in a toast, infer safety from color, or style unknown as successful. Respect reduced motion and forced colors. Keyboard focus must remain visible.
 
+## Documentation architecture illustration
+
+The framework illustration is a separate documentation surface; the inspector tokens above remain unchanged. Its canonical token and layout owner is `scripts/render-framework.mjs`, generating opaque light/dark SVGs and a standalone HTML walkthrough. Use slate backgrounds, blue lifecycle emphasis and amber bound authorization. All meanings have text labels. Local Segoe UI/Bahnschrift fonts match the inspector. Six numbered stages provide the signature; animation is user-initiated and limited to a current connector, with reduced-motion support. The README selects a static asset for the reader's color scheme. On narrow screens the diagram owns horizontal scrolling and descriptions reflow below it.
+

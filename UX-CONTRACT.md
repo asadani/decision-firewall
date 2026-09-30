@@ -37,3 +37,7 @@ Native links/buttons/forms/tables, associated labels, visible focus, live status
 
 English interface; INR labels and UTC audit timestamps are explicit. Desktop and narrow layouts share components. Reduced motion, forced colors, and print styles are supported. Browser verification covers empty/error, review success/stale/validation, keyboard, open select, narrow detail, and evaluation views.
 
+## Documentation walkthrough
+
+`docs/diagrams/framework.html` explains the lifecycle in [framework architecture](docs/framework/architecture.md) and [product direction](docs/framework/product-direction.md). It does not execute actions, load private data or report live status. Native buttons select stages, advance, reset, play/pause and switch themes. Playback is opt-in, stops at completion or page hiding, and never changes governance state. Reduced motion disables connector animation. The focused scroll region retains the full architecture on narrow screens; text descriptions reflow. No server or asynchronous data loading is involved. GitHub README embeds stay static and use explicit theme-specific SVGs.
+
