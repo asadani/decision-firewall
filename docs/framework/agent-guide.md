@@ -56,7 +56,7 @@ Deliver the adapter, runnable example, relevant tests and instructions covering 
 
 ## Task B: continue framework development
 
-Use the [roadmap](../../ROADMAP.md) and the requested task to select a bounded change. Conformance and offline incident reconstruction are implemented; see [release tools](release-tools.md). Feature expansion is frozen pending independent adoption evidence. Preserve existing `detail` / CLI `inspect`, receipt and replay operations.
+Use the [roadmap](../../ROADMAP.md) and the requested task to select a bounded change. Conformance and offline incident reconstruction are implemented; see [release tools](release-tools.md). The independent agent pilot is complete; only confirmed-defect maintenance is in scope. Read the 0.3.1 migration notes before changing approval callers. Preserve existing `detail` / CLI `inspect`, receipt and replay operations.
 
 Preserve public APIs, old signed payloads and historical benchmark artifacts. Version semantic changes and test compatibility. Do not add general orchestration, model tuning or retrieval infrastructure merely to broaden the framework. Preserve unknown execution outcomes until authoritative resolution.
 

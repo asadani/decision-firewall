@@ -41,8 +41,14 @@ def setup(home, *, mode="success", environment="staging", clock=None):
 
 def test_production_review_receipt_replay(tmp_path):
     fw, _, rid, _, _ = setup(tmp_path, environment="production")
-    assert fw.evaluate(rid)["result"]["disposition"] == "REQUIRE_REVIEW"
-    result = fw.review(rid, Review(decision="approve", reason="Release approved"), revision=1)
+    seen = fw.evaluate(rid)
+    assert seen["result"]["disposition"] == "REQUIRE_REVIEW"
+    result = fw.review(
+        rid,
+        Review(decision="approve", reason="Release approved"),
+        revision=1,
+        evaluation_id=seen["evaluation_id"],
+    )
     assert fw.execute(result["authorization"])["status"] == "SUCCEEDED"
     assert fw.replay(result["evaluation_id"])["matches"]
     assert verify_receipt(fw.receipt(), fw.store.public)
@@ -51,7 +57,8 @@ def test_production_review_receipt_replay(tmp_path):
 @pytest.mark.parametrize("change", ["unapproved", "service", "environment", "frozen", "missing"])
 def test_review_cannot_waive_registry_restrictions(tmp_path, change):
     fw, ledger, rid, proposal, assessment = setup(tmp_path, environment="production")
-    assert fw.evaluate(rid)["result"]["disposition"] == "REQUIRE_REVIEW"
+    seen = fw.evaluate(rid)
+    assert seen["result"]["disposition"] == "REQUIRE_REVIEW"
     if change == "frozen":
         ledger.register("environment", "production", {"enabled": False})
     elif change == "missing":
@@ -59,7 +66,8 @@ def test_review_cannot_waive_registry_restrictions(tmp_path, change):
             update={"action": {**proposal.action, "artifact": "sha256:" + "b" * 64}}
         )
         rid = fw.submit(proposal, assessment)
-        assert fw.evaluate(rid)["result"]["disposition"] == "REQUIRE_EVIDENCE"
+        seen = fw.evaluate(rid)
+        assert seen["result"]["disposition"] == "REQUIRE_EVIDENCE"
     else:
         ledger.register(
             "artifact",
@@ -70,7 +78,22 @@ def test_review_cannot_waive_registry_restrictions(tmp_path, change):
                 "environments": ["staging"] if change == "environment" else ["production"],
             },
         )
-    result = fw.review(rid, Review(decision="approve", reason="Attempt override"), revision=1)
+    if change != "missing":
+        with pytest.raises(FirewallError, match="snapshot changed"):
+            fw.review(
+                rid,
+                Review(decision="approve", reason="Attempt override"),
+                revision=1,
+                evaluation_id=seen["evaluation_id"],
+            )
+        result = fw.evaluate(rid)
+    else:
+        result = fw.review(
+            rid,
+            Review(decision="approve", reason="Attempt override"),
+            revision=1,
+            evaluation_id=seen["evaluation_id"],
+        )
     assert result["authorization"] is None
     assert result["result"]["disposition"] == (
         "REQUIRE_EVIDENCE" if change == "missing" else "DENY"

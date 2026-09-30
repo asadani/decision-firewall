@@ -103,6 +103,7 @@ class Framework:
         return {
             "id": rid,
             "token": evaluated["authorization"],
+            "evaluation_id": evaluated["evaluation_id"],
             "disposition": "ALLOW"
             if evaluated["result"]["disposition"] == "ALLOW_WITH_CONSTRAINTS"
             else evaluated["result"]["disposition"],
@@ -115,6 +116,7 @@ class Framework:
             handle["id"],
             Review(decision="approve", reason="Authorized synthetic review"),
             revision=1,
+            evaluation_id=handle["evaluation_id"],
         )
         handle.update(token=result["authorization"], disposition=result["result"]["disposition"])
 

@@ -168,9 +168,17 @@ def run_conformance(factory: Callable[[Path, str], ConformanceFixture]) -> dict:
                         )
                         if hook:
                             hook()
-                        result = fw.review(
-                            rid, Review(decision="approve", reason="Test approval"), revision=1
-                        )
+                        try:
+                            result = fw.review(
+                                rid,
+                                Review(decision="approve", reason="Test approval"),
+                                revision=1,
+                                evaluation_id=result["evaluation_id"],
+                            )
+                        except FirewallError:
+                            if check != "review_cannot_override":
+                                raise
+                            result = fw.evaluate(rid)
                         if check == "review_cannot_override":
                             require(result["authorization"] is None, "Approval waived hard rule")
                     if check != "review_cannot_override":

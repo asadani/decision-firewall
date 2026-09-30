@@ -1,5 +1,7 @@
 # Conformance checks and incident reconstruction
 
+Status after independent evaluation: reference implementation and conformance kit, with no adoption advantage established. The [0.3.1 corrective release](../verification/0.3.1/README.md) supersedes the earlier test counts below and documents the approval API migration. Historical measurements remain labelled as such.
+
 These core-only tools are the bounded release-candidate deliverables. They do not require a model, telemetry service or browser. Existing application APIs and signed record formats are unchanged.
 
 ## Run conformance checks

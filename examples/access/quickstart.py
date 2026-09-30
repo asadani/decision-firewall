@@ -16,9 +16,13 @@ request = fw.submit(
     ),
     Assessment(provider="fixture", model="example", revision="1"),
 )
-assert fw.evaluate(request)["result"]["disposition"] == "REQUIRE_REVIEW"
+seen = fw.evaluate(request)
+assert seen["result"]["disposition"] == "REQUIRE_REVIEW"
 evaluation = fw.review(
-    request, Review(decision="approve", reason="Confirmed on-call assignment"), revision=1
+    request,
+    Review(decision="approve", reason="Confirmed on-call assignment"),
+    revision=1,
+    evaluation_id=seen["evaluation_id"],
 )
 print(fw.execute(evaluation["authorization"]))
 assert fw.replay(evaluation["evaluation_id"])["matches"]

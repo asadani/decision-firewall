@@ -109,8 +109,10 @@ fw = DecisionFirewall(home, [create_domain(home)])
 rid = fw.submit(Proposal(domain="documents", message="Publish my draft",
                         action={"title": "Hello", "destination": "sandbox"}),
                 Assessment(provider="fixture", model="example", revision="1"))
-assert fw.evaluate(rid)["result"]["disposition"] == "REQUIRE_REVIEW"
-evaluation = fw.review(rid, Review(decision="approve", reason="Reviewed the draft"), revision=1)
+seen = fw.evaluate(rid)
+assert seen["result"]["disposition"] == "REQUIRE_REVIEW"
+evaluation = fw.review(rid, Review(decision="approve", reason="Reviewed the draft"), revision=1,
+                       evaluation_id=seen["evaluation_id"])
 print(fw.execute(evaluation["authorization"]))
 assert fw.replay(evaluation["evaluation_id"])["matches"]
 assert verify_receipt(fw.receipt(), fw.store.public)

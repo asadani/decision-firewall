@@ -37,7 +37,12 @@ def main():
         Assessment(provider="fixture", model="structured-deployment", revision="1"),
     )
     evaluation = fw.evaluate(rid)
-    approved = fw.review(rid, Review(decision="approve", reason="Release reviewed"), revision=1)
+    approved = fw.review(
+        rid,
+        Review(decision="approve", reason="Release reviewed"),
+        revision=1,
+        evaluation_id=evaluation["evaluation_id"],
+    )
     attempt = fw.execute(approved["authorization"])
     restarted = DecisionFirewall(args.home, [deployment_domain(args.home)])
     outcome = restarted.reconcile(approved["authorization"]["payload"]["id"])

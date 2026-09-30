@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.3.1 — Bounded corrective release
+
+Accepted the independent pilot's recommendation to narrow to a tested reference
+implementation and conformance kit. Approvals now require the inspected evaluation
+ID and matching material facts; old unbound approvals cannot authorize dispatch.
+Latest-review selection prevents resurrection of older approvals, and rejection
+remains effective for its revision. Oversized integer outcome metadata is recorded
+losslessly without wedging completed effects. Added independent-review regressions
+and an isolated nine-fault mutation check. See the upgrade notes before using review.
+No global-lock redesign, new domains, paid benchmarks or adoption study is included.
+
 ## Unreleased — Preparation and public benchmarks
 
 Added a core-only, 17-check simulated integration conformance runner with explicit

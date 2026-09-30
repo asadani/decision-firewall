@@ -4,6 +4,7 @@ import json
 import os
 import subprocess
 import tempfile
+import tomllib
 import venv
 from pathlib import Path
 
@@ -11,7 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
-    wheel = max((ROOT / "dist").glob("decision_firewall-0.3.0-*.whl"))
+    version = tomllib.loads((ROOT / "pyproject.toml").read_text())["project"]["version"]
+    wheel = max((ROOT / "dist").glob(f"decision_firewall-{version}-*.whl"))
     with tempfile.TemporaryDirectory(prefix="firewall-core-") as directory:
         root = Path(directory)
         venv.EnvBuilder(with_pip=True).create(root / "env")

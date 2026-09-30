@@ -1,0 +1,82 @@
+{
+  "scope": "Nine fault classes from the independent review; targeted corrective tests only",
+  "generation_mutation": "M9 updated for latest-review-first selection; same removed invariant",
+  "runtime_sha256": "8001f1eac8b7eb82296c4653b267d59e932568b49f0b231c8f82f5f5e57ed98b",
+  "tests_sha256": "11259e86d582c8912c267835c534cbd25fbb04624ddbff5601e91256fa311719",
+  "python": "3.12.14",
+  "observations": [
+    {
+      "name": "baseline",
+      "status": "PASS",
+      "failed_tests": []
+    },
+    {
+      "name": "M1_second_dispatch_validation",
+      "status": "KILLED",
+      "failed_tests": [
+        "FAILED test_corrective_release.py::test_core_second_validation_prevents_dispatch"
+      ]
+    },
+    {
+      "name": "M2_unknown_reservations",
+      "status": "KILLED",
+      "failed_tests": [
+        "FAILED test_corrective_release.py::test_unknown_claims_remain_reserved - Asse..."
+      ]
+    },
+    {
+      "name": "M3_reconciliation_fingerprint",
+      "status": "KILLED",
+      "failed_tests": [
+        "FAILED test_corrective_release.py::test_reconcile_requires_original_pack - Fa..."
+      ]
+    },
+    {
+      "name": "M4_permit_expiry",
+      "status": "KILLED",
+      "failed_tests": [
+        "FAILED test_corrective_release.py::test_invalid_permit_does_not_dispatch[expired]"
+      ]
+    },
+    {
+      "name": "M5_approval_evidence",
+      "status": "KILLED",
+      "failed_tests": [
+        "FAILED test_corrective_release.py::test_rejection_never_resurrects_prior_approval[deactivate]"
+      ]
+    },
+    {
+      "name": "M6_approval_expiry",
+      "status": "KILLED",
+      "failed_tests": [
+        "FAILED test_corrective_release.py::test_approval_invalidated_before_new_permit[expiry]"
+      ]
+    },
+    {
+      "name": "M7_pending_evaluation",
+      "status": "KILLED",
+      "failed_tests": [
+        "FAILED test_corrective_release.py::test_evaluation_refuses_unresolved_execution"
+      ]
+    },
+    {
+      "name": "M8_revocation",
+      "status": "KILLED",
+      "failed_tests": [
+        "FAILED test_corrective_release.py::test_invalid_permit_does_not_dispatch[revoked]"
+      ]
+    },
+    {
+      "name": "M9_approval_generation",
+      "status": "KILLED",
+      "failed_tests": [
+        "FAILED test_corrective_release.py::test_approval_invalidated_before_new_permit[generation]"
+      ]
+    }
+  ],
+  "counts": {
+    "KILLED": 9,
+    "SURVIVED": 0,
+    "ERROR": 0
+  }
+}

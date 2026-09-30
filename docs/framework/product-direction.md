@@ -1,5 +1,7 @@
 # Product direction: authorization and recovery for consequential actions
 
+Current status: the [independent pilot](../evaluations/2026-09-29/COMPARISON.md) recommends **narrow**. Keep a tested reference implementation and conformance kit. The design rationale below is historical; it does not authorize feature expansion or make adoption claims. See the [corrective release](../verification/0.3.1/README.md).
+
 ## Decision
 
 Focus Decision Firewall on a reusable execution lifecycle for actions that need explicit permission, reliable recovery and an explanation afterward. Its central contract is authorization bound to an exact action and its supporting facts, with durable tracking through execution and reconciliation.
@@ -26,7 +28,7 @@ The current embedded SQLite runtime does not promise distributed coordination. A
 
 ## Immediate deliverables and acceptance
 
-The [release tools](release-tools.md) now provide bounded conformance checks and offline incident reconstruction using the existing integration API. The scope below records the intended deliverables; use that guide for actual coverage and limits. Broader feature expansion is frozen pending the independent adoption exercise.
+The [release tools](release-tools.md) now provide bounded conformance checks and offline incident reconstruction using the existing integration API. The scope below records the intended deliverables; use that guide for actual coverage and limits. The independent agent pilot is complete and recommends narrowing; feature expansion and adoption claims have stopped.
 
 1. **Minimum integration path.** Document one model-free SDK path with explicit caller, evidence, policy and executor responsibilities. Exercise it with refunds and access without changing core for either domain. Keep optional conveniences separate from the required contract.
 2. **Conformance suite.** Let domain/executor authors run reusable checks for action binding, mandatory denials, review limits, expiry/staleness, resource contention, definitive failure, ambiguous success, restart and idempotent reconciliation. Report each applicable invariant and unsupported capability. A green happy path alone is insufficient.

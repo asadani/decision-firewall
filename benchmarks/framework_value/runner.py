@@ -94,6 +94,7 @@ class Governed:
         return {
             "id": rid,
             "token": evaluation["authorization"],
+            "evaluation_id": evaluation["evaluation_id"],
             "disposition": normalize(evaluation["result"]["disposition"]),
         }
 
@@ -104,6 +105,7 @@ class Governed:
             handle["id"],
             Review(decision="approve", reason="Benchmark authorized reviewer"),
             revision=1,
+            evaluation_id=handle["evaluation_id"],
         )
         handle.update(
             token=result["authorization"], disposition=normalize(result["result"]["disposition"])

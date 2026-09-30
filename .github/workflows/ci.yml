@@ -17,6 +17,7 @@ jobs:
       - run: python -m ruff format --check src tests scripts examples benchmarks
       - run: python -m mypy src/decision_firewall
       - run: python -m pytest -q
+      - run: python scripts/check-safety-mutations.py --output .runtime-mutations/report.json
       - run: python -m build
       - run: firewall benchmark runs/fixture --provider fixture --variations 0
       - run: firewall framework --domain access demo

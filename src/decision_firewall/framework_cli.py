@@ -113,12 +113,20 @@ def evaluate(ctx: typer.Context, request_id: str, save: Path | None = None):
 
 
 @app.command()
-def review(ctx: typer.Context, request_id: str, decision: str, reason: str, revision: int):
+def review(
+    ctx: typer.Context,
+    request_id: str,
+    decision: str,
+    reason: str,
+    revision: int,
+    evaluation_id: str | None = None,
+):
     output(
         ctx.obj.review(
             request_id,
             Review.model_validate({"decision": decision, "reason": reason}),
             revision=revision,
+            evaluation_id=evaluation_id,
         )
     )
 

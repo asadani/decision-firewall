@@ -39,9 +39,13 @@ def access(tmp_path, hours=4, mode="success", clock=None):
 
 def test_non_financial_lifecycle(tmp_path):
     fw, rid, domain, _ = access(tmp_path, hours=24)
-    assert fw.evaluate(rid)["result"]["disposition"] == "REQUIRE_REVIEW"
+    seen = fw.evaluate(rid)
+    assert seen["result"]["disposition"] == "REQUIRE_REVIEW"
     evaluated = fw.review(
-        rid, Review(decision="approve", reason="Temporary on-call duty"), revision=1
+        rid,
+        Review(decision="approve", reason="Temporary on-call duty"),
+        revision=1,
+        evaluation_id=seen["evaluation_id"],
     )
     assert fw.execute(evaluated["authorization"])["status"] == "SUCCEEDED"
     assert fw.detail(rid)["status"] == "COMPLETED"
@@ -164,14 +168,16 @@ def test_review_cannot_override_hard_constraints(tmp_path):
         message="Access",
     )
     rid = fw.submit(p, assessment())
-    fw.evaluate(rid)
+    seen = fw.evaluate(rid)
     directory["alice"]["active"] = False
-    assert (
-        fw.review(rid, Review(decision="approve", reason="Attempted override"), revision=1)[
-            "authorization"
-        ]
-        is None
-    )
+    with pytest.raises(FirewallError, match="snapshot changed"):
+        fw.review(
+            rid,
+            Review(decision="approve", reason="Attempted override"),
+            revision=1,
+            evaluation_id=seen["evaluation_id"],
+        )
+    assert fw.evaluate(rid)["authorization"] is None
     assert fw.detail(rid)["status"] == "DENY"
 
 

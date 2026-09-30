@@ -17,6 +17,7 @@ from .contracts import (
     RuntimeIdentity,
 )
 from .observation import component, observed, set_correlation
+from .outcomes import audit_outcome
 from .plugins import DecisionModel, DomainPack
 from .policy import evaluate_context
 from .preparation import PreparationResult, PreparationSpec, PreparedModel
@@ -248,24 +249,45 @@ class DecisionFirewall:
             )
         }
         approval = db.execute(
-            "SELECT a.* FROM approvals a JOIN identities i ON i.name=a.reviewer "
-            "WHERE a.request_id=? AND a.revision=? AND i.active=1 AND i.role='reviewer' "
-            "AND i.version=a.generation ORDER BY a.id DESC LIMIT 1",
+            "SELECT a.*,i.active AS reviewer_active,i.role AS reviewer_role,"
+            "i.version AS reviewer_version FROM approvals a LEFT JOIN identities i ON i.name=a.reviewer "
+            "WHERE a.request_id=? AND a.revision=? ORDER BY a.id DESC LIMIT 1",
             (row["id"], row["revision"]),
         ).fetchone()
+        recorded_review = Review.model_validate_json(approval["body"]) if approval else None
+        review_event = db.execute(
+            "SELECT body FROM events WHERE request_id=? AND json_extract(body,'$.kind')='review_recorded' "
+            "ORDER BY seq DESC LIMIT 1",
+            (row["id"],),
+        ).fetchone()
+        provenance = json.loads(review_event["body"])["data"] if review_event else {}
         valid = (
             approval
+            and recorded_review is not None
+            and (
+                recorded_review.decision != "approve"
+                or (
+                    provenance.get("approval_id") == approval["id"]
+                    and bool(provenance.get("evaluation_id"))
+                )
+            )
+            and approval["reviewer_active"] == 1
+            and approval["reviewer_role"] == "reviewer"
+            and approval["reviewer_version"] == approval["generation"]
             and approval["expires"] > self.clock()
             and approval["evidence_hash"] == digest(evidence.model_dump())
             and approval["domain_hash"] == domain.fingerprint
         )
+        # A later review supersedes earlier ones even if its actor becomes invalid.
+        # Rejection is a durable veto for this revision, not expiring permission.
+        rejected = approval and Review.model_validate_json(approval["body"]).decision == "reject"
         context = Context(
             proposal=proposal,
             assessment=Assessment.model_validate_json(row["assessment"]),
             evidence=evidence,
             usage=usage,
             now=self.clock(),
-            review=Review.model_validate_json(approval["body"]) if valid else None,
+            review=Review.model_validate_json(approval["body"]) if valid or rejected else None,
         )
         return domain, context, approval["id"] if valid else None
 
@@ -368,7 +390,9 @@ class DecisionFirewall:
             }
 
     @observed("governance.review")
-    def review(self, rid: str, decision: Review, *, revision: int) -> dict:
+    def review(
+        self, rid: str, decision: Review, *, revision: int, evaluation_id: str | None = None
+    ) -> dict:
         with self.store.transaction() as db:
             actor = self._actor(db, self.identity.reviewer, "reviewer")
             row = self._request(db, rid)
@@ -378,7 +402,22 @@ class DecisionFirewall:
             }:
                 raise FirewallError("Stale revision or request is not awaiting review")
             domain, context, _ = self._context(db, row)
-            db.execute(
+            if decision.decision == "approve":
+                seen = db.execute(
+                    "SELECT * FROM checks WHERE request_id=? ORDER BY rowid DESC LIMIT 1", (rid,)
+                ).fetchone()
+                if not evaluation_id or not seen or seen["id"] != evaluation_id:
+                    raise FirewallError("Approval requires the latest inspected evaluation_id")
+                snapshot = json.loads(seen["context"])
+                if (
+                    snapshot is None
+                    or seen["domain_hash"] != domain.fingerprint
+                    or digest(snapshot["proposal"]) != digest(context.proposal.model_dump())
+                    or digest(snapshot["assessment"]) != digest(context.assessment.model_dump())
+                    or digest(snapshot["evidence"]) != digest(context.evidence.model_dump())
+                ):
+                    raise FirewallError("Reviewed snapshot changed; evaluate and inspect again")
+            approval_cursor = db.execute(
                 "INSERT INTO approvals (request_id,revision,reviewer,generation,evidence_hash,"
                 "domain_hash,expires,body) VALUES (?,?,?,?,?,?,?,?)",
                 (
@@ -397,7 +436,14 @@ class DecisionFirewall:
                 db,
                 rid,
                 "review_recorded",
-                {"actor": actor["name"], "revision": revision, **decision.model_dump()},
+                {
+                    "actor": actor["name"],
+                    "revision": revision,
+                    **decision.model_dump(),
+                    "evaluation_id": evaluation_id,
+                    "approval_id": approval_cursor.lastrowid,
+                    "evidence_hash": digest(context.evidence.model_dump()),
+                },
                 self.clock(),
             )
         return self.evaluate(rid)
@@ -502,6 +548,7 @@ class DecisionFirewall:
             return self._finish(db, permit, outcome)
 
     def _finish(self, db, permit, outcome):
+        outcome = audit_outcome(outcome)
         result = {
             "authorization_id": permit["id"],
             "attempt_id": permit["attempt"],

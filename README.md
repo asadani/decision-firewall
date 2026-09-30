@@ -1,6 +1,8 @@
 # Decision Firewall
 
-**A reusable authorization and recovery runtime for consequential actions.**
+**A tested reference implementation and conformance kit for action-bound authorization and recovery.**
+
+**Status: narrowed; feature expansion and adoption/migration claims have stopped.** An independent paired agent pilot found equal correctness and investigation scores, more integration workarounds and about 9× longer held-out-suite execution time in the framework arm. This is one diagnostic pilot, not a statistical or human-productivity study. Read the unchanged [comparison](docs/evaluations/2026-09-29/COMPARISON.md), [review findings](docs/evaluations/2026-09-29/findings.md) and [0.3.1 corrective release](docs/verification/0.3.1/README.md).
 
 An application proposes an action. Decision Firewall checks trusted evidence and policy, binds authorization to the exact action, tracks execution and uncertain outcomes, and records what happened. Bring your domain rules and idempotent execution adapter.
 
@@ -27,7 +29,7 @@ The core has no payment fields, refund thresholds, or model SDK imports. Model s
 
 ## When to use it
 
-Use it when several integrations need the same authorization and recovery lifecycle, such as refunds and access grants. Its central contract binds permission to an exact action and supporting facts, then tracks that action through execution and recovery.
+Use the code and conformance checks as examples for studying and testing authorization and recovery. Its central contract binds permission to an exact action and supporting facts, then tracks that action through execution and recovery. The pilot did not establish a reason to adopt this runtime over competent application controls.
 
 Classification-only applications usually do not need this runtime. An application with complete existing controls may gain little from migration. This remains an experimental local runtime; deployment identity, credential isolation and prevention of bypass paths are integration responsibilities.
 
@@ -35,7 +37,7 @@ Authorization, recovery and durable audit are the core product. History, policy 
 
 ## How we will test its value
 
-The next adoption question is: **can an engineer add another consequential-action integration, change its policy and investigate an uncertain execution more easily than with an equally capable shared application library?**
+The original adoption question was whether another integration, a policy change and an investigation would be easier than with an equally capable shared application library. The paired agent pilot established no advantage. The hypotheses below remain unproven; no follow-up study is scheduled.
 
 | Engineering goal | What would establish the benefit |
 |---|---|
@@ -47,7 +49,7 @@ The next adoption question is: **can an engineer add another consequential-actio
 
 These are **validation targets, not established results**. Equivalent, correctly implemented application controls should make the same decisions. The framework packages those controls and their supporting tools; it does not inherently improve model accuracy or policy correctness. It also adds runtime and dependency costs.
 
-These five outcomes evaluate the focused runtime; they are not reasons to expand it into a general orchestration framework. See the [engineering value and measurement plan](docs/framework/engineering-value.md) and [roadmap](ROADMAP.md). Independent developer evaluation has not yet been run.
+These five outcomes evaluate the focused runtime; they are not reasons to expand it into a general orchestration framework. See the [engineering value and measurement plan](docs/framework/engineering-value.md) and [roadmap](ROADMAP.md). The independent agent pilot is complete; human developer evaluation has not been run.
 
 ## Quickstart
 
@@ -166,7 +168,7 @@ refer/                    Original references, unchanged rights
 
 ## Development and status
 
-The bounded release-candidate tools are implemented. Broader feature expansion is paused pending an independent adoption exercise; benchmark results do not establish developer productivity.
+The bounded tools and corrective release are implemented. The independent pilot supports narrowing to a reference implementation and conformance kit; only confirmed-defect maintenance remains in scope.
 
 ```sh
 python -m pip install -r requirements-core.lock -r requirements-dev.lock

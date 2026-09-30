@@ -73,7 +73,12 @@ def test_review_and_request_status_distinct_from_execution(tmp_path, scenario, e
     _, fw, rid = make_request(tmp_path, scenario)
     result = fw.evaluate(rid)
     if scenario == "review":
-        result = fw.review(rid, Review(decision="approve", reason="Approved release"), revision=1)
+        result = fw.review(
+            rid,
+            Review(decision="approve", reason="Approved release"),
+            revision=1,
+            evaluation_id=result["evaluation_id"],
+        )
     fw.execute(result["authorization"])
     report = investigate(fw.receipt(), fw.store.public, rid)
     assert report["request_status_from_events"] == expected

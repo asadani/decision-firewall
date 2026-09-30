@@ -14,7 +14,7 @@ Primary imports from `decision_firewall`: `DecisionFirewall`, `Proposal`, `Asses
 | `submit(proposal, assessment)` | Validate action and append revision 1 |
 | `revise(id, proposal, assessment)` | Append revision; revoke unclaimed permits |
 | `evaluate(id)` | Persist snapshot and conditionally issue permit |
-| `review(id, Review(...), revision=...)` | Record authorized review and re-evaluate |
+| `review(id, Review(...), revision=..., evaluation_id=...)` | Approve the exact inspected evaluation; reject stale submissions and re-evaluate |
 | `execute(token)` | Revalidate, reserve, claim and dispatch once |
 | `reconcile(permit_id)` | Resolve original attempt without retry |
 | `revoke(permit_id)` | Revoke an unclaimed permit |
@@ -26,6 +26,8 @@ Primary imports from `decision_firewall`: `DecisionFirewall`, `Proposal`, `Asses
 | `configure_identity(name, role, active=...)` | Trusted administration; bump authority generation |
 
 `RuntimeIdentity` comes from trusted host code. Seeded roles are a local demonstration, not network authentication. Proposals/assessments forbid extra actor/permission fields.
+
+In 0.3.1, approvals require the latest inspected `evaluation_id`; CLI `framework review` accepts `--evaluation-id`. Preserve the ID from the evaluation shown to the reviewer. Do not fetch a new ID silently while submitting approval. If evidence, proposal, assessment or policy changed, re-evaluate and obtain a new review. Reject/request-evidence actions do not grant authority and may omit that ID. See [migration](migration.md) for existing approvals and permits.
 
 Options precede generic CLI commands:
 

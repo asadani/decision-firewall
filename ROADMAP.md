@@ -1,12 +1,16 @@
 # Roadmap
 
+## Current decision: narrow
+
+The [independent agent pilot](docs/evaluations/2026-09-29/COMPARISON.md) is complete. Keep a tested reference implementation and conformance kit; stop feature expansion and adoption/migration claims. Version 0.3.1 is a bounded corrective release for confirmed defects and test gaps. The global write lock and other documented design limitations remain. No new domain, paid benchmark or follow-up adoption study is scheduled. The delivery sequence below records prior work, not authorization for more development.
+
 The product is a reusable authorization and recovery runtime for consequential actions. See the [scope and adoption experiment](docs/framework/product-direction.md). Integration effort, safeguard completeness, maintenance, investigation and consistency are measures of its value, not separate product lines.
 
 ## Release-candidate delivery
 
 The [conformance and investigation tools](docs/framework/release-tools.md) are implemented: a 17-check simulated fixture runner and offline reconstruction from verified receipts. Existing integration interfaces remain unchanged. These tools have bounded coverage and do not certify production integrations.
 
-**Next: freeze feature expansion and run an independent adoption exercise.** No additional domain or paid benchmark expansion is scheduled in this phase.
+**Next: maintenance only for confirmed defects.** The independent agent exercise is complete; another study needs separate scope and authorization.
 
 ## Delivery sequence and adoption plan
 
