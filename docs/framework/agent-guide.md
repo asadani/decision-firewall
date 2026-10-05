@@ -20,6 +20,7 @@ Run from the repository root in an activated Python 3.12 virtual environment:
 ```sh
 python -m pip install -r requirements-core.lock -r requirements-dev.lock
 python -m pip install --no-deps -e .
+python -m pip install --no-deps -e ./conformance
 firewall framework --domain access demo
 firewall framework --domain refunds demo
 ```
@@ -27,6 +28,11 @@ firewall framework --domain refunds demo
 These commands use simulated effects and local runtime storage. No model download or API key is needed. Use a separate runtime directory for experiments and tests; do not reuse a user's database without task-specific authorization. Do not read or print `.env` contents.
 
 ## Task A: integrate a new use case
+
+If the task is to **test existing controls without runtime adoption**, start with
+the [independent conformance pilot](../../conformance/README.md) instead. Its separate
+package requires a thin test adapter and a simulated effect oracle. Do not insert
+Decision Firewall or add missing controls in that adapter to make tests pass.
 
 First identify the action, authoritative evidence, mandatory restrictions, review requirements, resource limits and execution system. Missing business requirements must remain explicit; do not invent eligibility rules or treat a model's assertions as verified facts.
 

@@ -13,12 +13,17 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r requirements-core.lock -r requirements-dev.lock
       - run: python -m pip install --no-deps -e .
-      - run: python -m ruff check src tests scripts examples benchmarks
-      - run: python -m ruff format --check src tests scripts examples benchmarks
+      - run: python -m pip install --no-deps -e ./conformance
+      - run: python -m ruff check src conformance/src tests scripts examples benchmarks
+      - run: python -m ruff format --check src conformance/src tests scripts examples benchmarks
       - run: python -m mypy src/decision_firewall
+      - run: python -m mypy conformance/src/control_conformance
       - run: python -m pytest -q
       - run: python scripts/check-safety-mutations.py --output .runtime-mutations/report.json
       - run: python -m build
+      - run: python -m build conformance
+      - run: python scripts/verify-conformance-wheel.py
+      - run: python -m benchmarks.control_conformance.run --output .runtime-independent-pilot
       - run: firewall benchmark runs/fixture --provider fixture --variations 0
       - run: firewall framework --domain access demo
       - run: firewall framework --domain refunds demo

@@ -4,6 +4,11 @@ Current status: the [independent pilot](../evaluations/2026-09-29/COMPARISON.md)
 
 ## Decision
 
+October 5, 2026: a separately scoped [independent conformance pilot](../../conformance/README.md)
+extracts three behavioural scenarios into a standard-library-only package. It tests
+existing application controls as well as the reference runtime. This is a bounded
+test-tool extraction; the earlier adoption results and runtime limitations stand.
+
 Focus Decision Firewall on a reusable execution lifecycle for actions that need explicit permission, reliable recovery and an explanation afterward. Its central contract is authorization bound to an exact action and its supporting facts, with durable tracking through execution and reconciliation.
 
 The target user is an engineer adding consequential actions to multiple application integrations. A human, deterministic program or model may originate a proposal. The lifecycle must work without inference or an external observability service.

@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased — Independent conformance pilot (October 5, 2026)
+
+Added a separately installable, standard-library-only `decision-control-conformance`
+package. Three behavioural scenarios exercise stale approval, repeat effects and
+fresh-process recovery after response loss through a test adapter. Both the existing
+plain application controls and framework integration pass; six declared injected
+behavioural faults are detected. No runtime code, signed formats or historical
+benchmarks changed. See [scope and results](docs/benchmarks/independent-conformance/README.md).
+
 ## 0.3.1 — Bounded corrective release
 
 Accepted the independent pilot's recommendation to narrow to a tested reference

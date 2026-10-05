@@ -2,6 +2,11 @@
 
 ## Current decision: narrow
 
+October 5, 2026: the separately requested [independent conformance pilot](conformance/README.md)
+is implemented. Its three scenarios run against existing application controls without
+the runtime, as well as against Decision Firewall. The [results](docs/benchmarks/independent-conformance/summary.md)
+support this bounded extraction; they do not reopen runtime expansion or adoption claims.
+
 The [independent agent pilot](docs/evaluations/2026-09-29/COMPARISON.md) is complete. Keep a tested reference implementation and conformance kit; stop feature expansion and adoption/migration claims. Version 0.3.1 is a bounded corrective release for confirmed defects and test gaps. The global write lock and other documented design limitations remain. No new domain, paid benchmark or follow-up adoption study is scheduled. The delivery sequence below records prior work, not authorization for more development.
 
 The product is a reusable authorization and recovery runtime for consequential actions. See the [scope and adoption experiment](docs/framework/product-direction.md). Integration effort, safeguard completeness, maintenance, investigation and consistency are measures of its value, not separate product lines.

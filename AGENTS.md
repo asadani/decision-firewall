@@ -5,7 +5,7 @@ Start with [the agent entry guide](docs/framework/agent-guide.md) for setup, rea
 All financial effects must remain simulated unless a future user explicitly scopes a real integration.
 Keep assessment, trusted evidence, policy, and execution authority separate.
 Core must not import domain packages, model SDKs, or web tooling. Implement business rules in explicit domain packs.
-New integrations use DecisionFirewall; retain v0.1 refund compatibility and document migrations explicitly.
+New runtime integrations use DecisionFirewall; retain v0.1 refund compatibility and document migrations explicitly. Independent control-conformance adapters can target plain application controls without the runtime. Keep the standalone conformance package free of framework imports and dependencies.
 Do not let model confidence bypass mandatory controls. Preserve unknown outcomes until reconciliation.
 Use integer minor units. Do not modify refer/.
 Run pytest, Ruff, mypy, and the package build after substantive changes. Model-free CI must not download weights.

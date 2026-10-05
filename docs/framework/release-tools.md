@@ -1,5 +1,10 @@
 # Conformance checks and incident reconstruction
 
+This page describes the **runtime-specific** 17-check `firewall conformance` command.
+For plain application controls, the separate [independent pilot](../../conformance/README.md)
+provides three behavioural checks without installing the runtime. It does not yet
+replace this command or cover all its scenarios and receipt formats.
+
 Status after independent evaluation: reference implementation and conformance kit, with no adoption advantage established. The [0.3.1 corrective release](../verification/0.3.1/README.md) supersedes the earlier test counts below and documents the approval API migration. Historical measurements remain labelled as such.
 
 These core-only tools are the bounded release-candidate deliverables. They do not require a model, telemetry service or browser. Existing application APIs and signed record formats are unchanged.

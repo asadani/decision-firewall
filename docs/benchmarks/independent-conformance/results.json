@@ -1,0 +1,311 @@
+{
+  "suite": "control-conformance-pilot-2",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_parent_commit": "a9b9a52dcf52ee9cfb7fddc8707a77352144be48",
+  "source_hash_encoding": "UTF-8 with CRLF normalized to LF",
+  "source_hashes": {
+    "benchmarks/control_conformance/__init__.py": "fd7178148c4cb63813c2c667a35029941f2d35cee23be3a0caf0d32ad2c8fe85",
+    "benchmarks/control_conformance/adapters.py": "47f19e9637292ea58b89908f07b7e31fac4c31dec17bfe8466a6e06d97d44f06",
+    "benchmarks/control_conformance/faults.py": "ea0856a8c7f4068abac23aafb57842530e49de40d8a912379a1b6f4f78560b11",
+    "benchmarks/control_conformance/recover.py": "690600872fc59a37a675e11817ae0c87170d7062e1a17c1440f38c42c46cfb1a",
+    "benchmarks/control_conformance/run.py": "c67be9cd4ab7ed3a77e7f6d77650c5c312ea571eee9810aa4781d47b4c3aaeaa",
+    "benchmarks/framework_value/application.py": "6141bacd175bd9501315a09f6d475284e7685a02df49d977249e521b18cc12fa",
+    "benchmarks/reuse_observability/application.py": "d09875e5c4e34049defb88105781abdd1f9827cb8c621aa22a25e81cf2c5523d",
+    "benchmarks/reuse_observability/framework.py": "eaeedd2aa02933ba4269fb75b77c7fc0a6ae53fb8d1e246760c8aeb3aed58a99",
+    "benchmarks/reuse_observability/make_cases.py": "e76d85a50ccae17e612c780f7d1d19b7067d02cbeb4c79221b7b42ca61d0e3cd",
+    "benchmarks/reuse_observability/policies.py": "1b2e6b08cbf29c8baa09e2b42e629cf1778afb5059ffd9934daf482bbb2675f3",
+    "benchmarks/reuse_observability/runner.py": "25a702bc51a54ac0dea135a7a85ca2b0c8a6cf43c2c140ddc228a573a0e63f56",
+    "benchmarks/reuse_observability/service.py": "2d6933f7a9967ebd365661d44e8feb03f9d899bd85e9e514284e17afd50d147b",
+    "benchmarks/reuse_observability/telemetry.py": "301730475183e6b68f9eac2b93daeb5f7e4e6771533fce548c364c77e2dba3cf",
+    "conformance/pyproject.toml": "5278e4ff2af4bf46d76859c2b130a9106962d107bf2a4345be2b74764a8e0cfc",
+    "conformance/src/control_conformance/__init__.py": "e3a44fe25b223d040c51fe9074fb13ec8abd1e83abca3506627eac6a88eab1c6",
+    "conformance/src/control_conformance/__main__.py": "af1a2d5667969722984730ee3c1badbfacdbd0e8cce42482320e87ec12579c0b",
+    "conformance/src/control_conformance/runner.py": "4ea48c5d1497b30dceb41131cdc1eca9da9b600e63de1d20ec0cc2f5b5d84df6",
+    "src/decision_firewall/core/__init__.py": "de1b0a831c15b4ec39f528e6cacbd9039e340432e0df17a7ee649f2e191a57ce",
+    "src/decision_firewall/core/audit.py": "44ed35e5ea7d14f60fb82bc1edb60e0efc77a38adff6dc23ed770704104467a1",
+    "src/decision_firewall/core/conformance.py": "d956160fae8c44ef5eec31221bac080b0d7b3cc14670f9c41124bc6348371d1a",
+    "src/decision_firewall/core/contracts.py": "42424b8aee62f093fbaf774fe7bede487cd22c354af18cf85ff54b999d91e72f",
+    "src/decision_firewall/core/investigation.py": "79bd991b6b72dc9c01b873e2a7260eef9f46de5c9f7764fc1b13feea86d0455f",
+    "src/decision_firewall/core/observation.py": "f80631a2b333e9bddbe6ebfb7e33b2c1915468f0d94f9f8fb8d97239c594dd1d",
+    "src/decision_firewall/core/outcomes.py": "c801e9ccc95aad297a68b09f0a004103dbc85956e6fe79edbae118b42ecf0f19",
+    "src/decision_firewall/core/plugins.py": "c2d1515fd7558cd97d07bb62be44a3fcb5b0802d6718e9437b5921f68d94fc92",
+    "src/decision_firewall/core/policy.py": "ba3dfc916a04691069bb20252810b2e369dc18313c773fb64d945d6bc6072570",
+    "src/decision_firewall/core/preparation.py": "19f13b055bc4806cae3b91f1d781f26d9672d28f6f4bc641948c7107d4020795",
+    "src/decision_firewall/core/rules.py": "c78ca55144f610c68e714c14f1b7f51ca59ab0f4dab0ee0c399ff31d867158d0",
+    "src/decision_firewall/core/runtime.py": "81bfaf62bce516304a8401adc8e029a51ff7c3d17f25ea515e9de7b30224430c",
+    "tests/test_independent_conformance.py": "8cbee5b26a71973bb0f4974dc0031e910ff219df2139d8a848e42787a419c215"
+  },
+  "integration_inventory": {
+    "required_protocol_methods": 6,
+    "nonblank_lines_including_comments": {
+      "benchmarks/control_conformance/adapters.py": 136,
+      "benchmarks/control_conformance/recover.py": 13,
+      "benchmarks/reuse_observability/application.py": 200,
+      "benchmarks/reuse_observability/framework.py": 112
+    },
+    "interpretation": "Shared bridge/oracle plus reused engine source; not time saved or total system size"
+  },
+  "measurements": [
+    {
+      "arm": "application",
+      "fault": null,
+      "expected_result_observed": true,
+      "elapsed_seconds": 0.3521,
+      "report": {
+        "suite": "control-conformance-pilot-2",
+        "checks": [
+          {
+            "case": "stale_approval",
+            "status": "PASS"
+          },
+          {
+            "case": "duplicate_effect",
+            "status": "PASS"
+          },
+          {
+            "case": "lost_response",
+            "status": "PASS"
+          }
+        ],
+        "counts": {
+          "PASS": 3,
+          "FAIL": 0,
+          "ERROR": 0,
+          "UNSUPPORTED": 0
+        },
+        "passed": true,
+        "scope": "Three simulated lifecycle scenarios; no production certification"
+      }
+    },
+    {
+      "arm": "application",
+      "fault": "stale_approval",
+      "expected_result_observed": true,
+      "elapsed_seconds": 0.3801,
+      "report": {
+        "suite": "control-conformance-pilot-2",
+        "checks": [
+          {
+            "case": "stale_approval",
+            "status": "FAIL",
+            "reason": "stale_approval_dispatched"
+          },
+          {
+            "case": "duplicate_effect",
+            "status": "PASS"
+          },
+          {
+            "case": "lost_response",
+            "status": "PASS"
+          }
+        ],
+        "counts": {
+          "PASS": 2,
+          "FAIL": 1,
+          "ERROR": 0,
+          "UNSUPPORTED": 0
+        },
+        "passed": false,
+        "scope": "Three simulated lifecycle scenarios; no production certification"
+      }
+    },
+    {
+      "arm": "application",
+      "fault": "duplicate_effect",
+      "expected_result_observed": true,
+      "elapsed_seconds": 0.3314,
+      "report": {
+        "suite": "control-conformance-pilot-2",
+        "checks": [
+          {
+            "case": "stale_approval",
+            "status": "PASS"
+          },
+          {
+            "case": "duplicate_effect",
+            "status": "FAIL",
+            "reason": "duplicate_effect"
+          },
+          {
+            "case": "lost_response",
+            "status": "PASS"
+          }
+        ],
+        "counts": {
+          "PASS": 2,
+          "FAIL": 1,
+          "ERROR": 0,
+          "UNSUPPORTED": 0
+        },
+        "passed": false,
+        "scope": "Three simulated lifecycle scenarios; no production certification"
+      }
+    },
+    {
+      "arm": "application",
+      "fault": "lost_response",
+      "expected_result_observed": true,
+      "elapsed_seconds": 0.3486,
+      "report": {
+        "suite": "control-conformance-pilot-2",
+        "checks": [
+          {
+            "case": "stale_approval",
+            "status": "PASS"
+          },
+          {
+            "case": "duplicate_effect",
+            "status": "PASS"
+          },
+          {
+            "case": "lost_response",
+            "status": "FAIL",
+            "reason": "recovery_duplicate_effect"
+          }
+        ],
+        "counts": {
+          "PASS": 2,
+          "FAIL": 1,
+          "ERROR": 0,
+          "UNSUPPORTED": 0
+        },
+        "passed": false,
+        "scope": "Three simulated lifecycle scenarios; no production certification"
+      }
+    },
+    {
+      "arm": "framework",
+      "fault": null,
+      "expected_result_observed": true,
+      "elapsed_seconds": 0.9759,
+      "report": {
+        "suite": "control-conformance-pilot-2",
+        "checks": [
+          {
+            "case": "stale_approval",
+            "status": "PASS"
+          },
+          {
+            "case": "duplicate_effect",
+            "status": "PASS"
+          },
+          {
+            "case": "lost_response",
+            "status": "PASS"
+          }
+        ],
+        "counts": {
+          "PASS": 3,
+          "FAIL": 0,
+          "ERROR": 0,
+          "UNSUPPORTED": 0
+        },
+        "passed": true,
+        "scope": "Three simulated lifecycle scenarios; no production certification"
+      }
+    },
+    {
+      "arm": "framework",
+      "fault": "stale_approval",
+      "expected_result_observed": true,
+      "elapsed_seconds": 0.7661,
+      "report": {
+        "suite": "control-conformance-pilot-2",
+        "checks": [
+          {
+            "case": "stale_approval",
+            "status": "FAIL",
+            "reason": "stale_approval_accepted"
+          },
+          {
+            "case": "duplicate_effect",
+            "status": "PASS"
+          },
+          {
+            "case": "lost_response",
+            "status": "PASS"
+          }
+        ],
+        "counts": {
+          "PASS": 2,
+          "FAIL": 1,
+          "ERROR": 0,
+          "UNSUPPORTED": 0
+        },
+        "passed": false,
+        "scope": "Three simulated lifecycle scenarios; no production certification"
+      }
+    },
+    {
+      "arm": "framework",
+      "fault": "duplicate_effect",
+      "expected_result_observed": true,
+      "elapsed_seconds": 0.7529,
+      "report": {
+        "suite": "control-conformance-pilot-2",
+        "checks": [
+          {
+            "case": "stale_approval",
+            "status": "PASS"
+          },
+          {
+            "case": "duplicate_effect",
+            "status": "FAIL",
+            "reason": "duplicate_effect"
+          },
+          {
+            "case": "lost_response",
+            "status": "PASS"
+          }
+        ],
+        "counts": {
+          "PASS": 2,
+          "FAIL": 1,
+          "ERROR": 0,
+          "UNSUPPORTED": 0
+        },
+        "passed": false,
+        "scope": "Three simulated lifecycle scenarios; no production certification"
+      }
+    },
+    {
+      "arm": "framework",
+      "fault": "lost_response",
+      "expected_result_observed": true,
+      "elapsed_seconds": 0.7705,
+      "report": {
+        "suite": "control-conformance-pilot-2",
+        "checks": [
+          {
+            "case": "stale_approval",
+            "status": "PASS"
+          },
+          {
+            "case": "duplicate_effect",
+            "status": "PASS"
+          },
+          {
+            "case": "lost_response",
+            "status": "FAIL",
+            "reason": "recovery_duplicate_effect"
+          }
+        ],
+        "counts": {
+          "PASS": 2,
+          "FAIL": 1,
+          "ERROR": 0,
+          "UNSUPPORTED": 0
+        },
+        "passed": false,
+        "scope": "Three simulated lifecycle scenarios; no production certification"
+      }
+    }
+  ],
+  "limitations": [
+    "Development-informed synthetic fixtures; one export domain",
+    "Six injected behavioural faults, not mutation coverage",
+    "No human productivity or production-effectiveness measurement",
+    "Elapsed time includes fresh-interpreter recovery; not a performance benchmark"
+  ]
+}

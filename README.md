@@ -10,7 +10,18 @@
 
 **Status: narrowed; feature expansion and adoption/migration claims have stopped.** An independent paired agent pilot found equal correctness and investigation scores, more integration workarounds and about 9× longer held-out-suite execution time in the framework arm. This is one diagnostic pilot, not a statistical or human-productivity study. Read the unchanged [comparison](docs/evaluations/2026-09-29/COMPARISON.md), [review findings](docs/evaluations/2026-09-29/findings.md) and [0.3.1 corrective release](docs/verification/0.3.1/README.md).
 
-An application proposes an action. Decision Firewall checks trusted evidence and policy, binds authorization to the exact action, tracks execution and uncertain outcomes, and records what happened. Bring your domain rules and idempotent execution adapter.
+There are now two separate entry points. Testing your existing controls does **not**
+require adopting the runtime:
+
+| Goal | Use | Installation |
+|---|---|---|
+| Test an existing application's behaviour | [Independent conformance pilot](conformance/README.md): three scenarios through your test adapter | `python -m pip install ./conformance` (standard library only) |
+| Study or integrate the reference lifecycle | Decision Firewall runtime and its original 17-check integration suite | Root package plus core dependencies |
+
+The extraction changes how tests can be used; it does not change existing runtime APIs
+or improve the historical adoption results. [Measured pilot and limitations](docs/benchmarks/independent-conformance/README.md).
+
+In the reference runtime, an application proposes an action. Decision Firewall checks trusted evidence and policy, binds authorization to the exact action, tracks execution and uncertain outcomes, and records what happened. Bring your domain rules and idempotent execution adapter.
 
 Proposals can originate from a human, deterministic program or model. Model inference is optional and never grants authority. The difficult cases are changing evidence, delayed approval, concurrent resource claims and a timeout after an action already succeeded.
 
@@ -40,6 +51,13 @@ The core has no payment fields, refund thresholds, or model SDK imports. Model s
 
 ## When to use it
 
+**Testing an existing application without adopting this runtime?** The new
+[independent conformance pilot](conformance/README.md) is a separate, standard-library-only
+package. It checks stale approval, duplicate effects and recovery after a lost response
+through your test adapter. The [measured pilot](docs/benchmarks/independent-conformance/summary.md)
+exercises both existing application controls and Decision Firewall, including declared
+fault injections. This is a three-scenario development pilot, not a migration recommendation.
+
 Use the code and conformance checks as examples for studying and testing authorization and recovery. Its central contract binds permission to an exact action and supporting facts, then tracks that action through execution and recovery. The pilot did not establish a reason to adopt this runtime over competent application controls.
 
 Classification-only applications usually do not need this runtime. An application with complete existing controls may gain little from migration. This remains an experimental local runtime; deployment identity, credential isolation and prevention of bypass paths are integration responsibilities.
@@ -65,6 +83,22 @@ These five outcomes evaluate the focused runtime; they are not reasons to expand
 ## Quickstart
 
 Python 3.12 is the tested runtime. From a local checkout, in an activated virtual environment:
+
+**Test plain application controls, without the runtime:**
+
+```sh
+python -m pip install ./conformance
+python -m control_conformance benchmarks.control_conformance.adapters:application --output report.json
+```
+
+This example uses the existing application comparator in the checkout. To test your
+own application, supply a [test adapter and independent effect oracle](conformance/README.md#connect-your-own-application).
+Neither the example adapters nor the framework ship inside the independent wheel.
+The profile checks stale approval, duplicate effects and lost-response recovery.
+Automatic actions can run the latter two without adding a fake approval step.
+Unsupported capabilities remain visible and do not count as a full pass.
+
+**Run the reference framework:**
 
 ```sh
 python -m pip install -r requirements-core.lock
@@ -184,9 +218,10 @@ The bounded tools and corrective release are implemented. The independent pilot 
 ```sh
 python -m pip install -r requirements-core.lock -r requirements-dev.lock
 python -m pip install --no-deps -e .
+python -m pip install --no-deps -e ./conformance
 python -m pytest -q
-python -m ruff check src tests scripts examples
-python -m ruff format --check src tests scripts examples
+python -m ruff check src conformance/src tests scripts examples benchmarks
+python -m ruff format --check src conformance/src tests scripts examples benchmarks
 python -m mypy src/decision_firewall
 python -m build
 ```
